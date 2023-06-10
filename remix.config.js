@@ -6,18 +6,18 @@ module.exports = {
       ? "./server.js"
       : undefined,
   ignoredRouteFiles: ["**/.*"],
-  appDirectory: "app",
-  assetsBuildDirectory: "public/build/assets",
-  sharedBuildDirectory: "public/build/shared",
-  routesBuildDirectory: "public/build/routes",
+  appDirectory: "./app",
+  assetsBuildDirectory: "./public/build/assets",
+  sharedBuildDirectory: "./public/build/shared",
+  routesBuildDirectory: "./public/build/routes",
   htmlTemplates: [
     {
       path: "./resources/index.html",
-      output: "public/index.html",
+      output: "./public/index.html",
     },
   ],
-  serverBuildPath: ".netlify/functions-internal/server.js",
-  publicPath: "/build/",
-  src: "public/build",
+  serverBuildPath: "./netlify/functions-internal/server.js",
+  publicPath: "./public/build/",
+  src: "./app/routes",
 };
 
