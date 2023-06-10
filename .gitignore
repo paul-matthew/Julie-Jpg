@@ -1,0 +1,9 @@
+# Exclude build output
+build/
+
+# Exclude node_modules
+node_modules/
+
+# Exclude other generated files
+.cache/
+.vscode/
