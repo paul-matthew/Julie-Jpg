@@ -1,11 +1,14 @@
 {
+  "homepage": "http://paul-matthew.github.io/Julie-Jpg",
   "private": true,
   "sideEffects": false,
   "scripts": {
     "build": "npm run build:css && remix build",
     "build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
     "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
-    "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css"
+    "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
+    "predeploy": "npm run build",
+    "deploy": "npx gh-pages -d ./public/build"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.6",
@@ -19,7 +22,8 @@
     "qs": "^6.11.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "rellax": "^1.12.1"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.6.7",
@@ -28,6 +32,7 @@
     "autoprefixer": "^10.4.8",
     "concurrently": "^7.3.0",
     "eslint": "^8.20.0",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.7"
   },
