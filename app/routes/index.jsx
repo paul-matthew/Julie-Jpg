@@ -290,7 +290,7 @@ console.log(info);
                                 <a href="#home">Home</a>
                             </li>
                             <li>
-                                <a href="#work">Work</a>
+                                <a href="#work">My Work</a>
                             </li>
                             <li>
                                 <a href="#services">Services</a>

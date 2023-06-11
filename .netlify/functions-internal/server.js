@@ -90,7 +90,7 @@ init_react();
 var import_node = require("@remix-run/node"), import_react2 = require("@remix-run/react");
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-AUP4Y5ND.css";
+var app_default = "/build/_assets/app-4YOVQ7EA.css";
 
 // app/root.jsx
 var meta = () => ({
@@ -501,7 +501,7 @@ function HomeRoute() {
     href: "#home"
   }, "Home")), /* @__PURE__ */ import_react3.default.createElement("li", null, /* @__PURE__ */ import_react3.default.createElement("a", {
     href: "#work"
-  }, "Work")), /* @__PURE__ */ import_react3.default.createElement("li", null, /* @__PURE__ */ import_react3.default.createElement("a", {
+  }, "My Work")), /* @__PURE__ */ import_react3.default.createElement("li", null, /* @__PURE__ */ import_react3.default.createElement("a", {
     href: "#services"
   }, "Services")), /* @__PURE__ */ import_react3.default.createElement("li", null, /* @__PURE__ */ import_react3.default.createElement("a", {
     className: "block w-max",
@@ -525,10 +525,10 @@ function HomeRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "467f72e2", entry: { module: "/build/entry.client-SBRUP7RM.js", imports: ["/build/_shared/chunk-46TJGGGU.js", "/build/_shared/chunk-ZORK422C.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-2BGQMBWY.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-4DVFL3BY.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-W6EPGXYZ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-467F72E2.js" };
+var assets_manifest_default = { version: "2a7ff9cc", entry: { module: "/build/entry.client-6ZAC4U5N.js", imports: ["/build/_shared/chunk-6JM2TVFS.js", "/build/_shared/chunk-QKP6INRL.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-3QIH2OEC.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-JNEWRMSL.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-FRCOXUZG.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-2A7FF9CC.js" };
 
 // server-entry-module:@remix-run/dev/server-build
-var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
+var assetsBuildDirectory = "public/build/assets", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
   root: {
     id: "root",
     parentId: void 0,
@@ -563,3 +563,4 @@ module.exports = __toCommonJS(stdin_exports);
   publicPath,
   routes
 });
+//# sourceMappingURL=server.js.map
