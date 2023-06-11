@@ -23,7 +23,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.4.0",
-    "rellax": "^1.12.1"
+    "rellax": "^1.12.1",
+    "strapi-plugin-netlify-deployments": "^2.0.0"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.6.7",
