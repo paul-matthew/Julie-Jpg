@@ -524,7 +524,7 @@ init_react();
 var assets_manifest_default = { version: "c038d52d", entry: { module: "./public/build/entry.client-SBRUP7RM.js", imports: ["./public/build/_shared/chunk-46TJGGGU.js", "./public/build/_shared/chunk-ZORK422C.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "./public/build/root-2BGQMBWY.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "./public/build/routes/index-4DVFL3BY.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "./public/build/routes/index.client-W6EPGXYZ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "./public/build/manifest-C038D52D.js" };
 
 // server-entry-module:@remix-run/dev/server-build
-var assetsBuildDirectory = "./public/build/", publicPath = "./public/build/", entry = { module: entry_server_exports }, routes = {
+var assetsBuildDirectory = "./public/build/_assets", publicPath = "./public/build/", entry = { module: entry_server_exports }, routes = {
   root: {
     id: "root",
     parentId: void 0,
