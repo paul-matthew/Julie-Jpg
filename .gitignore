@@ -7,3 +7,5 @@ node_modules/
 # Exclude other generated files
 .cache/
 .vscode/
+
+README.md

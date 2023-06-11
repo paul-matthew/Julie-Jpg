@@ -18,6 +18,6 @@ module.exports = {
   ],
   serverBuildPath: "./netlify/functions-internal/server.js",
   publicPath: "./public/build/",
-  src: "./app/routes/index.jsx",
+  src: "./index.jsx",
 };
 
