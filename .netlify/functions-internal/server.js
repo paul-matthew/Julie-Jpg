@@ -134,6 +134,11 @@ var import_react3 = __toESM(require("react")), import_react4 = require("@remix-r
 
 // app/api/get-data-from-strapi.server.js
 init_react();
+function getEnv() {
+  return {
+    BASE_URL: process.env.NODE_ENV === 'production' ? process.env.BASE_URL_PROD : process.env.BASE_URL
+  };
+}
 async function getDataFromStrapi(path, query) {
   let baseUrl2 = process.env.BASE_URL, url = `${process.env.BASE_URL}/api/${path}?${query}`;
   console.log(url), console.log("po");
@@ -150,6 +155,7 @@ async function getDataFromStrapi(path, query) {
     throw console.error(error), new Error("Error fetching data from Strapi");
   }
 }
+
 var baseUrl = process.env.BASE_URL;
 
 // app/routes/index.jsx
