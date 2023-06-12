@@ -45,10 +45,10 @@ import Rellax from 'rellax';
 function ArtCard({ data }) {
   const path_medImage = data.attributes.ArtImage.data.attributes.formats.medium.url;
   
-  const mediumImage=`${baseUrl}${path_medImage}`;
-  console.log(baseUrl);
-  console.log(path_medImage);
-  console.log(mediumImage);
+  const mediumImage=`http://127.0.0.1:1337${path_medImage}`;
+//   console.log(baseUrl);
+//   console.log(path_medImage);
+//   console.log(mediumImage);
 
 if (process.env.NODE_ENV === 'production')[
     console.log("ah yo!")
