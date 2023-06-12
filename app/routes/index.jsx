@@ -3,12 +3,14 @@ import React, { useRef, useEffect } from 'react';
 
 import { useLoaderData } from "@remix-run/react";
 import { getDataFromStrapi } from "~/api/get-data-from-strapi.server";
-import { baseUrl } from "~/api/get-data-from-strapi.server";
+// import { baseUrl } from "~/api/get-data-from-strapi.server";
 import Rellax from 'rellax';
 
 
  export async function loader() {
-   const response = await getDataFromStrapi("art-collections/", "populate=*");
+    const path = "art-collections/";
+    const query = "populate=*";
+   const response = await getDataFromStrapi(path, query);
    const data = response.data;
  
    if (!Array.isArray(data)) {
