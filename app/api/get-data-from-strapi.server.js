@@ -4,7 +4,7 @@ export async function getDataFromStrapi(path, query) {
     : process.env.BASE_URL;
 
 
-  const url = `${process.env.BASE_URL}/api/${path}?${query}`;
+    const url = `${baseUrl}/api/${path}?${query}`;
 console.log(url);
 console.log('po');
   try {
