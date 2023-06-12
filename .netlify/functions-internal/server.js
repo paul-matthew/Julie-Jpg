@@ -159,8 +159,6 @@ async function loader2() {
   return Array.isArray(data) ? { info: data } : { info: [data] };
 }
 function ArtCard({ data }) {
-  let path_medImage = data.attributes.ArtImage.data.attributes.formats.medium.url, mediumImage = `${baseUrl}${path_medImage}`;
-  console.log(mediumImage);
   let ref = (0, import_react3.useRef)();
   return (0, import_react3.useEffect)(() => {
     new import_rellax.default(ref.current, {
@@ -384,27 +382,27 @@ function HomeRoute() {
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "grid gap-8 sm:grid-cols-2 sm:gap-4"
   }, /* @__PURE__ */ import_react3.default.createElement("div", null, /* @__PURE__ */ import_react3.default.createElement("label", {
-    for: "firstname",
+    htmlFor: "firstname",
     className: "tracking-wide text-white"
   }, "Fistname"), /* @__PURE__ */ import_react3.default.createElement("input", {
     type: "text",
     id: "fistname",
     name: "fistname",
-    autocomplete: "name",
+    autoComplete: "name",
     placeholder: "Your fistname",
     className: "mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary"
   })), /* @__PURE__ */ import_react3.default.createElement("div", null, /* @__PURE__ */ import_react3.default.createElement("label", {
-    for: "lastname",
+    htmlFor: "lastname",
     className: "tracking-wide text-white"
   }, "Last name"), /* @__PURE__ */ import_react3.default.createElement("input", {
     type: "text",
     id: "lastname",
     name: "lastname",
-    autocomplete: "family-name",
+    autoComplete: "family-name",
     placeholder: "Your last name",
     className: "mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary"
   }))), /* @__PURE__ */ import_react3.default.createElement("div", null, /* @__PURE__ */ import_react3.default.createElement("label", {
-    for: "email",
+    htmlFor: "email",
     className: "tracking-wide text-white"
   }, "Mail address"), /* @__PURE__ */ import_react3.default.createElement("input", {
     type: "email",
@@ -413,7 +411,7 @@ function HomeRoute() {
     placeholder: "Your mail address",
     className: "mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary"
   })), /* @__PURE__ */ import_react3.default.createElement("div", null, /* @__PURE__ */ import_react3.default.createElement("label", {
-    for: "message",
+    htmlFor: "message",
     className: "tracking-wide text-white"
   }, "Your message"), /* @__PURE__ */ import_react3.default.createElement("textarea", {
     name: "message",
@@ -514,13 +512,13 @@ function HomeRoute() {
     className: "text-white"
   }, "PM Daybreak Designs"), " via Tailus in Lubumbashi ")))))), /* @__PURE__ */ import_react3.default.createElement("script", {
     src: "https://use.fontawesome.com/releases/v6.1.0/js/all.js",
-    crossorigin: "anonymous"
+    crossOrigin: "anonymous"
   }));
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "f500c660", entry: { module: "/build/entry.client-G7U3QPAL.js", imports: ["/build/_shared/chunk-VR75DVUX.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FTIZ5XYI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-7L4JPPLH.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-F500C660.js" };
+var assets_manifest_default = { version: "f29317c3", entry: { module: "/build/entry.client-G7U3QPAL.js", imports: ["/build/_shared/chunk-VR75DVUX.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FTIZ5XYI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-X5DHMGHC.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-F29317C3.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

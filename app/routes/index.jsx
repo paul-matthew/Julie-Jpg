@@ -10,12 +10,14 @@ import Rellax from 'rellax';
  export async function loader() {
    const response = await getDataFromStrapi("art-collections/", "populate=*");
    const data = response.data;
+ 
    if (!Array.isArray(data)) {
     return { info: [data] }; // Wrap data in an array if it's not already an array
   }
    return { info:data };
    
  }
+ 
 
 // const data = {
 //   info: [
@@ -41,10 +43,18 @@ import Rellax from 'rellax';
 // };
 
 function ArtCard({ data }) {
-  const path_medImage = data.attributes.ArtImage.data.attributes.formats.medium.url;
+//   const path_medImage = data.attributes.ArtImage.data.attributes.formats.medium.url;
   
-  const mediumImage=`${baseUrl}${path_medImage}`;
-  console.log(mediumImage);
+//   const mediumImage=`${baseUrl}${path_medImage}`;
+//   console.log(baseUrl);
+//   console.log(path_medImage);
+//   console.log(mediumImage);
+
+// if (process.env.NODE_ENV === 'production')[
+//     console.log("ah yo!")
+// ]
+// else (console.log("peace"))
+
   const ref = useRef();
 
   useEffect(() => {
@@ -66,7 +76,12 @@ function ArtCard({ data }) {
       className="rellax group col-span-2 lg:col-span-1"
     >
       <div style={{ width: '100%', height: '100%', overflow: 'hidden' }}className="relative before:absolute before:inset-0 before:origin-top before:bg-gradient-to-t before:from-black/5 before:opacity-50 before:backdrop-grayscale before:transition before:duration-500 group-hover:before:origin-bottom group-hover:before:scale-y-0">
-
+        {/* <img
+          className="transition duration-500"
+          src={mediumImage}
+          alt={data.attributes.Title}
+          style={{ width: '100%', height: '100%', objectFit: 'cover'}}
+        /> */}
       </div>
       <div className="flex items-center justify-between p-4">
         <h3 className="text-2xl font-normal text-white">{data.attributes.Title}</h3>
@@ -225,20 +240,20 @@ console.log(info);
                                 <form action="" className="mx-auto space-y-8 md:w-3/4">
                                     <div className="grid gap-8 sm:grid-cols-2 sm:gap-4">
                                         <div>
-                                            <label for="firstname" className="tracking-wide text-white">Fistname</label>
-                                            <input type="text" id="fistname" name="fistname" autocomplete="name" placeholder="Your fistname" className="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary" />
+                                            <label htmlFor="firstname" className="tracking-wide text-white">Fistname</label>
+                                            <input type="text" id="fistname" name="fistname" autoComplete="name" placeholder="Your fistname" className="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary" />
                                         </div>
                                         <div>
-                                            <label for="lastname" className="tracking-wide text-white">Last name</label>
-                                            <input type="text" id="lastname" name="lastname" autocomplete="family-name" placeholder="Your last name" className="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary" />
+                                            <label htmlFor="lastname" className="tracking-wide text-white">Last name</label>
+                                            <input type="text" id="lastname" name="lastname" autoComplete="family-name" placeholder="Your last name" className="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary" />
                                         </div>
                                     </div>
                                     <div>
-                                        <label for="email" className="tracking-wide text-white">Mail address</label>
+                                        <label htmlFor="email" className="tracking-wide text-white">Mail address</label>
                                         <input type="email" id="email" name="email" placeholder="Your mail address" className="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary" />
                                     </div>
                                     <div>
-                                        <label for="message" className="tracking-wide text-white">Your message</label>
+                                        <label htmlFor="message" className="tracking-wide text-white">Your message</label>
                                         <textarea name="message" id="message" cols="30" rows="6" placeholder="Your message" className="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary"></textarea>
                                     </div>
                                     <button type="submit" className="group ml-auto flex h-12 w-auto items-center overflow-hidden bg-white px-5 transition-all duration-300 hover:bg-primary">
@@ -306,7 +321,7 @@ console.log(info);
             </div>
         </div>
     </footer>
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossOrigin="anonymous"></script>
     </div>
   );
 }
