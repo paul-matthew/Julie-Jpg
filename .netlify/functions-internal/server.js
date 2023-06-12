@@ -135,7 +135,7 @@ var import_react3 = __toESM(require("react")), import_react4 = require("@remix-r
 // app/api/get-data-from-strapi.server.js
 init_react();
 async function getDataFromStrapi(path, query) {
-  let url = `${process.env.BASE_URL}/api/${path}?${query}`;
+  let baseUrl2 = process.env.BASE_URL, url = `${process.env.BASE_URL}/api/${path}?${query}`;
   console.log(url), console.log("po");
   try {
     let response = await fetch(url, {
