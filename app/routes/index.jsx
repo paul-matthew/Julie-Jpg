@@ -43,17 +43,17 @@ import Rellax from 'rellax';
 // };
 
 function ArtCard({ data }) {
-//   const path_medImage = data.attributes.ArtImage.data.attributes.formats.medium.url;
+  const path_medImage = data.attributes.ArtImage.data.attributes.formats.medium.url;
   
-//   const mediumImage=`${baseUrl}${path_medImage}`;
-//   console.log(baseUrl);
-//   console.log(path_medImage);
-//   console.log(mediumImage);
+  const mediumImage=`${baseUrl}${path_medImage}`;
+  console.log(baseUrl);
+  console.log(path_medImage);
+  console.log(mediumImage);
 
-// if (process.env.NODE_ENV === 'production')[
-//     console.log("ah yo!")
-// ]
-// else (console.log("peace"))
+if (process.env.NODE_ENV === 'production')[
+    console.log("ah yo!")
+]
+else (console.log("peace"))
 
   const ref = useRef();
 
@@ -76,12 +76,12 @@ function ArtCard({ data }) {
       className="rellax group col-span-2 lg:col-span-1"
     >
       <div style={{ width: '100%', height: '100%', overflow: 'hidden' }}className="relative before:absolute before:inset-0 before:origin-top before:bg-gradient-to-t before:from-black/5 before:opacity-50 before:backdrop-grayscale before:transition before:duration-500 group-hover:before:origin-bottom group-hover:before:scale-y-0">
-        {/* <img
+        <img
           className="transition duration-500"
           src={mediumImage}
           alt={data.attributes.Title}
           style={{ width: '100%', height: '100%', objectFit: 'cover'}}
-        /> */}
+        />
       </div>
       <div className="flex items-center justify-between p-4">
         <h3 className="text-2xl font-normal text-white">{data.attributes.Title}</h3>
