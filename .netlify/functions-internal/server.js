@@ -134,11 +134,6 @@ var import_react3 = __toESM(require("react")), import_react4 = require("@remix-r
 
 // app/api/get-data-from-strapi.server.js
 init_react();
-function getEnv() {
-  return {
-    BASE_URL: process.env.NODE_ENV === 'production' ? process.env.BASE_URL_PROD : process.env.BASE_URL
-  };
-}
 async function getDataFromStrapi(path, query) {
   let baseUrl2 = process.env.BASE_URL, url = `${process.env.BASE_URL}/api/${path}?${query}`;
   console.log(url), console.log("po");
@@ -155,7 +150,6 @@ async function getDataFromStrapi(path, query) {
     throw console.error(error), new Error("Error fetching data from Strapi");
   }
 }
-
 var baseUrl = process.env.BASE_URL;
 
 // app/routes/index.jsx
@@ -185,12 +179,7 @@ function ArtCard({ data }) {
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
     style: { width: "100%", height: "100%", overflow: "hidden" },
     className: "relative before:absolute before:inset-0 before:origin-top before:bg-gradient-to-t before:from-black/5 before:opacity-50 before:backdrop-grayscale before:transition before:duration-500 group-hover:before:origin-bottom group-hover:before:scale-y-0"
-  }, /* @__PURE__ */ import_react3.default.createElement("img", {
-    className: "transition duration-500",
-    src: mediumImage,
-    alt: data.attributes.Title,
-    style: { width: "100%", height: "100%", objectFit: "cover" }
-  })), /* @__PURE__ */ import_react3.default.createElement("div", {
+  }), /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "flex items-center justify-between p-4"
   }, /* @__PURE__ */ import_react3.default.createElement("h3", {
     className: "text-2xl font-normal text-white"
@@ -531,7 +520,7 @@ function HomeRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "d1fb5b98", entry: { module: "/build/entry.client-G7U3QPAL.js", imports: ["/build/_shared/chunk-VR75DVUX.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FTIZ5XYI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-FX5Q6S6Q.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-D1FB5B98.js" };
+var assets_manifest_default = { version: "f500c660", entry: { module: "/build/entry.client-G7U3QPAL.js", imports: ["/build/_shared/chunk-VR75DVUX.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FTIZ5XYI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-7L4JPPLH.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-F500C660.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
