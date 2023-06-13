@@ -1,8 +1,17 @@
 export async function getDataFromStrapi(path, query) {
-  const isProduction = process.env.NODE_ENV === 'production';
-  const baseUrl = isProduction ? process.env.BASE_URL_PROD : process.env.BASE_URL;
+  // const isProduction = process.env.NODE_ENV === 'production';
+  // const baseUrl = isProduction ? process.env.BASE_URL_PROD : process.env.BASE_URL;
 
   // const baseUrl = "http://127.0.0.1:1337";
+
+  let baseUrl = "https://jules-frontend-dev.herokuapp.com";
+
+  if (process.env.NODE_ENV !== 'production') {
+    baseUrl = "http://127.0.0.1:1337";
+    console.log("This is a local build yo");
+  } else {
+    console.log("This is a production build");
+  }
 
   const url = `${baseUrl}/api/${path}?${query}`;
   try {
@@ -23,6 +32,6 @@ export async function getDataFromStrapi(path, query) {
   }
 }
 
-export const baseUrl = process.env.NODE_ENV === 'production'
-  ? process.env.BASE_URL_PROD
-  : process.env.BASE_URL;
+// export const baseUrl = process.env.NODE_ENV === 'production'
+//   ? process.env.BASE_URL_PROD
+//   : process.env.BASE_URL;

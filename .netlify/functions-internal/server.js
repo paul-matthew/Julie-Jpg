@@ -135,7 +135,9 @@ var import_react3 = __toESM(require("react")), import_react4 = require("@remix-r
 // app/api/get-data-from-strapi.server.js
 init_react();
 async function getDataFromStrapi(path, query) {
-  let url = `${process.env.BASE_URL}/api/${path}?${query}`;
+  let baseUrl2 = "https://jules-frontend-dev.herokuapp.com";
+  baseUrl2 = "http://127.0.0.1:1337", console.log("This is a local build yo");
+  let url = `${baseUrl2}/api/${path}?${query}`;
   try {
     let response = await fetch(url, {
       headers: {
@@ -149,18 +151,17 @@ async function getDataFromStrapi(path, query) {
     throw console.error(error), new Error("Error fetching data from Strapi");
   }
 }
-var baseUrl = process.env.BASE_URL;
 
 // app/routes/index.jsx
-var import_rellax = __toESM(require("rellax")), baseUrl2 = "https://jules-frontend-dev.herokuapp.com";
-baseUrl2 = "http://127.0.0.1:1337", console.log("This is a local build");
+var import_rellax = __toESM(require("rellax")), baseUrl = "https://jules-frontend-dev.herokuapp.com";
+baseUrl = "http://127.0.0.1:1337", console.log("This is a local build");
 async function loader2() {
   let data = (await getDataFromStrapi("art-collections/", "populate=*")).data;
   return Array.isArray(data) ? { info: data } : { info: [data] };
 }
 function ArtCard({ data }) {
-  let path_medImage = data.attributes.ArtImage.data.attributes.formats.medium.url, mediumImage = `${baseUrl2}${path_medImage}`;
-  console.log(baseUrl2), console.log(path_medImage), console.log(mediumImage);
+  let path_medImage = data.attributes.ArtImage.data.attributes.formats.medium.url, mediumImage = `${baseUrl}${path_medImage}`;
+  console.log(baseUrl), console.log(path_medImage), console.log(mediumImage);
   let ref = (0, import_react3.useRef)();
   return (0, import_react3.useEffect)(() => {
     new import_rellax.default(ref.current, {
