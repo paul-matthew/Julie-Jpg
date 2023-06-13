@@ -1,7 +1,8 @@
 export async function getDataFromStrapi(path, query) {
-  const baseUrl = process.env.NODE_ENV === 'production'
-    ? process.env.BASE_URL_PROD
-    : process.env.BASE_URL;
+  const isProduction = process.env.NODE_ENV === 'production';
+  const baseUrl = isProduction ? process.env.BASE_URL_PROD : process.env.BASE_URL;
+
+  // const baseUrl = "http://127.0.0.1:1337";
 
   const url = `${baseUrl}/api/${path}?${query}`;
   try {

@@ -3,9 +3,21 @@ import React, { useRef, useEffect } from 'react';
 
 import { useLoaderData } from "@remix-run/react";
 import { getDataFromStrapi } from "~/api/get-data-from-strapi.server";
-import { baseUrl } from "~/api/get-data-from-strapi.server";
+// import { baseUrl } from "~/api/get-data-from-strapi.server";
+
 import Rellax from 'rellax';
 
+const baseUrl = process.env.NODE_ENV === 'production'
+  ? "https://jules-frontend-dev.herokuapp.com"
+  : "http://127.0.0.1:1337";
+
+console.log(baseUrl);
+
+if (process.env.NODE_ENV === 'production') {
+  console.log("This is a production build");
+} else {
+  console.log("This is a local build");
+}
 
  export async function loader() {
     const path = "art-collections/";
@@ -44,10 +56,7 @@ import Rellax from 'rellax';
 //   ],
 // };
 
-if (process.env.NODE_ENV === 'production')[
-    console.log("this is a production build")
-]
-else (console.log("this is local a build"))
+
 
 function ArtCard({ data }) {
   const path_medImage = data.attributes.ArtImage.data.attributes.formats.medium.url;
