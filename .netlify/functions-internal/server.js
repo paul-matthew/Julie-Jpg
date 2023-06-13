@@ -136,7 +136,6 @@ var import_react3 = __toESM(require("react")), import_react4 = require("@remix-r
 init_react();
 async function getDataFromStrapi(path, query) {
   let url = `${process.env.BASE_URL}/api/${path}?${query}`;
-  console.log(url), console.log("po");
   try {
     let response = await fetch(url, {
       headers: {
@@ -158,9 +157,10 @@ async function loader2() {
   let data = (await getDataFromStrapi("art-collections/", "populate=*")).data;
   return Array.isArray(data) ? { info: data } : { info: [data] };
 }
+console.log("this is local a build");
 function ArtCard({ data }) {
   let path_medImage = data.attributes.ArtImage.data.attributes.formats.medium.url, mediumImage = `${baseUrl}${path_medImage}`;
-  console.log("peace");
+  console.log(baseUrl), console.log(path_medImage), console.log(mediumImage);
   let ref = (0, import_react3.useRef)();
   return (0, import_react3.useEffect)(() => {
     new import_rellax.default(ref.current, {
@@ -194,7 +194,7 @@ function ArtCard({ data }) {
 }
 function HomeRoute() {
   let { info } = (0, import_react4.useLoaderData)();
-  return console.log("fet"), console.log(info), /* @__PURE__ */ import_react3.default.createElement("div", {
+  return /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "bg-black"
   }, /* @__PURE__ */ import_react3.default.createElement("main", {
     className: "background relative"
@@ -525,7 +525,7 @@ function HomeRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "c06d9480", entry: { module: "/build/entry.client-G7U3QPAL.js", imports: ["/build/_shared/chunk-VR75DVUX.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FTIZ5XYI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-JACTVE2X.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-C06D9480.js" };
+var assets_manifest_default = { version: "03119f64", entry: { module: "/build/entry.client-G7U3QPAL.js", imports: ["/build/_shared/chunk-VR75DVUX.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FTIZ5XYI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-ROINHSIQ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-03119F64.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

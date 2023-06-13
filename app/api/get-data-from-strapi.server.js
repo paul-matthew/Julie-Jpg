@@ -4,8 +4,6 @@ export async function getDataFromStrapi(path, query) {
     : process.env.BASE_URL;
 
   const url = `${baseUrl}/api/${path}?${query}`;
-  console.log(url);
-  console.log('po');
   try {
     const response = await fetch(url, {
       headers: {

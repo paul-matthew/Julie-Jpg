@@ -44,18 +44,20 @@ import Rellax from 'rellax';
 //   ],
 // };
 
+if (process.env.NODE_ENV === 'production')[
+    console.log("this is a production build")
+]
+else (console.log("this is local a build"))
+
 function ArtCard({ data }) {
   const path_medImage = data.attributes.ArtImage.data.attributes.formats.medium.url;
   
   const mediumImage=`${baseUrl}${path_medImage}`;
-//   console.log(baseUrl);
-//   console.log(path_medImage);
-//   console.log(mediumImage);
+  console.log(baseUrl);
+  console.log(path_medImage);
+  console.log(mediumImage);
 
-if (process.env.NODE_ENV === 'production')[
-    console.log("ah yo!")
-]
-else (console.log("peace"))
+
 
   const ref = useRef();
 
@@ -98,10 +100,6 @@ else (console.log("peace"))
 
 export default function HomeRoute() {
 const { info } = useLoaderData();
-console.log('fet');
-console.log(info);
-
-
 
   return (
     <div className="bg-black">
