@@ -152,7 +152,7 @@ async function getDataFromStrapi(path, query) {
 var baseUrl = process.env.BASE_URL;
 
 // app/routes/index.jsx
-var import_rellax = __toESM(require("rellax")), baseUrl2 = "http://127.0.0.1:1337";
+var import_rellax = __toESM(require("rellax")), baseUrl2 = "https://jules-frontend-dev.herokuapp.com";
 console.log(baseUrl2);
 console.log("This is a local build");
 async function loader2() {
@@ -526,7 +526,7 @@ function HomeRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "ef66c3e1", entry: { module: "/build/entry.client-G7U3QPAL.js", imports: ["/build/_shared/chunk-VR75DVUX.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FTIZ5XYI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-5GSIUBO4.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-EF66C3E1.js" };
+var assets_manifest_default = { version: "4ea4fa0b", entry: { module: "/build/entry.client-G7U3QPAL.js", imports: ["/build/_shared/chunk-VR75DVUX.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FTIZ5XYI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-UDYAMBMB.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-4EA4FA0B.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

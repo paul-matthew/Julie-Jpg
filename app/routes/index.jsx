@@ -7,9 +7,11 @@ import { getDataFromStrapi } from "~/api/get-data-from-strapi.server";
 
 import Rellax from 'rellax';
 
-const baseUrl = process.env.NODE_ENV === 'production'
-  ? "https://jules-frontend-dev.herokuapp.com"
-  : "http://127.0.0.1:1337";
+// const baseUrl = process.env.NODE_ENV === 'production'
+//   ? "https://jules-frontend-dev.herokuapp.com"
+//   : "http://127.0.0.1:1337";
+
+const baseUrl = "https://jules-frontend-dev.herokuapp.com"
 
 console.log(baseUrl);
 
