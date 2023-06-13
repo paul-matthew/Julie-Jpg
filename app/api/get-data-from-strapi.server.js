@@ -1,12 +1,11 @@
 export async function getDataFromStrapi(path, query) {
-  // const baseUrl = process.env.NODE_ENV === 'production'
-  //   ? process.env.BASE_URL_PROD
-  //   : process.env.BASE_URL;
-  const baseUrl = process.env.BASE_URL_PROD
+  const baseUrl = process.env.NODE_ENV === 'production'
+    ? process.env.BASE_URL_PROD
+    : process.env.BASE_URL;
 
-    const url = `${baseUrl}/api/${path}?${query}`;
-console.log(url);
-console.log('po');
+  const url = `${baseUrl}/api/${path}?${query}`;
+  console.log(url);
+  console.log('po');
   try {
     const response = await fetch(url, {
       headers: {
@@ -25,7 +24,6 @@ console.log('po');
   }
 }
 
-export const baseUrl = process.env.BASE_URL_PROD
-// export const baseUrl = process.env.NODE_ENV === 'production'
-//   // ? process.env.BASE_URL_PROD
-//   // : process.env.BASE_URL;
+export const baseUrl = process.env.NODE_ENV === 'production'
+  ? process.env.BASE_URL_PROD
+  : process.env.BASE_URL;

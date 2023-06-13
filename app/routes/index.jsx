@@ -3,7 +3,7 @@ import React, { useRef, useEffect } from 'react';
 
 import { useLoaderData } from "@remix-run/react";
 import { getDataFromStrapi } from "~/api/get-data-from-strapi.server";
-// import { baseUrl } from "~/api/get-data-from-strapi.server";
+import { baseUrl } from "~/api/get-data-from-strapi.server";
 import Rellax from 'rellax';
 
 
@@ -47,10 +47,10 @@ import Rellax from 'rellax';
 function ArtCard({ data }) {
   const path_medImage = data.attributes.ArtImage.data.attributes.formats.medium.url;
   
-  const mediumImage=`https://jules-frontend-dev.herokuapp.com${path_medImage}`;
+  const mediumImage=`${baseUrl}${path_medImage}`;
 //   console.log(baseUrl);
 //   console.log(path_medImage);
-  console.log(mediumImage);
+//   console.log(mediumImage);
 
 if (process.env.NODE_ENV === 'production')[
     console.log("ah yo!")
