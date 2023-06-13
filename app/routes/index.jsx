@@ -11,14 +11,13 @@ import Rellax from 'rellax';
 //   ? "https://jules-frontend-dev.herokuapp.com"
 //   : "http://127.0.0.1:1337";
 
-const baseUrl = "https://jules-frontend-dev.herokuapp.com"
+let baseUrl = "https://jules-frontend-dev.herokuapp.com";
 
-console.log(baseUrl);
-
-if (process.env.NODE_ENV === 'production') {
-  console.log("This is a production build");
-} else {
+if (process.env.NODE_ENV !== 'production') {
+  baseUrl = "http://127.0.0.1:1337";
   console.log("This is a local build");
+} else {
+  console.log("This is a production build");
 }
 
  export async function loader() {
