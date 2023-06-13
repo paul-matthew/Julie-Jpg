@@ -135,7 +135,7 @@ var import_react3 = __toESM(require("react")), import_react4 = require("@remix-r
 // app/api/get-data-from-strapi.server.js
 init_react();
 async function getDataFromStrapi(path, query) {
-  let url = `${process.env.BASE_URL}/api/${path}?${query}`;
+  let url = `${process.env.BASE_URL_PROD}/api/${path}?${query}`;
   console.log(url), console.log("po");
   try {
     let response = await fetch(url, {
@@ -150,7 +150,7 @@ async function getDataFromStrapi(path, query) {
     throw console.error(error), new Error("Error fetching data from Strapi");
   }
 }
-var baseUrl = process.env.BASE_URL;
+var baseUrl = process.env.BASE_URL_PROD;
 
 // app/routes/index.jsx
 var import_rellax = __toESM(require("rellax"));
@@ -159,8 +159,8 @@ async function loader2() {
   return Array.isArray(data) ? { info: data } : { info: [data] };
 }
 function ArtCard({ data }) {
-  let mediumImage = `http://127.0.0.1:1337${data.attributes.ArtImage.data.attributes.formats.medium.url}`;
-  console.log("peace");
+  let mediumImage = `https://jules-frontend-dev.herokuapp.com${data.attributes.ArtImage.data.attributes.formats.medium.url}`;
+  console.log(mediumImage), console.log("peace");
   let ref = (0, import_react3.useRef)();
   return (0, import_react3.useEffect)(() => {
     new import_rellax.default(ref.current, {
@@ -525,7 +525,7 @@ function HomeRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "6faa8274", entry: { module: "/build/entry.client-G7U3QPAL.js", imports: ["/build/_shared/chunk-VR75DVUX.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FTIZ5XYI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-7Q3BANWD.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-6FAA8274.js" };
+var assets_manifest_default = { version: "43653b71", entry: { module: "/build/entry.client-G7U3QPAL.js", imports: ["/build/_shared/chunk-VR75DVUX.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FTIZ5XYI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-WHMZC3OV.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-43653B71.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
