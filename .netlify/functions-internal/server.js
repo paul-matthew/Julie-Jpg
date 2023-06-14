@@ -135,12 +135,10 @@ var import_react3 = __toESM(require("react")), import_react4 = require("@remix-r
 // app/api/get-data-from-strapi.server.js
 init_react();
 async function getDataFromStrapi(path, query) {
-  baseUrl = "http://127.0.0.1:1337", console.log("This is a local build yo");
-  let url = `${baseUrl}/api/${path}?${query}`;
   try {
-    let baseUrl3 = "https://jules-frontend-dev.herokuapp.com", apiToken = "";
-    baseUrl3 = "http://127.0.0.1:1337", apiToken = "8d6bc6426e15cd3f2258c808296c55de0a56f144520131471d3821ba329a6a0aecfeb1c25280c7c51812c5f9a11cfbbefe804434e22f186266aee12f990d45467e8f9f139f700760e0bc0d9512eaa30d3c7a7f26296d9cf9ef9db9b571d6f307c3a05a2080c13ac74b44cbab9a02d5169ee68ccfd3547a711a5953c5c2f81c8e", console.log("This is a local build yo");
-    let response = await fetch(url, {
+    let baseUrl2 = "https://jules-frontend-dev.herokuapp.com", apiToken = "";
+    baseUrl2 = "http://127.0.0.1:1337", apiToken = "8d6bc6426e15cd3f2258c808296c55de0a56f144520131471d3821ba329a6a0aecfeb1c25280c7c51812c5f9a11cfbbefe804434e22f186266aee12f990d45467e8f9f139f700760e0bc0d9512eaa30d3c7a7f26296d9cf9ef9db9b571d6f307c3a05a2080c13ac74b44cbab9a02d5169ee68ccfd3547a711a5953c5c2f81c8e", console.log("This is a local build yo");
+    let url = `${baseUrl2}/api/${path}?${query}`, response = await fetch(url, {
       headers: {
         Authorization: `Bearer ${apiToken}`
       }
@@ -154,15 +152,15 @@ async function getDataFromStrapi(path, query) {
 }
 
 // app/routes/index.jsx
-var import_rellax = __toESM(require("rellax")), baseUrl2 = "https://jules-frontend-dev.herokuapp.com";
-baseUrl2 = "http://127.0.0.1:1337", console.log("This is a local build");
+var import_rellax = __toESM(require("rellax")), baseUrl = "https://jules-frontend-dev.herokuapp.com";
+baseUrl = "http://127.0.0.1:1337", console.log("This is a local build");
 async function loader2() {
   let data = (await getDataFromStrapi("art-collections/", "populate=*")).data;
   return Array.isArray(data) ? { info: data } : { info: [data] };
 }
 function ArtCard({ data }) {
-  let path_medImage = data.attributes.ArtImage.data.attributes.formats.medium.url, mediumImage = `${baseUrl2}${path_medImage}`;
-  console.log(baseUrl2), console.log(path_medImage), console.log(mediumImage);
+  let path_medImage = data.attributes.ArtImage.data.attributes.formats.medium.url, mediumImage = `${baseUrl}${path_medImage}`;
+  console.log(baseUrl), console.log(path_medImage), console.log(mediumImage);
   let ref = (0, import_react3.useRef)();
   return (0, import_react3.useEffect)(() => {
     new import_rellax.default(ref.current, {

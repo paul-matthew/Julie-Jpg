@@ -4,14 +4,14 @@ export async function getDataFromStrapi(path, query) {
 
   // const baseUrl = "http://127.0.0.1:1337";
 
-  if (process.env.NODE_ENV !== 'production') {
-    baseUrl = "http://127.0.0.1:1337";
-    console.log("This is a local build yo");
-  } else {
-    console.log("This is a production build");
-  }
+  // if (process.env.NODE_ENV !== 'production') {
+  //   baseUrl = "http://127.0.0.1:1337";
+  //   console.log("This is a local build yo");
+  // } else {
+  //   console.log("This is a production build");
+  // }
 
-const url = `${baseUrl}/api/${path}?${query}`;
+
 try {
   let baseUrl = "https://jules-frontend-dev.herokuapp.com";
   let apiToken = "";
@@ -25,7 +25,7 @@ try {
     apiToken = "2fc52a25496bc6327bd4f9686e345763780fddc29c88cab5a3bb3481ccdad9d7ba4caf3e3257cf8e5669698d32fca39edb518c87c1f7bbb579a859fdf185928ed84dad0723a2b5f0108d5b691c5106a3dcb2e87321e65ba7af8f4b04d0bdf399d93f0fe3846ebbf832464aa2d2a0c8370945995f24f17771846230f57d4769f4";
     console.log("This is a production build");
   }
-
+  const url = `${baseUrl}/api/${path}?${query}`;
   const response = await fetch(url, {
     headers: {
       Authorization: `Bearer ${apiToken}`,
@@ -38,7 +38,9 @@ try {
 
   const data = await response.json();
   return data;
-} catch (error) {
+} 
+
+  catch (error) {
   console.error(error);
   throw new Error('Error fetching data from Strapi');
 }
