@@ -14,9 +14,28 @@ import styles from "./styles/app.css"
 
 export const meta = () => ({
   charset: "utf-8",
-  title: "New Remix App",
+  title: "JULIE-JPG",
   viewport: "width=device-width,initial-scale=1",
+  meta: [
+    {
+      name: "description",
+      content: "Julie-Jpg Artwork",
+    },
+    {
+      property: "og:title",
+      content: "JULIE-JPG",
+    },
+    {
+      property: "og:description",
+      content: "Julie-Jpg Artwork",
+    },
+    {
+      property: "og:image",
+      content: "./public/empresspaint.png",
+    },
+  ],
 });
+
 
 export function loader() {
   return json({

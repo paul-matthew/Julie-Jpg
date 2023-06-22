@@ -138,7 +138,7 @@ const [startIndex, setStartIndex] = useState(0);
   };
 
   const scrollToSection = () => {
-    sectionRef.current.scrollIntoView({ behavior: 'instant' });
+    sectionRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
   const displayedItems = info.slice(startIndex, startIndex + itemsPerPage);
@@ -204,7 +204,7 @@ const [startIndex, setStartIndex] = useState(0);
               className="rellax flex flex-wrap items-center gap-6"
             >
               <h2 className="text-7xl font-bold text-white xl:text-8xl">
-                Latest work
+                My work
               </h2>
               <span className="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">
                 {info.length} Projects
@@ -217,14 +217,14 @@ const [startIndex, setStartIndex] = useState(0);
         </div>
       </div>
       {info.length > itemsPerPage && (
-        <div className="flex justify-center mt-20 space-x-4">
+        <div className="flex justify-center mt-10 space-x-4">
             {!isFirstPage && (
-          <button className="text-white text-lg underline" onClick={handlePrevious}>
+          <button className="text-white text-3xl underline" onClick={handlePrevious}>
             Previous
           </button>)}
           {!isLastPage && (
-          <button className="text-white text-lg underline" onClick={handleNext}>
-            Next
+          <button className="text-white text-3xl underline" onClick={handleNext}>
+            More
           </button>)}
         </div>
       )}
@@ -289,7 +289,7 @@ const [startIndex, setStartIndex] = useState(0);
         </div>
         <div className="ml-auto flex items-center bg-white">
             <div>
-                <p className="text-6xl font-light text-black ml-4">Hello, I'm Jules, a Toronto-based artist.</p>
+                <p className="text-6xl font-light text-black ml-4">Hello, I'm Julie, a Toronto-based artist.</p>
                 <hr className="border-black my-4" />
                 <p className="text-2xl font-light text-black ml-4">Passionate about painting and drawing, I express myself creatively through vibrant colors and intricate details. Inspired by the streets of Toronto, I infuse my unique perspective into each artwork. Join me on this artistic journey as I invite you to experience the power of art through my lens.</p> 
             </div>
@@ -363,7 +363,7 @@ const [startIndex, setStartIndex] = useState(0);
             <div className="mt-12 md:mt-16 lg:mt-24">
                 <div className="space-y-8 md:space-y-12">
                     <a href="/" className="text-2xl font-light tracking-widest text-white">
-                        <img className="h-8 w-auto brightness-200" src="/empresspaint.jpg" alt="logo mark" width="100" height="100" />
+                        <img className="h-8 w-auto brightness-200" src="/empresspaint.png" alt="logo mark" width="100" height="100" />
                     </a>
                     <div className="flex flex-wrap justify-between gap-3">
                         <span className="text-sm text-white/50">&copy; Radiant 2021 - Present</span>

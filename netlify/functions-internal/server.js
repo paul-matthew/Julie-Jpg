@@ -95,7 +95,7 @@ var app_default = "./public/build/_assets/app-AUP4Y5ND.css";
 // app/root.jsx
 var meta = () => ({
   charset: "utf-8",
-  title: "New Remix App",
+  title: "JULIE-JPG",
   viewport: "width=device-width,initial-scale=1"
 });
 function loader() {
@@ -487,7 +487,7 @@ function HomeRoute() {
     className: "text-2xl font-light tracking-widest text-white"
   }, /* @__PURE__ */ import_react3.default.createElement("img", {
     className: "h-8 w-auto brightness-200",
-    src: "/empresspaint.jpg",
+    src: "/empresspaint.png",
     alt: "logo mark",
     width: "100",
     height: "100"

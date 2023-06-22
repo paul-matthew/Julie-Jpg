@@ -90,13 +90,31 @@ init_react();
 var import_node = require("@remix-run/node"), import_react2 = require("@remix-run/react");
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-GG4MRT6C.css";
+var app_default = "/build/_assets/app-GDLAYJLL.css";
 
 // app/root.jsx
 var meta = () => ({
   charset: "utf-8",
-  title: "New Remix App",
-  viewport: "width=device-width,initial-scale=1"
+  title: "JULIE-JPG",
+  viewport: "width=device-width,initial-scale=1",
+  meta: [
+    {
+      name: "description",
+      content: "Julie-Jpg Artwork"
+    },
+    {
+      property: "og:title",
+      content: "JULIE-JPG"
+    },
+    {
+      property: "og:description",
+      content: "Julie-Jpg Artwork"
+    },
+    {
+      property: "og:image",
+      content: "./public/empresspaint.png"
+    }
+  ]
 });
 function loader() {
   return (0, import_node.json)({
@@ -199,7 +217,7 @@ function HomeRoute() {
   }, handleNext = () => {
     startIndex + itemsPerPage < info.length && (setStartIndex(startIndex + itemsPerPage), scrollToSection());
   }, scrollToSection = () => {
-    sectionRef.current.scrollIntoView({ behavior: "instant" });
+    sectionRef.current.scrollIntoView({ behavior: "smooth" });
   }, displayedItems = info.slice(startIndex, startIndex + itemsPerPage), isFirstPage = startIndex === 0, isLastPage = startIndex + itemsPerPage >= info.length;
   return /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "bg-black"
@@ -297,7 +315,7 @@ function HomeRoute() {
     className: "rellax flex flex-wrap items-center gap-6"
   }, /* @__PURE__ */ import_react3.default.createElement("h2", {
     className: "text-7xl font-bold text-white xl:text-8xl"
-  }, "Latest work"), /* @__PURE__ */ import_react3.default.createElement("span", {
+  }, "My work"), /* @__PURE__ */ import_react3.default.createElement("span", {
     className: "h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white"
   }, info.length, " Projects")), /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "relative mt-20 gap-20 gap-x-6 space-y-20 sm:grid sm:grid-cols-2 sm:space-y-0 md:mt-72 lg:mt-60"
@@ -306,14 +324,14 @@ function HomeRoute() {
     data: item,
     index
   })))), info.length > itemsPerPage && /* @__PURE__ */ import_react3.default.createElement("div", {
-    className: "flex justify-center mt-20 space-x-4"
+    className: "flex justify-center mt-10 space-x-4"
   }, !isFirstPage && /* @__PURE__ */ import_react3.default.createElement("button", {
-    className: "text-white text-lg underline",
+    className: "text-white text-3xl underline",
     onClick: handlePrevious
   }, "Previous"), !isLastPage && /* @__PURE__ */ import_react3.default.createElement("button", {
-    className: "text-white text-lg underline",
+    className: "text-white text-3xl underline",
     onClick: handleNext
-  }, "Next"))), /* @__PURE__ */ import_react3.default.createElement("section", {
+  }, "More"))), /* @__PURE__ */ import_react3.default.createElement("section", {
     id: "services",
     className: "relative bg-black pb-0 pt-32 md:pb-0 lg:pb-32 xl:pt-96"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
@@ -399,7 +417,7 @@ function HomeRoute() {
     className: "ml-auto flex items-center bg-white"
   }, /* @__PURE__ */ import_react3.default.createElement("div", null, /* @__PURE__ */ import_react3.default.createElement("p", {
     className: "text-6xl font-light text-black ml-4"
-  }, "Hello, I'm Jules, a Toronto-based artist."), /* @__PURE__ */ import_react3.default.createElement("hr", {
+  }, "Hello, I'm Julie, a Toronto-based artist."), /* @__PURE__ */ import_react3.default.createElement("hr", {
     className: "border-black my-4"
   }), /* @__PURE__ */ import_react3.default.createElement("p", {
     className: "text-2xl font-light text-black ml-4"
@@ -526,7 +544,7 @@ function HomeRoute() {
     className: "text-2xl font-light tracking-widest text-white"
   }, /* @__PURE__ */ import_react3.default.createElement("img", {
     className: "h-8 w-auto brightness-200",
-    src: "/empresspaint.jpg",
+    src: "/empresspaint.png",
     alt: "logo mark",
     width: "100",
     height: "100"
@@ -547,7 +565,7 @@ function HomeRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "4c16c506", entry: { module: "/build/entry.client-G7U3QPAL.js", imports: ["/build/_shared/chunk-VR75DVUX.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-W7FTDHDX.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-UB57G2LX.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-4C16C506.js" };
+var assets_manifest_default = { version: "be839a4c", entry: { module: "/build/entry.client-G7U3QPAL.js", imports: ["/build/_shared/chunk-VR75DVUX.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-6C6GUGCJ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-3M4RSKVX.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-BE839A4C.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
