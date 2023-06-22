@@ -90,7 +90,7 @@ init_react();
 var import_node = require("@remix-run/node"), import_react2 = require("@remix-run/react");
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-GDLAYJLL.css";
+var app_default = "/build/_assets/app-5ENCD5LZ.css";
 
 // app/root.jsx
 var meta = () => ({
@@ -231,31 +231,38 @@ function HomeRoute() {
     className: "flex items-center justify-between"
   }, /* @__PURE__ */ import_react3.default.createElement("a", {
     href: "/",
-    className: "text-2xl font-light tracking-widest text-white -mt-10"
+    className: "text-2xl font-light tracking-widest text-white -mt-10 ml-[-0.7rem]"
   }, /* @__PURE__ */ import_react3.default.createElement("i", {
     className: "fa fa-home fa-1x",
     "aria-hidden": "true"
-  })), /* @__PURE__ */ import_react3.default.createElement("a", {
+  })), /* @__PURE__ */ import_react3.default.createElement("div", {
+    className: "flex justify-end flex-1"
+  }, /* @__PURE__ */ import_react3.default.createElement("a", {
     href: "#work",
-    className: "relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
+    className: "mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
   }, /* @__PURE__ */ import_react3.default.createElement("span", {
     className: "relative"
   }, "Portfolio")), /* @__PURE__ */ import_react3.default.createElement("a", {
     href: "#services",
-    className: "relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
+    className: "mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
   }, /* @__PURE__ */ import_react3.default.createElement("span", {
     className: "relative"
   }, "Services")), /* @__PURE__ */ import_react3.default.createElement("a", {
     href: "#about",
-    className: "relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
+    className: "mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
   }, /* @__PURE__ */ import_react3.default.createElement("span", {
     className: "relative"
   }, "About")), /* @__PURE__ */ import_react3.default.createElement("a", {
     href: "#contact",
-    className: "relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
+    className: "mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
   }, /* @__PURE__ */ import_react3.default.createElement("span", {
     className: "relative"
-  }, "Contact"))))), /* @__PURE__ */ import_react3.default.createElement("section", {
+  }, "Contact")), /* @__PURE__ */ import_react3.default.createElement("a", {
+    href: "#",
+    className: "mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
+  }, /* @__PURE__ */ import_react3.default.createElement("span", {
+    className: "relative"
+  }, "Shop")))))), /* @__PURE__ */ import_react3.default.createElement("section", {
     id: "home",
     className: "relative flex min-h-screen items-center"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
@@ -565,7 +572,7 @@ function HomeRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "be839a4c", entry: { module: "/build/entry.client-G7U3QPAL.js", imports: ["/build/_shared/chunk-VR75DVUX.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-6C6GUGCJ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-3M4RSKVX.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-BE839A4C.js" };
+var assets_manifest_default = { version: "2bb3048b", entry: { module: "/build/entry.client-G7U3QPAL.js", imports: ["/build/_shared/chunk-VR75DVUX.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-KLNCJGTP.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-7OJXSOEI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-2BB3048B.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

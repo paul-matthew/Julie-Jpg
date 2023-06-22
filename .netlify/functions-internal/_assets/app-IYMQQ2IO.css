@@ -613,26 +613,6 @@ video {
   margin-top: 2.5rem;
 }
 
-.mr-\[1rem\] {
-  margin-right: 1rem;
-}
-
-.mr-\[0\.5rem\] {
-  margin-right: 0.5rem;
-}
-
-.-mt-1 {
-  margin-top: -0.25rem;
-}
-
-.ml-\[-0\.5rem\] {
-  margin-left: -0.5rem;
-}
-
-.ml-\[-0\.7rem\] {
-  margin-left: -0.7rem;
-}
-
 .inline-block {
   display: inline-block;
 }

@@ -150,25 +150,31 @@ const [startIndex, setStartIndex] = useState(0);
     <div className="bg-black">
     <main className="background relative">
       <header className="fixed top-0 z-20 w-full">
-            <nav className="2lg:px-12 mx-auto max-w-7xl px-6 py-12 lg:px-12 xl:px-6 2xl:px-0">
-                <div className="flex items-center justify-between">
-                    <a href="/" className="text-2xl font-light tracking-widest text-white -mt-10">
-                        <i className="fa fa-home fa-1x" aria-hidden="true"></i>
-                    </a>
-                    <a href="#work" className="relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
-                        <span className="relative">Portfolio</span>
-                    </a>
-                    <a href="#services" className="relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
-                        <span className="relative">Services</span>
-                    </a>
-                    <a href="#about" className="relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
-                        <span className="relative">About</span>
-                    </a>
-                    <a href="#contact" className="relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
-                        <span className="relative">Contact</span>
-                    </a>
-                </div>
-            </nav>
+      <nav className="2lg:px-12 mx-auto max-w-7xl px-6 py-12 lg:px-12 xl:px-6 2xl:px-0">
+  <div className="flex items-center justify-between">
+    <a href="/" className="text-2xl font-light tracking-widest text-white -mt-10 ml-[-0.7rem]">
+      <i className="fa fa-home fa-1x" aria-hidden="true"></i>
+    </a>
+    <div className="flex justify-end flex-1">
+      <a href="#work" className="mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
+        <span className="relative">Portfolio</span>
+      </a>
+      <a href="#services" className="mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
+        <span className="relative">Services</span>
+      </a>
+      <a href="#about" className="mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
+        <span className="relative">About</span>
+      </a>
+      <a href="#contact" className="mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
+        <span className="relative">Contact</span>
+      </a>
+      <a href="#" className="mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
+        <span className="relative">Shop</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
       </header>
     <section id="home" className="relative flex min-h-screen items-center">
         <div aria-hidden="true" className="absolute inset-0 z-[1] bg-gradient-to-b from-black/10 via-black/20 to-black"></div>
