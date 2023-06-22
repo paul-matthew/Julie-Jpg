@@ -1,5 +1,5 @@
 
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 
 import { useLoaderData } from "@remix-run/react";
 import { getDataFromStrapi } from "~/api/get-data-from-strapi.server";
@@ -24,14 +24,22 @@ if (process.env.NODE_ENV !== 'production') {
     const path = "art-collections/";
     const query = "populate=*";
    const response = await getDataFromStrapi(path, query);
-   const data = response.data;
+   let data = response.data;
  
    if (!Array.isArray(data)) {
-    return { info: [data] }; // Wrap data in an array if it's not already an array
+    data = [data]; // Wrap data in an array if it's not already an array
   }
-   return { info:data };
+
+  data.sort((a, b) => {
+    const dateA = new Date(a.attributes.Date);
+    const dateB = new Date(b.attributes.Date);
+    return dateB - dateA; // Sort in descending order
+  });
+  console.log(data)
+  return { info: data };
    
  }
+ 
  
 
 // const data = {
@@ -59,14 +67,13 @@ if (process.env.NODE_ENV !== 'production') {
 
 
 
-function ArtCard({ data }) {
+function ArtCard({ data, index }) {
   const path_medImage = data.attributes.ArtImage.data.attributes.formats.medium.url;
   
   const mediumImage=`${baseUrl}${path_medImage}`;
-  console.log(baseUrl);
-  console.log(path_medImage);
-  console.log(mediumImage);
-
+  
+ 
+ 
 
 
   const ref = useRef();
@@ -79,7 +86,9 @@ function ArtCard({ data }) {
       tabletSpeed: 0,
     });
   }, []);
- 
+  if (index > 3) {
+    return null; // Skip rendering for items after the fourth index
+  }
   return (
     <a
       href="/pages/project.html"
@@ -110,6 +119,32 @@ function ArtCard({ data }) {
 
 export default function HomeRoute() {
 const { info } = useLoaderData();
+const [startIndex, setStartIndex] = useState(0);
+  const itemsPerPage = 4;
+  const sectionRef = useRef(null);
+
+  const handlePrevious = () => {
+    if (startIndex - itemsPerPage >= 0) {
+      setStartIndex(startIndex - itemsPerPage);
+      scrollToSection();
+    }
+  };
+
+  const handleNext = () => {
+    if (startIndex + itemsPerPage < info.length) {
+      setStartIndex(startIndex + itemsPerPage);
+      scrollToSection();
+    }
+  };
+
+  const scrollToSection = () => {
+    sectionRef.current.scrollIntoView({ behavior: 'instant' });
+  };
+
+  const displayedItems = info.slice(startIndex, startIndex + itemsPerPage);
+
+  const isFirstPage = startIndex === 0;
+  const isLastPage = startIndex + itemsPerPage >= info.length;
 
   return (
     <div className="bg-black">
@@ -117,9 +152,20 @@ const { info } = useLoaderData();
       <header className="fixed top-0 z-20 w-full">
             <nav className="2lg:px-12 mx-auto max-w-7xl px-6 py-12 lg:px-12 xl:px-6 2xl:px-0">
                 <div className="flex items-center justify-between">
-                    <a href="/" className="text-2xl font-light tracking-widest text-white">JULIE JPG</a>
-                    <a href="#contact" className="relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10">
-                        <span className="relative">Get in touch</span>
+                    <a href="/" className="text-2xl font-light tracking-widest text-white -mt-10">
+                        <i className="fa fa-home fa-1x" aria-hidden="true"></i>
+                    </a>
+                    <a href="#work" className="relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
+                        <span className="relative">Portfolio</span>
+                    </a>
+                    <a href="#services" className="relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
+                        <span className="relative">Services</span>
+                    </a>
+                    <a href="#about" className="relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
+                        <span className="relative">About</span>
+                    </a>
+                    <a href="#contact" className="relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
+                        <span className="relative">Contact</span>
                     </a>
                 </div>
             </nav>
@@ -127,9 +173,9 @@ const { info } = useLoaderData();
     <section id="home" className="relative flex min-h-screen items-center">
         <div aria-hidden="true" className="absolute inset-0 z-[1] bg-gradient-to-b from-black/10 via-black/20 to-black"></div>
         <img src="/cover2.jpg" className="fixed inset-0 h-full w-full object-cover" alt="woman in dark" width="4160" height="6240" />
-        <div className="relative z-10 mx-auto max-w-7xl px-6 pb-40 pt-60 lg:px-12 xl:px-6 2xl:px-0">
+        <div className="relative z-10 mx-auto max-w-7xl px-6 pt-30 lg:px-12 xl:px-6 2xl:px-0">
             <div className="pb-12 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-12">
-                <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight">Julie Jpg</h1>
+                <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0">JULIE JPG</h1>
             </div>
             <div>
                 <div className="ml-auto md:w-2/3 md:pt-12 lg:w-1/2">
@@ -149,29 +195,41 @@ const { info } = useLoaderData();
             </div>
         </div>
     </section>
-    <section id="work" className="relative z-10 bg-black pb-20 lg:pt-0">
-          <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 xl:pb-96 2xl:px-0">
+    <section ref={sectionRef} id="work" className="relative bg-black pb-20 pt-32 md:pb-0 lg:pb-32 xl:pt-96">          
+    <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 xl:pb-96 2xl:px-0">
             <div
-              data-rellax-speed="-3"
+              data-rellax-speed="-1"
               data-rellax-xs-speed="0"
               data-rellax-mobile-speed="0"
               className="rellax flex flex-wrap items-center gap-6"
             >
               <h2 className="text-7xl font-bold text-white xl:text-8xl">
-                My work
+                Latest work
               </h2>
               <span className="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">
                 {info.length} Projects
               </span>
             </div>
             <div className="relative mt-20 gap-20 gap-x-6 space-y-20 sm:grid sm:grid-cols-2 sm:space-y-0 md:mt-72 lg:mt-60">
-              {info.map((item) => (
-                <ArtCard key={item.id} data={item} />
-              ))}
-            </div>
-          </div>
+          {displayedItems.map((item, index) => (
+            <ArtCard key={item.id} data={item} index={index} />
+          ))}
+        </div>
+      </div>
+      {info.length > itemsPerPage && (
+        <div className="flex justify-center mt-20 space-x-4">
+            {!isFirstPage && (
+          <button className="text-white text-lg underline" onClick={handlePrevious}>
+            Previous
+          </button>)}
+          {!isLastPage && (
+          <button className="text-white text-lg underline" onClick={handleNext}>
+            Next
+          </button>)}
+        </div>
+      )}
     </section>
-    <section id="services" className="relative bg-black pb-20 pt-32 md:pb-0 lg:pb-0 xl:pt-96">
+    <section id="services" className="relative bg-black pb-0 pt-32 md:pb-0 lg:pb-32 xl:pt-96">
                 <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
                     <div className="flex flex-wrap items-center gap-6">
                         <h2 className="text-7xl font-bold text-white xl:text-8xl">My services</h2>
@@ -195,7 +253,7 @@ const { info } = useLoaderData();
                                     <div className="group border-b border-white/30 pb-8">
                                         <div className="flex flex-col gap-4 divide-y divide-white/30">
                                             <span className="inline-block text-white/60">002</span>
-                                            <h3 className="bg-black pt-6 text-3xl text-white">Artwork</h3>
+                                            <h3 className="bg-black pt-6 text-3xl text-white">Paintings</h3>
                                         </div>
                                         <div className="mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8">
                                             <p className="max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-xl">Sapiente, rem debitis obcaecati facilis earum repudiandae enim ratione nihil iusto ea. Officia sint perspiciatis ad ducimus qui.</p>
@@ -206,7 +264,7 @@ const { info } = useLoaderData();
                                     <div className="group border-b border-white/30 pb-8">
                                         <div className="flex flex-col gap-4 divide-y divide-white/30">
                                             <span className="inline-block text-white/60">003</span>
-                                            <h3 className="bg-black pt-6 text-3xl text-white">Artwork</h3>
+                                            <h3 className="bg-black pt-6 text-3xl text-white">Sketches</h3>
                                         </div>
                                         <div className="mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8">
                                             <p className="max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-xl">Sapiente, rem debitis obcaecati facilis earum repudiandae enim ratione nihil iusto ea. Officia sint perspiciatis ad ducimus qui.</p>
@@ -218,33 +276,36 @@ const { info } = useLoaderData();
                     </div>
                 </div>
     </section>
-    <section id="about" className="relative z-10 bg-black pb-20 pt-32 md:pb-0 md:pt-0 lg:pb-0">
+    <section id="about" className="relative z-10 bg-black pb-0 pt-12 md:pb-0 md:pt-0 lg:pb-0 xl:pt-96">
                 <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
                     <div data-rellax-speed="-0.4" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax flex flex-wrap items-center gap-6">
                         <h2 className="text-7xl font-bold text-white xl:text-8xl">About me</h2>
-                        <span className="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">01 Duo</span>
                     </div>
                     <div className="mt-24 md:mt-72">
-                        <div className="grid gap-6">
-                            <div className="grid md:grid-cols-3">
-                                <div className="overflow-hidden md:col-span-2">
-                                    <img src="/cover3.jpg" alt="unnamed duo photo" width="1500" height="1000" />
-                                </div>
-                            </div>
-                            <div data-rellax-speed="1" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" data-rellax-tablet-speed="0.5" className="rellax ml-auto md:w-1/5 lg:w-1/5">
-                                <p className="mt-12 text-2xl font-light text-white">Minima iure saepe necessitatibus ipsa voluptatibus, minus voluptatem in facere maxime quae repellendus nisi inventore libero impedit eligendi, accusantium consequuntur consectetur quidem?</p>
-                            </div>
-                        </div>
+                    <div className="grid gap-6">
+    <div className="grid md:grid-cols-3">
+        <div className="overflow-hidden md:col-span-2 flex items-center" data-rellax-speed="1" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" data-rellax-tablet-speed="0.5">
+            <img src="/cover3.jpg" alt="unnamed duo photo" width="1500" height="1000" />
+        </div>
+        <div className="ml-auto flex items-center bg-white">
+            <div>
+                <p className="text-6xl font-light text-black ml-4">Hello, I'm Jules, a Toronto-based artist.</p>
+                <hr className="border-black my-4" />
+                <p className="text-2xl font-light text-black ml-4">Passionate about painting and drawing, I express myself creatively through vibrant colors and intricate details. Inspired by the streets of Toronto, I infuse my unique perspective into each artwork. Join me on this artistic journey as I invite you to experience the power of art through my lens.</p> 
+            </div>
+        </div>
+    </div>
+</div>
+
                     </div>
                 </div>
     </section>
     <section id="contact" className="relative z-10 bg-gradient-to-b from-black via-black/80 to-black pt-32 backdrop-blur-3xl lg:pb-32 lg:pt-0">
                 <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
                     <div className="flex flex-wrap items-center gap-6">
-                        <h2 className="text-7xl font-bold text-white xl:text-8xl">Let's work together</h2>
-                        <span className="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">__</span>
+                        <h2 className="text-7xl font-bold text-white xl:text-8xl sm:mt-8 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-0">Let's work together</h2>
                     </div>
-                    <div className="mt-24">
+                    <div className="mt-4">
                         <div className="grid gap-6 border-t border-white/30 pt-24 lg:grid-cols-3 lg:gap-24">
                             <div className="lg:col-span-2">
                                 <form action="" className="mx-auto space-y-8 md:w-3/4">
@@ -304,25 +365,6 @@ const { info } = useLoaderData();
                     <a href="/" className="text-2xl font-light tracking-widest text-white">
                         <img className="h-8 w-auto brightness-200" src="/empresspaint.jpg" alt="logo mark" width="100" height="100" />
                     </a>
-                    <nav>
-                        <ul className="flex flex-wrap gap-6 text-sm uppercase tracking-wider text-white">
-                            <li>
-                                <a href="#home">Home</a>
-                            </li>
-                            <li>
-                                <a href="#work">My Work</a>
-                            </li>
-                            <li>
-                                <a href="#services">Services</a>
-                            </li>
-                            <li>
-                                <a className="block w-max" href="#about">About us</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
                     <div className="flex flex-wrap justify-between gap-3">
                         <span className="text-sm text-white/50">&copy; Radiant 2021 - Present</span>
                         <span className="text-sm text-white/50"><a href="pmdaybreak.com" className="text-white">PM Daybreak Designs</a> via Tailus in Lubumbashi </span>
