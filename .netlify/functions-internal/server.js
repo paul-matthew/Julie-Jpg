@@ -90,7 +90,7 @@ init_react();
 var import_node = require("@remix-run/node"), import_react2 = require("@remix-run/react");
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-QGOOWPYW.css";
+var app_default = "/build/_assets/app-IGVURFIV.css";
 
 // app/root.jsx
 var meta = () => ({
@@ -295,24 +295,10 @@ function HomeRoute() {
     className: "rellax relative inline-block py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10"
   }, /* @__PURE__ */ import_react3.default.createElement("span", {
     className: "relative"
-  }, "See my work")))), /* @__PURE__ */ import_react3.default.createElement("div", {
-    "data-rellax-speed": "-5",
-    "data-rellax-xs-speed": "0",
-    "data-rellax-mobile-speed": "0",
-    className: "rellax relative mt-16 ml-auto w-max md:mt-32 md:ml-0 xl:-mt-16"
-  }, /* @__PURE__ */ import_react3.default.createElement("span", {
-    className: "text-xs font-light uppercase tracking-widest text-white"
-  }, "Follow me"), /* @__PURE__ */ import_react3.default.createElement("ul", {
-    className: "relative z-20 mt-4 space-y-2 text-sm font-light text-white"
-  }, /* @__PURE__ */ import_react3.default.createElement("li", null, /* @__PURE__ */ import_react3.default.createElement("a", {
-    href: "https://www.instagram.com/juulie.jpg/",
-    "aria-label": "Instagram"
-  }, /* @__PURE__ */ import_react3.default.createElement("i", {
-    className: "fa-brands fa-instagram"
-  }))))))), /* @__PURE__ */ import_react3.default.createElement("section", {
+  }, "See my work")))))), /* @__PURE__ */ import_react3.default.createElement("section", {
     ref: sectionRef,
     id: "work",
-    className: "relative bg-black pb-20 pt-32 md:pb-0 lg:pb-32 xl:pt-96"
+    className: "relative bg-black pb-20 pt-12"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 xl:pb-96 2xl:px-0"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
@@ -340,7 +326,7 @@ function HomeRoute() {
     onClick: handleNext
   }, "More"))), /* @__PURE__ */ import_react3.default.createElement("section", {
     id: "services",
-    className: "relative bg-black pb-0 pt-32 md:pb-0 lg:pb-32 xl:pt-96"
+    className: "relative bg-black pb-20 pt-12"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
@@ -393,7 +379,7 @@ function HomeRoute() {
     className: "max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-xl"
   }, "Sapiente, rem debitis obcaecati facilis earum repudiandae enim ratione nihil iusto ea. Officia sint perspiciatis ad ducimus qui."))))))))), /* @__PURE__ */ import_react3.default.createElement("section", {
     id: "about",
-    className: "relative z-10 bg-black pb-0 pt-12 md:pb-0 md:pt-0 lg:pb-0 xl:pt-96"
+    className: "relative bg-black pb-20 pt-12"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
@@ -430,7 +416,7 @@ function HomeRoute() {
     className: "text-2xl font-light text-black ml-4"
   }, "Passionate about painting and drawing, I express myself creatively through vibrant colors and intricate details. Inspired by the streets of Toronto, I infuse my unique perspective into each artwork. Join me on this artistic journey as I invite you to experience the power of art through my lens.")))))))), /* @__PURE__ */ import_react3.default.createElement("section", {
     id: "contact",
-    className: "relative z-10 bg-gradient-to-b from-black via-black/80 to-black pt-32 backdrop-blur-3xl lg:pb-32 lg:pt-0"
+    className: "relative bg-black pb-20 pt-12"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
@@ -678,22 +664,22 @@ function ShopRoute() {
   })), /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "flex justify-end flex-1"
   }, /* @__PURE__ */ import_react5.default.createElement("a", {
-    href: "#work",
+    href: "/#work",
     className: "mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
   }, /* @__PURE__ */ import_react5.default.createElement("span", {
     className: "relative"
   }, "Portfolio")), /* @__PURE__ */ import_react5.default.createElement("a", {
-    href: "#services",
+    href: "/#services",
     className: "mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
   }, /* @__PURE__ */ import_react5.default.createElement("span", {
     className: "relative"
   }, "Services")), /* @__PURE__ */ import_react5.default.createElement("a", {
-    href: "#about",
+    href: "/#about",
     className: "mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
   }, /* @__PURE__ */ import_react5.default.createElement("span", {
     className: "relative"
   }, "About")), /* @__PURE__ */ import_react5.default.createElement("a", {
-    href: "#contact",
+    href: "/#contact",
     className: "mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
   }, /* @__PURE__ */ import_react5.default.createElement("span", {
     className: "relative"
@@ -826,7 +812,7 @@ function ShopRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "1d28a4f4", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-XBHCKJDH.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-T7JCHLE5.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-EERLLSF5.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-1D28A4F4.js" };
+var assets_manifest_default = { version: "3cff4e97", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FZJRGEXF.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-Q73YXIUW.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-3EUCSXFK.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-3CFF4E97.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

@@ -1014,10 +1014,6 @@ video {
   padding-top: 6rem;
 }
 
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -1415,10 +1411,6 @@ video {
     margin-top: 0.5rem;
   }
 
-  .md\:ml-auto {
-    margin-left: auto;
-  }
-
   .md\:h-96 {
     height: 24rem;
   }
@@ -1435,21 +1427,12 @@ video {
     width: 33.333333%;
   }
 
-  .md\:w-max {
-    width: -moz-max-content;
-    width: max-content;
-  }
-
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
   }
 
   .md\:space-y-12 > :not([hidden]) ~ :not([hidden]) {

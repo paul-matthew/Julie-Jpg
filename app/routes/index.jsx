@@ -193,17 +193,17 @@ const [startIndex, setStartIndex] = useState(0);
                     </a>
                 </div>
             </div>
-            <div data-rellax-speed="-5" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax relative mt-16 ml-auto w-max md:mt-32 md:ml-0 xl:-mt-16">
+            {/* <div className="rellax relative mt-16 ml-auto w-max md:mt-32 md:ml-0 xl:-mt-16">
                 <span className="text-xs font-light uppercase tracking-widest text-white">Follow me</span>
                 <ul className="relative z-20 mt-4 space-y-2 text-sm font-light text-white">
                     <li>
                     <a href="https://www.instagram.com/juulie.jpg/" aria-label="Instagram"><i className="fa-brands fa-instagram"></i></a>
                     </li>
                 </ul>
-            </div>
+            </div> */}
         </div>
     </section>
-    <section ref={sectionRef} id="work" className="relative bg-black pb-20 pt-32 md:pb-0 lg:pb-32 xl:pt-96">          
+    <section ref={sectionRef} id="work" className="relative bg-black pb-20 pt-12">          
     <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 xl:pb-96 2xl:px-0">
             <div
               data-rellax-speed="-1"
@@ -237,7 +237,7 @@ const [startIndex, setStartIndex] = useState(0);
         </div>
       )}
     </section>
-    <section id="services" className="relative bg-black pb-0 pt-32 md:pb-0 lg:pb-32 xl:pt-96">
+    <section id="services" className="relative bg-black pb-20 pt-12">
                 <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
                     <div className="flex flex-wrap items-center gap-6">
                         <h2 className="text-7xl font-bold text-white xl:text-8xl">My services</h2>
@@ -284,7 +284,7 @@ const [startIndex, setStartIndex] = useState(0);
                     </div>
                 </div>
     </section>
-    <section id="about" className="relative z-10 bg-black pb-0 pt-12 md:pb-0 md:pt-0 lg:pb-0 xl:pt-96">
+    <section id="about" className="relative bg-black pb-20 pt-12">
                 <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
                     <div data-rellax-speed="-0.4" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax flex flex-wrap items-center gap-6">
                         <h2 className="text-7xl font-bold text-white xl:text-8xl">About me</h2>
@@ -308,7 +308,7 @@ const [startIndex, setStartIndex] = useState(0);
                     </div>
                 </div>
     </section>
-    <section id="contact" className="relative z-10 bg-gradient-to-b from-black via-black/80 to-black pt-32 backdrop-blur-3xl lg:pb-32 lg:pt-0">
+    <section id="contact" className="relative bg-black pb-20 pt-12">
                 <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
                     <div className="flex flex-wrap items-center gap-6">
                         <h2 className="text-7xl font-bold text-white xl:text-8xl sm:mt-8 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-0">Let's work together</h2>
