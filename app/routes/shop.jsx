@@ -120,6 +120,9 @@ useEffect(() => {
 
   return (
     <div className="bg-black">
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet"/>
+      </head>
     <main className="background relative">
       <header className="fixed top-0 z-20 w-full">
       <nav className="2lg:px-12 mx-auto max-w-7xl px-6 py-12 lg:px-12 xl:px-6 2xl:px-0">
@@ -151,10 +154,12 @@ useEffect(() => {
 
     <section id="home" className="relative flex min-h-screen items-center">
         <div aria-hidden="true" className="absolute inset-0 z-[1] bg-gradient-to-b from-black/10 via-black/20 to-black"></div>
-        <img src="/cover2.jpg" className="fixed inset-0 h-full w-full object-cover" alt="woman in dark" width="4160" height="6240" />
+        <img
+          srcSet="/cover2-mobile.jpg 600w, /cover2desktop.jpg 1200w" sizes="(max-width: 600px) 100vw, 1200px" className="fixed inset-0 h-full w-full object-cover" alt="Julie Jpg main pic"
+        />            
         <div className="relative z-10 mx-auto max-w-7xl px-6 pt-30 lg:px-12 xl:px-6 2xl:px-0">
             <div className="pb-12 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-12">
-                <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0">Art For Purchase</h1>
+                <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0"style={{ fontFamily: 'Covered by Your Grace' }}>Art For Purchase</h1>
             </div>
         </div>
     </section>

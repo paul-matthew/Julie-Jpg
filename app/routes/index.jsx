@@ -72,10 +72,6 @@ function ArtCard({ data, index }) {
   const path_medImage = data.attributes.ArtImage.data.attributes.formats.medium.url;
   
   const mediumImage=`${baseUrl}${path_medImage}`;
-  
- 
- 
-
 
   const ref = useRef();
 
@@ -92,7 +88,6 @@ function ArtCard({ data, index }) {
   }
   return (
     <a
-      href="/pages/project.html"
       data-rellax-speed="-2"
       data-rellax-xs-speed="0"
       data-rellax-mobile-speed="0"
@@ -150,6 +145,9 @@ const [startIndex, setStartIndex] = useState(0);
 
   return (
     <div className="bg-black">
+      <head>
+      <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet"/>
+      </head>
     <main className="background relative">
       <header className="fixed top-0 z-20 w-full">
       <nav className="2lg:px-12 mx-auto max-w-7xl px-6 py-12 lg:px-12 xl:px-6 2xl:px-0">
@@ -180,13 +178,15 @@ const [startIndex, setStartIndex] = useState(0);
       </header>
     <section id="home" className="relative flex min-h-screen items-center">
         <div aria-hidden="true" className="absolute inset-0 z-[1] bg-gradient-to-b from-black/10 via-black/20 to-black"></div>
-        <img src="/cover2.jpg" className="fixed inset-0 h-full w-full object-cover" alt="woman in dark" width="4160" height="6240" />
-        <div className="relative z-10 mx-auto max-w-7xl px-6 pt-30 lg:px-12 xl:px-6 2xl:px-0">
+        <img
+          srcSet="/cover2-mobile.jpg 600w, /cover2desktop.jpg 1200w" sizes="(max-width: 600px) 100vw, 1200px" className="fixed inset-0 h-full w-full object-cover" alt="Julie Jpg main pic"
+        />    
+        <div className="relative z-10 mx-auto max-w-7xl px-6 pt-40 lg:pt-64 xl:px-6 2xl:px-0">
             <div className="pb-12 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-12">
-                <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0">JULIE JPG</h1>
+                <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0" style={{ fontFamily: 'Covered by Your Grace' }}>JULIE JPG</h1>
             </div>
             <div>
-                <div className="ml-auto md:w-2/3 md:pt-12 lg:w-1/2">
+                <div className="ml-auto md:w-2/3 md:pt-2 lg:w-1/2">
                     <p className="mb-20 text-lg font-light text-white sm:text-2xl xl:leading-normal">On an endless journey to create experiences that inspire others. Always motived by artwork that's honest, aesthetic and natural.  Join me on my personal journey in the discovery and creativity of everything artistic.</p>
                     <a data-rellax-speed="1" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" href="#work" className="rellax relative inline-block py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10">
                         <span className="relative">See my work</span>
@@ -211,7 +211,7 @@ const [startIndex, setStartIndex] = useState(0);
               data-rellax-mobile-speed="0"
               className="rellax flex flex-wrap items-center gap-6"
             >
-              <h2 className="text-7xl font-bold text-white xl:text-8xl">
+              <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{ fontFamily: 'Covered by Your Grace' }}>
                 My work
               </h2>
               <span className="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">
@@ -240,7 +240,7 @@ const [startIndex, setStartIndex] = useState(0);
     <section id="services" className="relative bg-black pb-20 pt-12">
                 <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
                     <div className="flex flex-wrap items-center gap-6">
-                        <h2 className="text-7xl font-bold text-white xl:text-8xl">My services</h2>
+                        <h2 className="text-7xl font-bold text-white xl:text-8xl"style={{ fontFamily: 'Covered by Your Grace' }}>My services</h2>
                         <span className="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">03 services</span>
                     </div>
                     <div className="mt-24">
@@ -287,7 +287,7 @@ const [startIndex, setStartIndex] = useState(0);
     <section id="about" className="relative bg-black pb-20 pt-12">
                 <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
                     <div data-rellax-speed="-0.4" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax flex flex-wrap items-center gap-6">
-                        <h2 className="text-7xl font-bold text-white xl:text-8xl">About me</h2>
+                        <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{ fontFamily: 'Covered by Your Grace' }}>About me</h2>
                     </div>
                     <div className="mt-24 md:mt-72">
                     <div className="grid gap-6">
@@ -311,7 +311,7 @@ const [startIndex, setStartIndex] = useState(0);
     <section id="contact" className="relative bg-black pb-20 pt-12">
                 <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
                     <div className="flex flex-wrap items-center gap-6">
-                        <h2 className="text-7xl font-bold text-white xl:text-8xl sm:mt-8 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-0">Let's work together</h2>
+                        <h2 className="text-7xl font-bold text-white xl:text-8xl sm:mt-8 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-0" style={{ fontFamily: 'Covered by Your Grace' }}>Let's work together</h2>
                     </div>
                     <div className="mt-4">
                         <div className="grid gap-6 border-t border-white/30 pt-24 lg:grid-cols-3 lg:gap-24">
