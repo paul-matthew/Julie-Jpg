@@ -22,7 +22,7 @@ try {
     console.log("This is a local build yo");
   } else {
     baseUrl = "https://jules-frontend-dev.herokuapp.com";
-    apiToken = "a872e9ef729c4578d7b02c526e9d77adbfcd921dbb02678b48f5e5f127e54d5df1520efa4be07a20ba3662c6140635618c260a4e90e109efe32825aa9b90db6408c4d93c171efc417329a14200921bf8a65aeeecfe6c71e8fc47c196ece37b1a635ad6f706a8d49cfdd1fb50902f25d43a9d94b2f7e9567396a71926f8641122";
+    apiToken = "e90e91fa4687f731ecac54d054b546efebf3b744f13a949d1fd6618bda0130905a265c3d3d9540d3da931fd9afb88a6bfac3cf4ba762150d61f2ba9f742ca146f8f1fe544565c00b33331a499f756d9af002e5865c7b65fcdc465609371a58c81daf384f0114b2f0fe9f8d7fd6701286cd95ddad10bfb06857c87a4bdc0a2757";
     console.log("This is a production build");
   }
   const url = `${baseUrl}/api/${path}?${query}`;
