@@ -178,12 +178,14 @@ const [startIndex, setStartIndex] = useState(0);
       </header>
     <section id="home" className="relative flex min-h-screen items-center">
         <div aria-hidden="true" className="absolute inset-0 z-[1] bg-gradient-to-b from-black/10 via-black/20 to-black"></div>
-        <img
-          srcSet="/cover2-mobile.jpg 600w, /cover2desktop.jpg 1200w" sizes="(max-width: 600px) 100vw, 1200px" className="fixed inset-0 h-full w-full object-cover" alt="Julie Jpg main pic"
-        />    
+        <picture>
+          <source srcSet="/cover2-mobile.jpg" media="(max-width: 600px)"/>
+          <source srcSet="/cover2desktop.jpg" media="(min-width: 601px)"/>
+          <img src="/cover2desktop.jpg" alt="Julie Jpg main pic" className="fixed inset-0 h-full w-full object-cover"/>
+        </picture>  
         <div className="relative z-10 mx-auto max-w-7xl px-6 pt-40 lg:pt-64 xl:px-6 2xl:px-0">
             <div className="pb-12 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-12">
-                <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0" style={{ fontFamily: 'Covered by Your Grace' }}>JULIE JPG</h1>
+                <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0" style={{ fontFamily: 'Covered by Your Grace',  textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', }}>JULIE JPG</h1>
             </div>
             <div>
                 <div className="ml-auto md:w-2/3 md:pt-2 lg:w-1/2">
@@ -211,7 +213,7 @@ const [startIndex, setStartIndex] = useState(0);
               data-rellax-mobile-speed="0"
               className="rellax flex flex-wrap items-center gap-6"
             >
-              <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{ fontFamily: 'Covered by Your Grace' }}>
+              <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{ fontFamily: 'Covered by Your Grace',  textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', }}>
                 My work
               </h2>
               <span className="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">
@@ -240,8 +242,8 @@ const [startIndex, setStartIndex] = useState(0);
     <section id="services" className="relative bg-black pb-20 pt-12">
                 <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
                     <div className="flex flex-wrap items-center gap-6">
-                        <h2 className="text-7xl font-bold text-white xl:text-8xl"style={{ fontFamily: 'Covered by Your Grace' }}>My services</h2>
-                        <span className="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">03 services</span>
+                        <h2 className="text-7xl font-bold text-white xl:text-8xl"style={{ fontFamily: 'Covered by Your Grace',  textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', }}>My services</h2>
+                        {/* <span className="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">03 services</span> */}
                     </div>
                     <div className="mt-24">
                         <div className="">
@@ -249,7 +251,7 @@ const [startIndex, setStartIndex] = useState(0);
                                 <div>
                                     <div className="group border-b border-white/30 pb-8">
                                         <div className="flex flex-col gap-4 divide-y divide-white/30">
-                                            <span className="inline-block text-white/60">001</span>
+                                            {/* <span className="inline-block text-white/60">001</span> */}
                                             <h3 className="bg-black pt-6 text-3xl text-white">Artwork</h3>
                                         </div>
                                         <div className="mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8">
@@ -260,7 +262,7 @@ const [startIndex, setStartIndex] = useState(0);
                                 <div>
                                     <div className="group border-b border-white/30 pb-8">
                                         <div className="flex flex-col gap-4 divide-y divide-white/30">
-                                            <span className="inline-block text-white/60">002</span>
+                                            {/* <span className="inline-block text-white/60">002</span> */}
                                             <h3 className="bg-black pt-6 text-3xl text-white">Paintings</h3>
                                         </div>
                                         <div className="mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8">
@@ -271,7 +273,7 @@ const [startIndex, setStartIndex] = useState(0);
                                 <div>
                                     <div className="group border-b border-white/30 pb-8">
                                         <div className="flex flex-col gap-4 divide-y divide-white/30">
-                                            <span className="inline-block text-white/60">003</span>
+                                            {/* <span className="inline-block text-white/60">003</span> */}
                                             <h3 className="bg-black pt-6 text-3xl text-white">Sketches</h3>
                                         </div>
                                         <div className="mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8">
@@ -287,7 +289,7 @@ const [startIndex, setStartIndex] = useState(0);
     <section id="about" className="relative bg-black pb-20 pt-12">
                 <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
                     <div data-rellax-speed="-0.4" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax flex flex-wrap items-center gap-6">
-                        <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{ fontFamily: 'Covered by Your Grace' }}>About me</h2>
+                        <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{ fontFamily: 'Covered by Your Grace',  textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', }}>About me</h2>
                     </div>
                     <div className="mt-24 md:mt-72">
                     <div className="grid gap-6">
@@ -311,7 +313,7 @@ const [startIndex, setStartIndex] = useState(0);
     <section id="contact" className="relative bg-black pb-20 pt-12">
                 <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
                     <div className="flex flex-wrap items-center gap-6">
-                        <h2 className="text-7xl font-bold text-white xl:text-8xl sm:mt-8 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-0" style={{ fontFamily: 'Covered by Your Grace' }}>Let's work together</h2>
+                        <h2 className="text-7xl font-bold text-white xl:text-8xl sm:mt-8 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-0" style={{ fontFamily: 'Covered by Your Grace',  textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', }}>Let's work together</h2>
                     </div>
                     <div className="mt-4">
                         <div className="grid gap-6 border-t border-white/30 pt-24 lg:grid-cols-3 lg:gap-24">
@@ -406,7 +408,7 @@ const [startIndex, setStartIndex] = useState(0);
                     </a>
                     <div className="flex flex-wrap justify-between gap-3">
                         <span className="text-sm text-white/50">&copy; Radiant 2021 - Present</span>
-                        <span className="text-sm text-white/50"><a href="pmdaybreak.com" className="text-white">PM Daybreak Designs</a> via Tailus in Lubumbashi </span>
+                        <span className="text-sm text-white/50"><a href="https://www.pmdaybreak.com" className="text-white">PM Daybreak Designs</a> via Tailus in Lubumbashi </span>
                     </div>
                 </div>
             </div>

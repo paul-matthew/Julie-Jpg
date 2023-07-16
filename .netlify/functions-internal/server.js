@@ -90,7 +90,7 @@ init_react();
 var import_node = require("@remix-run/node"), import_react2 = require("@remix-run/react");
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-5YBQ7WJD.css";
+var app_default = "/build/_assets/app-TVDF5JTF.css";
 
 // app/root.jsx
 var meta = () => ({
@@ -270,12 +270,17 @@ function HomeRoute() {
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
     "aria-hidden": "true",
     className: "absolute inset-0 z-[1] bg-gradient-to-b from-black/10 via-black/20 to-black"
+  }), /* @__PURE__ */ import_react3.default.createElement("picture", null, /* @__PURE__ */ import_react3.default.createElement("source", {
+    srcSet: "/cover2-mobile.jpg",
+    media: "(max-width: 600px)"
+  }), /* @__PURE__ */ import_react3.default.createElement("source", {
+    srcSet: "/cover2desktop.jpg",
+    media: "(min-width: 601px)"
   }), /* @__PURE__ */ import_react3.default.createElement("img", {
-    srcSet: "/cover2-mobile.jpg 600w, /cover2desktop.jpg 1200w",
-    sizes: "(max-width: 600px) 100vw, 1200px",
-    className: "fixed inset-0 h-full w-full object-cover",
-    alt: "Julie Jpg main pic"
-  }), /* @__PURE__ */ import_react3.default.createElement("div", {
+    src: "/cover2desktop.jpg",
+    alt: "Julie Jpg main pic",
+    className: "fixed inset-0 h-full w-full object-cover"
+  })), /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "relative z-10 mx-auto max-w-7xl px-6 pt-40 lg:pt-64 xl:px-6 2xl:px-0"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "pb-12 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-12"
@@ -284,7 +289,7 @@ function HomeRoute() {
     "data-rellax-xs-speed": "0",
     "data-rellax-mobile-speed": "0",
     className: "rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0",
-    style: { fontFamily: "Covered by Your Grace" }
+    style: { fontFamily: "Covered by Your Grace", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
   }, "JULIE JPG")), /* @__PURE__ */ import_react3.default.createElement("div", null, /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "ml-auto md:w-2/3 md:pt-2 lg:w-1/2"
   }, /* @__PURE__ */ import_react3.default.createElement("p", {
@@ -310,7 +315,7 @@ function HomeRoute() {
     className: "rellax flex flex-wrap items-center gap-6"
   }, /* @__PURE__ */ import_react3.default.createElement("h2", {
     className: "text-7xl font-bold text-white xl:text-8xl",
-    style: { fontFamily: "Covered by Your Grace" }
+    style: { fontFamily: "Covered by Your Grace", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
   }, "My work"), /* @__PURE__ */ import_react3.default.createElement("span", {
     className: "h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white"
   }, info.length, " Projects")), /* @__PURE__ */ import_react3.default.createElement("div", {
@@ -336,10 +341,8 @@ function HomeRoute() {
     className: "flex flex-wrap items-center gap-6"
   }, /* @__PURE__ */ import_react3.default.createElement("h2", {
     className: "text-7xl font-bold text-white xl:text-8xl",
-    style: { fontFamily: "Covered by Your Grace" }
-  }, "My services"), /* @__PURE__ */ import_react3.default.createElement("span", {
-    className: "h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white"
-  }, "03 services")), /* @__PURE__ */ import_react3.default.createElement("div", {
+    style: { fontFamily: "Covered by Your Grace", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
+  }, "My services")), /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "mt-24"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
     className: ""
@@ -349,9 +352,7 @@ function HomeRoute() {
     className: "group border-b border-white/30 pb-8"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "flex flex-col gap-4 divide-y divide-white/30"
-  }, /* @__PURE__ */ import_react3.default.createElement("span", {
-    className: "inline-block text-white/60"
-  }, "001"), /* @__PURE__ */ import_react3.default.createElement("h3", {
+  }, /* @__PURE__ */ import_react3.default.createElement("h3", {
     className: "bg-black pt-6 text-3xl text-white"
   }, "Artwork")), /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8"
@@ -361,9 +362,7 @@ function HomeRoute() {
     className: "group border-b border-white/30 pb-8"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "flex flex-col gap-4 divide-y divide-white/30"
-  }, /* @__PURE__ */ import_react3.default.createElement("span", {
-    className: "inline-block text-white/60"
-  }, "002"), /* @__PURE__ */ import_react3.default.createElement("h3", {
+  }, /* @__PURE__ */ import_react3.default.createElement("h3", {
     className: "bg-black pt-6 text-3xl text-white"
   }, "Paintings")), /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8"
@@ -373,9 +372,7 @@ function HomeRoute() {
     className: "group border-b border-white/30 pb-8"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "flex flex-col gap-4 divide-y divide-white/30"
-  }, /* @__PURE__ */ import_react3.default.createElement("span", {
-    className: "inline-block text-white/60"
-  }, "003"), /* @__PURE__ */ import_react3.default.createElement("h3", {
+  }, /* @__PURE__ */ import_react3.default.createElement("h3", {
     className: "bg-black pt-6 text-3xl text-white"
   }, "Sketches")), /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8"
@@ -393,7 +390,7 @@ function HomeRoute() {
     className: "rellax flex flex-wrap items-center gap-6"
   }, /* @__PURE__ */ import_react3.default.createElement("h2", {
     className: "text-7xl font-bold text-white xl:text-8xl",
-    style: { fontFamily: "Covered by Your Grace" }
+    style: { fontFamily: "Covered by Your Grace", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
   }, "About me")), /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "mt-24 md:mt-72"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
@@ -428,7 +425,7 @@ function HomeRoute() {
     className: "flex flex-wrap items-center gap-6"
   }, /* @__PURE__ */ import_react3.default.createElement("h2", {
     className: "text-7xl font-bold text-white xl:text-8xl sm:mt-8 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-0",
-    style: { fontFamily: "Covered by Your Grace" }
+    style: { fontFamily: "Covered by Your Grace", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
   }, "Let's work together")), /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "mt-4"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
@@ -616,7 +613,7 @@ function HomeRoute() {
   }, "\xA9 Radiant 2021 - Present"), /* @__PURE__ */ import_react3.default.createElement("span", {
     className: "text-sm text-white/50"
   }, /* @__PURE__ */ import_react3.default.createElement("a", {
-    href: "pmdaybreak.com",
+    href: "https://www.pmdaybreak.com",
     className: "text-white"
   }, "PM Daybreak Designs"), " via Tailus in Lubumbashi ")))))), /* @__PURE__ */ import_react3.default.createElement("script", {
     src: "https://use.fontawesome.com/releases/v6.1.0/js/all.js",
@@ -703,13 +700,18 @@ function ShopRoute() {
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
     "aria-hidden": "true",
     className: "absolute inset-0 z-[1] bg-gradient-to-b from-black/10 via-black/20 to-black"
+  }), /* @__PURE__ */ import_react5.default.createElement("picture", null, /* @__PURE__ */ import_react5.default.createElement("source", {
+    srcSet: "/cover5-mobile.jpg",
+    media: "(max-width: 600px)"
+  }), /* @__PURE__ */ import_react5.default.createElement("source", {
+    srcSet: "/cover5desktop.jpg",
+    media: "(min-width: 601px)"
   }), /* @__PURE__ */ import_react5.default.createElement("img", {
-    srcSet: "/cover2-mobile.jpg 600w, /cover2desktop.jpg 1200w",
-    sizes: "(max-width: 600px) 100vw, 1200px",
-    className: "fixed inset-0 h-full w-full object-cover",
-    alt: "Julie Jpg main pic"
-  }), /* @__PURE__ */ import_react5.default.createElement("div", {
-    className: "relative z-10 mx-auto max-w-7xl px-6 pt-30 lg:px-12 xl:px-6 2xl:px-0"
+    src: "/cover5desktop.jpg",
+    alt: "Julie Jpg main pic",
+    className: "fixed inset-0 h-full w-full object-cover"
+  })), /* @__PURE__ */ import_react5.default.createElement("div", {
+    className: "relative z-10 mx-auto max-w-7xl px-6 pt-0 lg:px-12 xl:px-6 2xl:px-0"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "pb-12 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-12"
   }, /* @__PURE__ */ import_react5.default.createElement("h1", {
@@ -717,7 +719,7 @@ function ShopRoute() {
     "data-rellax-xs-speed": "0",
     "data-rellax-mobile-speed": "0",
     className: "rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0",
-    style: { fontFamily: "Covered by Your Grace" }
+    style: { fontFamily: "Covered by Your Grace", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
   }, "Art For Purchase")))), /* @__PURE__ */ import_react5.default.createElement("section", {
     id: "work",
     className: "relative bg-black pb-20 pt-32 md:pb-0 lg:pb-32 xl:pt-96 flex justify-center"
@@ -821,7 +823,7 @@ function ShopRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "b89cb377", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-BOSI2FCF.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-DWDDXLMO.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-AUQMRILD.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-B89CB377.js" };
+var assets_manifest_default = { version: "fda740ea", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-H5UVJE6X.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-Y45TPT5E.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-4XIXIHYH.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-FDA740EA.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
