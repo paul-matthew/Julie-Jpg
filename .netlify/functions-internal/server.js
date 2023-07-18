@@ -90,7 +90,7 @@ init_react();
 var import_node = require("@remix-run/node"), import_react2 = require("@remix-run/react");
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-TVDF5JTF.css";
+var app_default = "/build/_assets/app-EXRY5AX5.css";
 
 // app/root.jsx
 var meta = () => ({
@@ -823,7 +823,7 @@ function ShopRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "fda740ea", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-H5UVJE6X.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-Y45TPT5E.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-4XIXIHYH.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-FDA740EA.js" };
+var assets_manifest_default = { version: "c87970fb", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-PIL2PQQC.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-Y45TPT5E.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-4XIXIHYH.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-C87970FB.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
