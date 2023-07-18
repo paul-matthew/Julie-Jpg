@@ -170,7 +170,7 @@ async function getDataFromStrapi(path, query) {
 }
 
 // app/routes/index.jsx
-var import_rellax = __toESM(require("rellax")), import_react_router_dom = require("react-router-dom"), baseUrl = "https://jules-frontend-dev.herokuapp.com";
+var import_rellax = __toESM(require("rellax")), import_react_router_dom = require("react-router-dom"), baseUrl = "https://julie-00182f9df30d.herokuapp.com";
 baseUrl = "http://127.0.0.1:1337", console.log("This is a local build");
 async function loader2() {
   let data = (await getDataFromStrapi("art-collections/", "populate=*")).data;
@@ -631,7 +631,7 @@ init_react();
 var import_react5 = __toESM(require("react")), import_react6 = require("@remix-run/react");
 var import_rellax2 = __toESM(require("rellax"));
 console.log("test test test");
-var baseUrl2 = "https://jules-frontend-dev.herokuapp.com";
+var baseUrl2 = "https://julie-00182f9df30d.herokuapp.com";
 baseUrl2 = "http://127.0.0.1:1337", console.log("This is a local build");
 async function loader3() {
   let data = (await getDataFromStrapi("art-collections/", "populate=*")).data;

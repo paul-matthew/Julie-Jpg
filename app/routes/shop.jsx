@@ -13,7 +13,7 @@ console.log("test test test")
 //   ? "https://jules-frontend-dev.herokuapp.com"
 //   : "http://127.0.0.1:1337";
 
-let baseUrl = "https://jules-frontend-dev.herokuapp.com";
+let baseUrl = "https://julie-00182f9df30d.herokuapp.com";
 
 if (process.env.NODE_ENV !== 'production') {
   baseUrl = "http://127.0.0.1:1337";
