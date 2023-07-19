@@ -71,7 +71,8 @@ if (process.env.NODE_ENV !== 'production') {
 function ArtCard({ data, index }) {
   const path_medImage = data.attributes.ArtImage.data.attributes.formats.medium.url;
   
-  const mediumImage=`${baseUrl}${path_medImage}`;
+  // const mediumImage=`${baseUrl}${path_medImage}`; UNCOMMENT IF NOT USING CLOUDINARY
+  const mediumImage=`${path_medImage}`;
 
   const ref = useRef();
 
