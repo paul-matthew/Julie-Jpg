@@ -1370,10 +1370,6 @@ video {
     margin-top: 1rem;
   }
 
-  .sm\:mt-0 {
-    margin-top: 0px;
-  }
-
   .sm\:grid {
     display: grid;
   }

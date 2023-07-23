@@ -228,15 +228,15 @@ const [startIndex, setStartIndex] = useState(0);
         </div>
       </div>
       {info.length > itemsPerPage && (
-        <div className="flex justify-center mt-10 space-x-4">
+        <div className="flex justify-center mt-20 space-x-4">
             {!isFirstPage && (
           <button className="text-white text-3xl underline" onClick={handlePrevious}>
             Previous
           </button>)}
           {!isLastPage && (
-          <button className="text-white text-3xl underline" onClick={handleNext}>
-            More
-          </button>)}
+          <a className="text-white text-3xl underline" href="/fullportfolio">
+            Full Portfolio
+          </a>)}
         </div>
       )}
     </section>
