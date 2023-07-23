@@ -228,34 +228,7 @@ function HomeRoute() {
   }, /* @__PURE__ */ import_react3.default.createElement("i", {
     className: "fa fa-home fa-1x",
     "aria-hidden": "true"
-  })), /* @__PURE__ */ import_react3.default.createElement("div", {
-    className: "flex justify-end flex-1"
-  }, /* @__PURE__ */ import_react3.default.createElement("a", {
-    href: "/#work",
-    className: "mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
-  }, /* @__PURE__ */ import_react3.default.createElement("span", {
-    className: "relative"
-  }, "Portfolio")), /* @__PURE__ */ import_react3.default.createElement("a", {
-    href: "/#services",
-    className: "mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
-  }, /* @__PURE__ */ import_react3.default.createElement("span", {
-    className: "relative"
-  }, "Services")), /* @__PURE__ */ import_react3.default.createElement("a", {
-    href: "/#about",
-    className: "mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
-  }, /* @__PURE__ */ import_react3.default.createElement("span", {
-    className: "relative"
-  }, "About")), /* @__PURE__ */ import_react3.default.createElement("a", {
-    href: "/#contact",
-    className: "mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
-  }, /* @__PURE__ */ import_react3.default.createElement("span", {
-    className: "relative"
-  }, "Contact")), /* @__PURE__ */ import_react3.default.createElement(import_react_router_dom.Link, {
-    to: "/shop",
-    className: "mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10"
-  }, /* @__PURE__ */ import_react3.default.createElement("span", {
-    className: "relative"
-  }, "Shop")))))), /* @__PURE__ */ import_react3.default.createElement("section", {
+  }))))), /* @__PURE__ */ import_react3.default.createElement("section", {
     ref: sectionRef,
     id: "work",
     className: "relative bg-black pb-20 pt-12"
@@ -1019,7 +992,7 @@ function ShopRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "4b8d2614", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-VRX7T54V.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-OJRC5D5F.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-AMXHOD5I.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-PA3EHSVK.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-4B8D2614.js" };
+var assets_manifest_default = { version: "20f8ee12", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-VRX7T54V.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-QPOMYU4N.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-AMXHOD5I.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-PA3EHSVK.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-20F8EE12.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
