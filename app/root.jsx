@@ -12,8 +12,11 @@ import {
 import { getEnv } from "../env.server";
 import styles from "./styles/app.css"
 
-export const meta = () => {
-  const commonMeta = [
+export const meta = () => ({
+  charset: "utf-8",
+  title: "JULIE-JPG",
+  viewport: "width=device-width,initial-scale=1",
+  meta: [
     {
       name: "description",
       content: "Julie-Jpg Artwork",
@@ -26,33 +29,12 @@ export const meta = () => {
       property: "og:description",
       content: "Julie-Jpg Artwork",
     },
-  ];
-
-  if (typeof window !== "undefined") {
-    // Client-side rendering (CSR)
-    return {
-      charset: "utf-8",
-      title: "JULIE-JPG",
-      viewport: "width=device-width,initial-scale=1",
-      meta: [
-        ...commonMeta,
-        {
-          property: "og:image",
-          content: window.location.origin + "/coverintro-mobile.jpg",
-        },
-      ],
-    };
-  } else {
-    // Server-side rendering (SSR)
-    return {
-      charset: "utf-8",
-      title: "JULIE-JPG",
-      viewport: "width=device-width,initial-scale=1",
-      meta: commonMeta,
-    };
-  }
-};
-
+    {
+      property: "og:image",
+      content: "./coverintro-mobile.jpg",
+    },
+  ],
+});
 
 
 export function loader() {
