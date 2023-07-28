@@ -167,29 +167,15 @@ useEffect(() => {
     </section>
     <section id="work" className="relative bg-black pb-20 pt-32 md:pb-0 lg:pb-32 xl:pt-96 flex justify-center">
 
-
-    {/* <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
-  <div>
-    <iframe src="https://pmbhtml.gumroad.com/l/rgwpp" class="w-full h-96 sm:h-auto md:h-96" frameBorder="0" scrolling="auto"></iframe>
-  </div>
-  <div>
-    <iframe src="https://pmbhtml.gumroad.com/l/rgwpp" class="w-full h-96 sm:h-auto md:h-96" frameBorder="0" scrolling="auto"></iframe>
-  </div>
-  <div>
-    <iframe src="https://pmbhtml.gumroad.com/l/rgwpp" class="w-full h-96 sm:h-auto md:h-96" frameBorder="0" scrolling="auto"></iframe>
-  </div>
-  <div>
-    <iframe src="https://pmbhtml.gumroad.com/l/rgwpp" class="w-full h-96 sm:h-auto md:h-96" frameBorder="0" scrolling="auto"></iframe>
-  </div>
-</div> */}
-
-
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-white">
+<div className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-black px-2">
       {products.map(product => (
-        <div key={product.id} className="p-4 border border-gray-300 rounded shadow-md">
+        <div key={product.id} className="p-4 border border-gray-300 rounded shadow-md bg-white">
           <h2 className="text-2xl font-bold mb-2 text-gray-800">{product.name}</h2>
-          <p className="mb-4 text-gray-600">{product.custom_summary}</p>
-          <img src={product.preview_url} alt={product.name} className="w-full rounded" />
+          <div className="min-h-[8.25rem] overflow-hidden">
+  <p className="mb-4 text-gray-600 line-clamp-3">{product.custom_summary}</p>
+</div>
+
+          <img src={product.preview_url} alt={product.name} className="w-full h-[200px] object-cover rounded"/>
           <div className="flex justify-between items-center mt-4">
             <p className="text-lg font-semibold text-gray-900">Price: {product.formatted_price}</p>
             <a href={product.short_url} className="text-blue-500 hover:underline">Purchase</a>

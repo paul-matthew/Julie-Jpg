@@ -742,10 +742,6 @@ video {
   min-height: 5.25rem;
 }
 
-.min-h-\[8\.25rem\] {
-  min-height: 8.25rem;
-}
-
 .w-full {
   width: 100%;
 }
@@ -1345,11 +1341,6 @@ video {
 .before\:duration-300::before {
   content: var(--tw-content);
   transition-duration: 300ms;
-}
-
-.hover\:text-blue-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
