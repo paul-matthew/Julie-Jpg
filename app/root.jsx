@@ -19,19 +19,19 @@ export const meta = () => ({
   meta: [
     {
       name: "description",
-      content: "Julie-Jpg Artwork",
+      content: "Professional portfolio for Julie-Jpg related to her artwork.  Services include art comission, live painting events and hand drawn sketches.",
     },
     {
       property: "og:title",
-      content: "JULIE-JPG",
+      content: "Professional portfolio of JULIE-JPG Artwork",
     },
     {
       property: "og:description",
-      content: "Julie-Jpg Artwork",
+      content: "Professional portfolio for Julie-Jpg related to her artwork.  Services include art comission, live painting events and hand drawn sketches.",
     },
     {
       property: "og:image",
-      content: "./coverintro-mobile.jpg",
+      content: `https://tinyurl.com/mt2pzj5n`,
     },
   ],
 });
