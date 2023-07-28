@@ -31,7 +31,7 @@ export const meta = () => ({
     },
     {
       property: "og:image",
-      content: `https://tinyurl.com/mt2pzj5n`,
+      content: `https://res.cloudinary.com/dc5ohptw5/image/upload/v1690580605/coverintro-mobile_rgdxr4.jpg`,
     },
   ],
 });
