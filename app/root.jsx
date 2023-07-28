@@ -31,7 +31,7 @@ export const meta = () => ({
     },
     {
       property: "og:image",
-      content: `https://res.cloudinary.com/dc5ohptw5/image/upload/c_scale,w_328/v1690582523/coverintro-mobile_rgdxr4.jpg`,
+      content: `https://res.cloudinary.com/dc5ohptw5/image/upload/c_scale,w_303/v1690584219/coverintro-mobile_rgdxr4.jpg`,
     },
   ],
 });
