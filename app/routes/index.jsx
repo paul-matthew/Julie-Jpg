@@ -317,7 +317,7 @@ export default function HomeRoute() {
             <div className="mt-4">
               <div className="grid gap-6 border-t border-white/30 pt-24 lg:grid-cols-3 lg:gap-24">
                 <div className="lg:col-span-2">
-                  <form action="" className="mx-auto space-y-8 md:w-3/4">
+                  <form action="https://formsubmit.co/julestheartist@juliejpeg.com" method="POST" className="mx-auto space-y-8 md:w-3/4">
                     <div className="grid gap-8 sm:grid-cols-2 sm:gap-4">
                       <div>
                         <label htmlFor="firstname" className="tracking-wide text-white">First name</label>
@@ -336,7 +336,6 @@ export default function HomeRoute() {
                       <label htmlFor="message" className="tracking-wide text-white">Your message</label>
                       <textarea name="message" id="message" cols="30" rows="6" placeholder="Your message" className="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary"></textarea>
                     </div>
-                    <input type="hidden" name="_replyto" value="pmb.html@gmail.com"></input>
                     <button type="submit" className="group ml-auto flex h-12 w-auto items-center overflow-hidden bg-white px-5 transition-all duration-300 hover:bg-primary">
                       <span className="relative uppercase tracking-wide text-black group-hover:text-white"> Send message </span>
                     </button>

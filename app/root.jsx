@@ -38,7 +38,7 @@ export const meta = () => {
         ...commonMeta,
         {
           property: "og:image",
-          content: window.location.origin + "/path/to/coverintro-mobile.jpg",
+          content: window.location.origin + "/coverintro-mobile.jpg",
         },
       ],
     };
