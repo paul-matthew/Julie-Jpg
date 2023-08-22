@@ -161,7 +161,7 @@ useEffect(() => {
         </picture>           
         <div className="relative z-10 mx-auto max-w-7xl px-6 pt-0 lg:px-12 xl:px-6 2xl:px-0">
             <div className="pb-12 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-12">
-                <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0"style={{ fontFamily: 'Covered by Your Grace',  textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', }}>Art For Purchase</h1>
+                <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0"style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>Art For Purchase</h1>
             </div>
         </div>
     </section>
@@ -185,7 +185,11 @@ useEffect(() => {
     </div>
           
     </section>
+        {/* <div>
+          <h2 className="text-3xl text-white xl:text-6xl" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>Conditions</h2>
+        </div> */}
     </main>
+
         <footer className="relative bg-black pt-32 backdrop-opacity-0">
         <div className="mx-auto max-w-7xl px-6 pb-12 lg:px-12 xl:px-6 2xl:px-0">
             <div>

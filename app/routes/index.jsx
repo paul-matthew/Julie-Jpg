@@ -147,6 +147,7 @@ export default function HomeRoute() {
     <div className="bg-black">
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet" />
       </head>
       <main className="background relative">
         <header className="fixed top-0 z-20 w-full mt-0">
@@ -180,15 +181,17 @@ export default function HomeRoute() {
           <picture>
             <source srcSet="/coverintro-mobile.jpg" media="(max-width: 600px)" />
             <source srcSet="/coverintro-desktop.jpg" media="(min-width: 601px)" />
-            <img src="/cover2desktop.jpg" alt="Julie Jpg main pic" className="fixed inset-0 h-full w-full object-cover" />
+            <img src="/cover2desktop.jpg" alt="Julie Jpeg main pic" className="fixed inset-0 h-full w-full object-cover" />
           </picture>
-          <div className="relative z-10 mx-auto max-w-7xl px-6 pt-1 lg:pt-0 xl:px-0 2xl:px-0" style={{ border: "hidden", marginTop: "-10rem" }}>
-  <div className="pb-12 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-12">
-    <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight mt-40 md:mt-20 lg:mt-20 xl:mt-20 2xl:mt-20" style={{ fontFamily: 'Covered by Your Grace', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>JULIE JPG</h1>
-  </div>
+          <div className="relative z-10 mx-auto max-w-7xl px-6 pt-1 lg:pt-0 xl:px-0 2xl:px-0" style={{ border: "hidden", marginTop: "-36rem", marginLeft:"0rem" }}>
+            <div className="pb-2 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-12">
+              <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight mt-40 md:mt-20 lg:mt-20 xl:mt-20 2xl:mt-20"   
+              style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>JULIE JPEG
+              </h1>
+            </div>
             <div>
-              <div className="ml-auto md:w-2/3 md:pt-2 lg:w-1/2">
-                <p className="mb-20 text-lg font-light text-white sm:text-2xl xl:leading-normal">On an endless journey to create experiences that inspire others. Always motived by artwork that's honest, aesthetic and natural.  Join me on my personal journey in the discovery and creativity of everything artistic.</p>
+              <div className="md:w-1/3 md:pt-2 lg:w-1/2">
+                <p className="mb-0 text-lg font-light text-white sm:text-2xl xl:leading-normal">Original & custom artwork</p>
                 <a data-rellax-speed="1" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" href="#work" className="rellax relative inline-block py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10">
                   <span className="relative">See my work</span>
                 </a>
@@ -212,7 +215,7 @@ export default function HomeRoute() {
               data-rellax-mobile-speed="0"
               className="rellax flex flex-wrap items-center gap-6"
             >
-              <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{ fontFamily: 'Covered by Your Grace', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', }}>
+              <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>
                 My work
               </h2>
               <span className="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">
@@ -241,7 +244,7 @@ export default function HomeRoute() {
         <section id="services" className="relative bg-black pb-20 pt-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
             <div className="flex flex-wrap items-center gap-6">
-              <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{ fontFamily: 'Covered by Your Grace', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', }}>My services</h2>
+              <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>My services</h2>
               {/* <span className="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">03 services</span> */}
             </div>
             <div className="mt-24">
@@ -251,10 +254,10 @@ export default function HomeRoute() {
                     <div className="group border-b border-white/30 pb-8">
                       <div className="flex flex-col gap-4 divide-y divide-white/30">
                         {/* <span className="inline-block text-white/60">001</span> */}
-                        <h3 className="bg-black pt-6 text-3xl text-white">Comissions</h3>
+                        <h3 className="bg-black pt-6 text-3xl text-white">Commissions</h3>
                       </div>
                       <div className="mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8">
-                        <p className="max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-xl">Offering personalized and captivating artwork commissions, my service brings your creative vision to life, ensuring a unique and meaningful piece tailored exclusively for you.</p>
+                        <p className="max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-l">Offering personalized and captivating artwork commissions, my service brings your creative vision to life, ensuring a unique and meaningful piece tailored exclusively for you.</p>
                       </div>
                     </div>
                   </div>
@@ -262,21 +265,20 @@ export default function HomeRoute() {
                     <div className="group border-b border-white/30 pb-8">
                       <div className="flex flex-col gap-4 divide-y divide-white/30">
                         {/* <span className="inline-block text-white/60">002</span> */}
-                        <h3 className="bg-black pt-6 text-3xl text-white">Live Painting & Events</h3>
+                        <h3 className="bg-black pt-6 text-3xl text-white">Live Painting</h3>
                       </div>
                       <div className="mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8">
-                        <p className="max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-xl"> I offer a captivating and interactive experience where art comes to life before your eyes, adding a touch of creativity and excitement to any occasion.</p>
+                        <p className="max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-l"> I offer a captivating and interactive experience where art comes to life before your eyes, adding a touch of creativity and excitement to any occasion.</p>
                       </div>
                     </div>
                   </div>
                   <div>
                     <div className="group border-b border-white/30 pb-8">
                       <div className="flex flex-col gap-4 divide-y divide-white/30">
-                        {/* <span className="inline-block text-white/60">003</span> */}
-                        <h3 className="bg-black pt-6 text-3xl text-white">Sketches</h3>
+                        <h3 className="bg-black pt-6 text-3xl text-white">Exhibits</h3>
                       </div>
                       <div className="mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8">
-                        <p className="max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-xl">Sapiente, rem debitis obcaecati facilis earum repudiandae enim ratione nihil iusto ea. Officia sint perspiciatis ad ducimus qui.</p>
+                        <p className="max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-l">Discover a captivating showcase of my artistic creations in the 'Exhibit' section, where my work takes center stage, inviting you to immerse yourself in a world of visual storytelling and creative expression.</p>
                       </div>
                     </div>
                   </div>
@@ -288,7 +290,7 @@ export default function HomeRoute() {
         <section id="about" className="relative bg-black pb-20 pt-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
             <div data-rellax-speed="-0.4" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax flex flex-wrap items-center gap-6">
-              <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{ fontFamily: 'Covered by Your Grace', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', }}>About me</h2>
+              <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>About me</h2>
             </div>
             <div className="mt-24 md:mt-72">
               <div className="grid gap-6">
@@ -298,9 +300,9 @@ export default function HomeRoute() {
                   </div>
                   <div className="ml-auto flex items-center bg-white">
                     <div>
-                      <p className="text-6xl font-light text-black ml-4">Hey! I'm Julie, a Toronto-based artist.</p>
+                      <p className="text-6xl font-light text-black ml-4">Illustrator & Acrylic Painter</p>
                       <hr className="border-black my-4" />
-                      <p className="text-2xl font-light text-black ml-4">Passionate about painting and drawing, I express myself creatively through vibrant colors and intricate details. Inspired by the streets of Toronto, I infuse my unique perspective into each artwork. Join me on this artistic journey as I invite you to experience the power of art through my lens.</p>
+                      <p className="text-2xl font-light text-black ml-4">Hey! I'm Julie, a Toronto-based visual artist.  Passionate about painting and drawing, I express myself creatively through vibrant colors and intricate details. Inspired by pop culture and the streets of Toronto, I infuse my unique perspective into each artwork. Join me on my artistic journey as I invite you to experience the power of art through my lens.</p>
                     </div>
                   </div>
                 </div>
@@ -312,7 +314,7 @@ export default function HomeRoute() {
         <section id="contact" className="relative bg-black pb-20 pt-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
             <div className="flex flex-wrap items-center gap-6">
-              <h2 className="text-7xl font-bold text-white xl:text-8xl sm:mt-8 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-0" style={{ fontFamily: 'Covered by Your Grace', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', }}>Let's work together</h2>
+              <h2 className="text-7xl font-bold text-white xl:text-8xl sm:mt-8 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-0" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>Let's work together</h2>
             </div>
             <div className="mt-4">
               <div className="grid gap-6 border-t border-white/30 pt-24 lg:grid-cols-3 lg:gap-24">
@@ -348,7 +350,7 @@ export default function HomeRoute() {
         <section className="relative z-10 bg-black pb-0 pt-12 md:pb-0 md:pt-0 lg:pb-0 xl:pt-96">
         <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
             <div className="flex flex-wrap items-center gap-6">
-              <h2 className="text-7xl font-bold text-white xl:text-8xl sm:mt-8 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-0" style={{ fontFamily: 'Covered by Your Grace', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', }}>Testimonials</h2>
+              <h2 className="text-7xl font-bold text-white xl:text-8xl sm:mt-8 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-0" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>Reviews</h2>
             </div>
             <div className="grid gap-6 border-t border-white/30 pt-24 lg:grid-cols-3 lg:gap-24"></div>
           <ul className="bg-white">
@@ -388,7 +390,7 @@ export default function HomeRoute() {
         <div className="mx-auto max-w-7xl px-6 pb-12 lg:px-12 xl:px-6 2xl:px-0">
           <div>
             <div className="flex flex-wrap items-center gap-6">
-              <h2 className="text-3xl text-white xl:text-6xl">Instagram</h2>
+              <h2 className="text-3xl text-white xl:text-6xl" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>Instagram</h2>
               <a href="https://www.instagram.com/juulie.jpg/" target="_blank" className="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">@juulie.jpg</a>
             </div>
             <div className="mt-12 grid grid-cols-3 md:mt-16 lg:mt-24">
