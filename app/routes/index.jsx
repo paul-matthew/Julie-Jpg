@@ -183,7 +183,7 @@ export default function HomeRoute() {
             <source srcSet="/coverintro-desktop.jpg" media="(min-width: 601px)" />
             <img src="/cover2desktop.jpg" alt="Julie Jpeg main pic" className="fixed inset-0 h-full w-full object-cover" />
           </picture>
-          <div className="relative z-10 mx-auto max-w-7xl px-6 pt-1 lg:pt-0 xl:px-0 2xl:px-0" style={{ border: "hidden", marginTop: "-36rem", marginLeft:"0rem" }}>
+          <div className="relative z-10 mx-auto max-w-7xl px-6 pt-1 lg:pt-7 xl:px-10 2xl:px-0" style={{ border: "hidden", marginTop: "-36rem", marginLeft:"0rem" }}>
             <div className="pb-2 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-12">
               <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight mt-40 md:mt-20 lg:mt-20 xl:mt-20 2xl:mt-20"   
               style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>JULIE JPEG

@@ -1487,10 +1487,6 @@ video {
     padding-top: 0px;
   }
 
-  .md\:pt-20 {
-    padding-top: 5rem;
-  }
-
   .md\:text-9xl {
     font-size: 8rem;
     line-height: 1;
@@ -1550,22 +1546,6 @@ video {
 
   .lg\:pb-32 {
     padding-bottom: 8rem;
-  }
-
-  .lg\:pt-5 {
-    padding-top: 1.25rem;
-  }
-
-  .lg\:pt-7 {
-    padding-top: 1.75rem;
-  }
-
-  .lg\:pt-20 {
-    padding-top: 5rem;
-  }
-
-  .lg\:pt-2 {
-    padding-top: 0.5rem;
   }
 }
 

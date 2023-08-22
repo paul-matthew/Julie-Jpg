@@ -1487,10 +1487,6 @@ video {
     padding-top: 0px;
   }
 
-  .md\:pt-20 {
-    padding-top: 5rem;
-  }
-
   .md\:text-9xl {
     font-size: 8rem;
     line-height: 1;
