@@ -1053,10 +1053,6 @@ video {
   padding-bottom: 10rem;
 }
 
-.pb-60 {
-  padding-bottom: 15rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -1504,10 +1500,6 @@ video {
 
   .lg\:mt-20 {
     margin-top: 5rem;
-  }
-
-  .lg\:mt-40 {
-    margin-top: 10rem;
   }
 
   .lg\:w-1\/2 {

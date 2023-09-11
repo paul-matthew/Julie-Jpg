@@ -645,18 +645,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .block {
   display: block;
 }
@@ -987,16 +975,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -1043,18 +1021,6 @@ video {
 
 .pb-5 {
   padding-bottom: 1.25rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
-.pb-40 {
-  padding-bottom: 10rem;
-}
-
-.pb-60 {
-  padding-bottom: 15rem;
 }
 
 .text-left {
@@ -1506,10 +1472,6 @@ video {
     margin-top: 5rem;
   }
 
-  .lg\:mt-40 {
-    margin-top: 10rem;
-  }
-
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -1527,11 +1489,6 @@ video {
     padding-right: 3rem;
   }
 
-  .lg\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
   .lg\:pt-7 {
     padding-top: 1.75rem;
   }
@@ -1546,10 +1503,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:m-5 {
-    margin: 1.25rem;
-  }
-
   .xl\:mt-20 {
     margin-top: 5rem;
   }
@@ -1560,18 +1513,6 @@ video {
 
   .xl\:mt-0 {
     margin-top: 0px;
-  }
-
-  .xl\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
-  .xl\:mb-5 {
-    margin-bottom: 1.25rem;
-  }
-
-  .xl\:mb-0 {
-    margin-bottom: 0px;
   }
 
   .xl\:grid-cols-3 {
@@ -1588,31 +1529,6 @@ video {
     padding-right: 2.5rem;
   }
 
-  .xl\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
-  .xl\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .xl\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .xl\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
-  .xl\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
   .xl\:pb-96 {
     padding-bottom: 24rem;
   }
@@ -1627,22 +1543,6 @@ video {
 
   .xl\:pb-2 {
     padding-bottom: 0.5rem;
-  }
-
-  .xl\:pb-0 {
-    padding-bottom: 0px;
-  }
-
-  .xl\:pb-\[-50\] {
-    padding-bottom: -50;
-  }
-
-  .xl\:pb-56 {
-    padding-bottom: 14rem;
-  }
-
-  .xl\:pb-36 {
-    padding-bottom: 9rem;
   }
 
   .xl\:text-8xl {

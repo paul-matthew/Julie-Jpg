@@ -653,10 +653,6 @@ video {
   margin-bottom: 5rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .block {
   display: block;
 }
@@ -1043,18 +1039,6 @@ video {
 
 .pb-5 {
   padding-bottom: 1.25rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
-.pb-40 {
-  padding-bottom: 10rem;
-}
-
-.pb-60 {
-  padding-bottom: 15rem;
 }
 
 .text-left {
@@ -1506,10 +1490,6 @@ video {
     margin-top: 5rem;
   }
 
-  .lg\:mt-40 {
-    margin-top: 10rem;
-  }
-
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -1635,14 +1615,6 @@ video {
 
   .xl\:pb-\[-50\] {
     padding-bottom: -50;
-  }
-
-  .xl\:pb-56 {
-    padding-bottom: 14rem;
-  }
-
-  .xl\:pb-36 {
-    padding-bottom: 9rem;
   }
 
   .xl\:text-8xl {

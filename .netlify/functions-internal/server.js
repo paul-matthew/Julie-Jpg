@@ -90,7 +90,7 @@ init_react();
 var import_node = require("@remix-run/node"), import_react2 = require("@remix-run/react");
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-AYG5F4HM.css";
+var app_default = "/build/_assets/app-6XNOOUU6.css";
 
 // app/root.jsx
 var meta = () => ({
@@ -167,7 +167,7 @@ async function getDataFromStrapi(path, query) {
 }
 
 // app/routes/fullportfolio.jsx
-var import_rellax = __toESM(require("rellax")), import_react_router_dom = require("react-router-dom"), baseUrl = "https://julie-00182f9df30d.herokuapp.com";
+var import_react_router_dom = require("react-router-dom"), baseUrl = "https://julie-00182f9df30d.herokuapp.com";
 baseUrl = "http://127.0.0.1:1337", console.log("This is a local build");
 async function loader2() {
   let data = (await getDataFromStrapi("art-collections/", "populate=*")).data;
@@ -179,18 +179,8 @@ async function loader2() {
 function ArtCard({ data, index }) {
   let mediumImage = `${data.attributes.ArtImage.data.attributes.formats.medium.url}`, ref = (0, import_react3.useRef)();
   return (0, import_react3.useEffect)(() => {
-    new import_rellax.default(ref.current, {
-      speed: -2,
-      xsSpeed: 0,
-      mobileSpeed: 0,
-      tabletSpeed: 0
-    });
   }, []), index > 30 ? null : /* @__PURE__ */ import_react3.default.createElement("a", {
-    "data-rellax-speed": "-2",
-    "data-rellax-xs-speed": "0",
-    "data-rellax-mobile-speed": "0",
-    "data-rellax-tablet-speed": "0",
-    className: "rellax group col-span-2 lg:col-span-1"
+    className: "group col-span-2 lg:col-span-1"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
     style: { width: "100%", height: "100%", overflow: "hidden" },
     className: "relative before:absolute before:inset-0 before:origin-top before:bg-gradient-to-t before:from-black/5 before:opacity-50 before:backdrop-grayscale before:transition before:duration-500 group-hover:before:origin-bottom group-hover:before:scale-y-0"
@@ -211,10 +201,10 @@ function HomeRoute() {
   let { info } = (0, import_react4.useLoaderData)(), [startIndex, setStartIndex] = (0, import_react3.useState)(0), itemsPerPage = 30, sectionRef = (0, import_react3.useRef)(null), displayedItems = info.slice(startIndex, startIndex + itemsPerPage), isFirstPage = startIndex === 0, isLastPage = startIndex + itemsPerPage >= info.length;
   return /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "bg-black"
-  }, /* @__PURE__ */ import_react3.default.createElement("head", null, /* @__PURE__ */ import_react3.default.createElement("link", {
+  }, /* @__PURE__ */ import_react3.default.createElement("link", {
     href: "https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap",
     rel: "stylesheet"
-  })), /* @__PURE__ */ import_react3.default.createElement("main", {
+  }), /* @__PURE__ */ import_react3.default.createElement("main", {
     className: "background relative"
   }, /* @__PURE__ */ import_react3.default.createElement("header", {
     className: "fixed top-0 z-20 w-full"
@@ -235,17 +225,14 @@ function HomeRoute() {
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
     className: "mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 xl:pb-96 2xl:px-0"
   }, /* @__PURE__ */ import_react3.default.createElement("div", {
-    "data-rellax-speed": "-1",
-    "data-rellax-xs-speed": "0",
-    "data-rellax-mobile-speed": "0",
-    className: "rellax flex flex-wrap items-center gap-6"
+    className: "flex flex-wrap items-center gap-6"
   }, /* @__PURE__ */ import_react3.default.createElement("h2", {
     className: "text-7xl font-bold text-white xl:text-8xl",
     style: { fontFamily: "Covered by Your Grace", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
   }, "Full Portfolio"), /* @__PURE__ */ import_react3.default.createElement("span", {
     className: "h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white"
   }, info.length, " Projects")), /* @__PURE__ */ import_react3.default.createElement("div", {
-    className: "relative mt-20 gap-20 gap-x-6 space-y-20 sm:grid sm:grid-cols-2 sm:space-y-0 md:mt-72 lg:mt-60"
+    className: "relative mt-20 gap-20 gap-x-6 space-y-20 sm:grid sm:grid-cols-2 sm:space-y-0 md:mt-32 lg:mt-40"
   }, displayedItems.map((item, index) => /* @__PURE__ */ import_react3.default.createElement(ArtCard, {
     key: item.id,
     data: item,
@@ -339,7 +326,7 @@ __export(routes_exports, {
 });
 init_react();
 var import_react5 = __toESM(require("react")), import_react6 = require("@remix-run/react");
-var import_rellax2 = __toESM(require("rellax")), import_react_router_dom2 = require("react-router-dom"), baseUrl2 = "https://julie-00182f9df30d.herokuapp.com";
+var import_react_router_dom2 = require("react-router-dom"), baseUrl2 = "https://julie-00182f9df30d.herokuapp.com";
 baseUrl2 = "http://127.0.0.1:1337", console.log("This is a local build");
 async function loader3() {
   let data = (await getDataFromStrapi("art-collections/", "populate=*")).data;
@@ -351,18 +338,8 @@ async function loader3() {
 function ArtCard2({ data, index }) {
   let mediumImage = `${data.attributes.ArtImage.data.attributes.formats.medium.url}`, ref = (0, import_react5.useRef)();
   return (0, import_react5.useEffect)(() => {
-    new import_rellax2.default(ref.current, {
-      speed: -2,
-      xsSpeed: 0,
-      mobileSpeed: 0,
-      tabletSpeed: 0
-    });
   }, []), index > 3 ? null : /* @__PURE__ */ import_react5.default.createElement("a", {
-    "data-rellax-speed": "-2",
-    "data-rellax-xs-speed": "0",
-    "data-rellax-mobile-speed": "0",
-    "data-rellax-tablet-speed": "0",
-    className: "rellax group col-span-2 lg:col-span-1"
+    className: "group col-span-2 lg:col-span-1"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
     style: { width: "100%", height: "100%", overflow: "hidden" },
     className: "relative before:absolute before:inset-0 before:origin-top before:bg-gradient-to-t before:from-black/5 before:opacity-50 before:backdrop-grayscale before:transition before:duration-500 group-hover:before:origin-bottom group-hover:before:scale-y-0"
@@ -389,13 +366,13 @@ function HomeRoute2() {
   }, displayedItems = info.slice(startIndex, startIndex + itemsPerPage), isFirstPage = startIndex === 0, isLastPage = startIndex + itemsPerPage >= info.length;
   return /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "bg-black"
-  }, /* @__PURE__ */ import_react5.default.createElement("head", null, /* @__PURE__ */ import_react5.default.createElement("link", {
+  }, /* @__PURE__ */ import_react5.default.createElement("link", {
     href: "https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap",
     rel: "stylesheet"
   }), /* @__PURE__ */ import_react5.default.createElement("link", {
     href: "https://fonts.googleapis.com/css2?family=Marcellus&display=swap",
     rel: "stylesheet"
-  })), /* @__PURE__ */ import_react5.default.createElement("main", {
+  }), /* @__PURE__ */ import_react5.default.createElement("main", {
     className: "background relative"
   }, /* @__PURE__ */ import_react5.default.createElement("header", {
     className: "fixed top-0 z-20 w-full mt-0"
@@ -453,26 +430,20 @@ function HomeRoute2() {
     alt: "Julie Jpeg main pic",
     className: "fixed inset-0 h-full w-full object-cover"
   })), /* @__PURE__ */ import_react5.default.createElement("div", {
-    className: "relative z-10 mx-auto max-w-7xl px-6 pt-1 lg:pt-7 xl:px-10 2xl:px-0",
-    style: { border: "hidden", marginTop: "-36rem", marginLeft: "0rem" }
+    className: "relative z-10 mx-auto max-w-7xl px-6 pt-1 lg:pt-7 xl:px-10 xl:mb-0 2xl:px-0",
+    style: { border: "hidden", marginTop: "-26rem", marginLeft: "0rem" }
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
-    className: "pb-2 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-12"
+    className: "pb-2 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-0"
   }, /* @__PURE__ */ import_react5.default.createElement("h1", {
-    "data-rellax-speed": "-3",
-    "data-rellax-xs-speed": "0",
-    "data-rellax-mobile-speed": "0",
-    className: "rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight mt-40 md:mt-20 lg:mt-20 xl:mt-20 2xl:mt-20",
+    className: " text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight mt-40 md:mt-20 lg:mt-20 xl:mt-20 2xl:mt-20",
     style: { fontFamily: "Marcellus, serif", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
   }, "JULIE JPEG")), /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "md:w-1/3 md:pt-2 lg:w-1/2"
   }, /* @__PURE__ */ import_react5.default.createElement("p", {
     className: "mb-0 text-lg font-light text-white sm:text-2xl xl:leading-normal"
   }, "Original & custom artwork"), /* @__PURE__ */ import_react5.default.createElement("a", {
-    "data-rellax-speed": "1",
-    "data-rellax-xs-speed": "0",
-    "data-rellax-mobile-speed": "0",
     href: "#work",
-    className: "rellax relative inline-block py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10"
+    className: "relative inline-block py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10"
   }, /* @__PURE__ */ import_react5.default.createElement("span", {
     className: "relative"
   }, "See my work")))))), /* @__PURE__ */ import_react5.default.createElement("section", {
@@ -480,25 +451,22 @@ function HomeRoute2() {
     id: "work",
     className: "relative bg-black pb-20 pt-12"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
-    className: "mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 xl:pb-96 2xl:px-0"
+    className: "mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 xl:pb-36 2xl:px-0"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
-    "data-rellax-speed": "-1",
-    "data-rellax-xs-speed": "0",
-    "data-rellax-mobile-speed": "0",
-    className: "rellax flex flex-wrap items-center gap-6"
+    className: "flex flex-wrap items-center gap-6"
   }, /* @__PURE__ */ import_react5.default.createElement("h2", {
     className: "text-7xl font-bold text-white xl:text-8xl",
     style: { fontFamily: "Marcellus, serif", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
   }, "My work"), /* @__PURE__ */ import_react5.default.createElement("span", {
     className: "h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white"
   }, info.length, " Projects")), /* @__PURE__ */ import_react5.default.createElement("div", {
-    className: "relative mt-20 gap-20 gap-x-6 space-y-20 sm:grid sm:grid-cols-2 sm:space-y-0 md:mt-72 lg:mt-60"
+    className: "relative mt-20 gap-20 gap-x-6 space-y-20 sm:grid sm:grid-cols-2 sm:space-y-0 md:mt-32 lg:mt-30"
   }, displayedItems.map((item, index) => /* @__PURE__ */ import_react5.default.createElement(ArtCard2, {
     key: item.id,
     data: item,
     index
   })))), info.length > itemsPerPage && /* @__PURE__ */ import_react5.default.createElement("div", {
-    className: "flex justify-center mt-20 space-x-4"
+    className: "flex justify-center mt-0 space-x-4"
   }, !isFirstPage && /* @__PURE__ */ import_react5.default.createElement("button", {
     className: "text-white text-3xl underline",
     onClick: handlePrevious
@@ -507,7 +475,7 @@ function HomeRoute2() {
     href: "/fullportfolio"
   }, "Browse Portfolio"))), /* @__PURE__ */ import_react5.default.createElement("section", {
     id: "services",
-    className: "relative bg-black pb-20 pt-12"
+    className: "relative bg-black pb-60 pt-12"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
@@ -557,25 +525,18 @@ function HomeRoute2() {
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
-    "data-rellax-speed": "-0.4",
-    "data-rellax-xs-speed": "0",
-    "data-rellax-mobile-speed": "0",
-    className: "rellax flex flex-wrap items-center gap-6"
+    className: " flex flex-wrap items-center gap-6"
   }, /* @__PURE__ */ import_react5.default.createElement("h2", {
     className: "text-7xl font-bold text-white xl:text-8xl",
     style: { fontFamily: "Marcellus, serif", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
   }, "About me")), /* @__PURE__ */ import_react5.default.createElement("div", {
-    className: "mt-24 md:mt-72"
+    className: "mt-24 md:mt-42"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "grid gap-6"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "grid md:grid-cols-3"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
-    className: "overflow-hidden md:col-span-2 flex items-center",
-    "data-rellax-speed": "1",
-    "data-rellax-xs-speed": "0",
-    "data-rellax-mobile-speed": "0",
-    "data-rellax-tablet-speed": "0.5"
+    className: "overflow-hidden md:col-span-2 flex items-center"
   }, /* @__PURE__ */ import_react5.default.createElement("img", {
     src: "/cover3.jpg",
     alt: "unnamed duo photo",
@@ -589,7 +550,7 @@ function HomeRoute2() {
     className: "border-black my-4"
   }), /* @__PURE__ */ import_react5.default.createElement("p", {
     className: "text-2xl font-light text-black ml-4"
-  }, "Hey! I'm Julie, a Toronto-based visual artist.  Passionate about painting and drawing, I express myself creatively through vibrant colors and intricate details. Inspired by pop culture and the streets of Toronto, I infuse my unique perspective into each artwork. Join me on my artistic journey as I invite you to experience the power of art through my lens.")))))))), /* @__PURE__ */ import_react5.default.createElement("section", {
+  }, "Hey! I\u2019m Julie Jpeg, a Toronto-based Visual Artist.  My journey began at the young age of 4 when I brought a pencil and piece of paper together at school. The creativity hasn\u2019t stopped since. Inspired by pop culture, black culture and nature-esque views, I bring my ideas to life one canvas at a time. Please join me as I invite you to experience the power of art through my lens.")))))))), /* @__PURE__ */ import_react5.default.createElement("section", {
     id: "contact",
     className: "relative bg-black pb-20 pt-12"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
@@ -616,9 +577,9 @@ function HomeRoute2() {
     className: "tracking-wide text-white"
   }, "First name"), /* @__PURE__ */ import_react5.default.createElement("input", {
     type: "text",
-    id: "fistname",
-    name: "fistname",
-    autoComplete: "name",
+    id: "firstname",
+    name: "firstname",
+    autoComplete: "given-name",
     placeholder: "Your first name",
     className: "mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary"
   })), /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("label", {
@@ -638,6 +599,7 @@ function HomeRoute2() {
     type: "email",
     id: "email",
     name: "email",
+    autoComplete: "email",
     placeholder: "Your email address",
     className: "mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary"
   })), /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("label", {
@@ -655,7 +617,7 @@ function HomeRoute2() {
     className: "group ml-auto flex h-12 w-auto items-center overflow-hidden bg-white px-5 transition-all duration-300 hover:bg-primary"
   }, /* @__PURE__ */ import_react5.default.createElement("span", {
     className: "relative uppercase tracking-wide text-black group-hover:text-white"
-  }, " Send message ")))))))), /* @__PURE__ */ import_react5.default.createElement("section", {
+  }, "Send message")))))))), /* @__PURE__ */ import_react5.default.createElement("section", {
     className: "relative z-10 bg-black pb-0 pt-12 md:pb-0 md:pt-0 lg:pb-0 xl:pt-96"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0"
@@ -813,7 +775,7 @@ __export(shop_exports, {
 });
 init_react();
 var import_react7 = __toESM(require("react")), import_react8 = require("@remix-run/react");
-var import_rellax3 = __toESM(require("rellax"));
+var import_rellax = __toESM(require("rellax"));
 console.log("test test test");
 var baseUrl3 = "https://julie-00182f9df30d.herokuapp.com";
 baseUrl3 = "http://127.0.0.1:1337", console.log("This is a local build");
@@ -1009,7 +971,7 @@ function ShopRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "158030f5", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-KQFFU7OQ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-QPOMYU4N.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-AYQAHM5N.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-SRAHWVYH.js", imports: ["/build/_shared/chunk-DYWSBADA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-158030F5.js" };
+var assets_manifest_default = { version: "9f8c667c", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-NTWG5P2X.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-2UXAQD3D.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-ZFFA2NH5.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-33EZ72O5.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-9F8C667C.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { useLoaderData } from "@remix-run/react";
 import { getDataFromStrapi } from "~/api/get-data-from-strapi.server";
-import Rellax from 'rellax';
 import { Link } from "react-router-dom";
 
 let baseUrl = "https://julie-00182f9df30d.herokuapp.com";
@@ -41,23 +40,14 @@ function ArtCard({ data, index }) {
   const ref = useRef();
 
   useEffect(() => {
-    new Rellax(ref.current, {
-      speed: -2,
-      xsSpeed: 0,
-      mobileSpeed: 0,
-      tabletSpeed: 0,
-    });
+
   }, []);
   if (index > 30) {
     return null; // Skip rendering for items after the fourth index
   }
   return (
     <a
-      data-rellax-speed="-2"
-      data-rellax-xs-speed="0"
-      data-rellax-mobile-speed="0"
-      data-rellax-tablet-speed="0"
-      className="rellax group col-span-2 lg:col-span-1"
+      className="group col-span-2 lg:col-span-1"
     >
       <div style={{ width: '100%', height: '100%', overflow: 'hidden' }} className="relative before:absolute before:inset-0 before:origin-top before:bg-gradient-to-t before:from-black/5 before:opacity-50 before:backdrop-grayscale before:transition before:duration-500 group-hover:before:origin-bottom group-hover:before:scale-y-0">
         <img
@@ -92,9 +82,7 @@ export default function HomeRoute() {
 
   return (
     <div className="bg-black">
-      <head>
-        <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet" />
-      </head>
+      <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet" />
       <main className="background relative">
         <header className="fixed top-0 z-20 w-full">
           <nav className="2lg:px-12 mx-auto max-w-7xl px-6 py-12 lg:px-12 xl:px-6 2xl:px-0">
@@ -108,10 +96,7 @@ export default function HomeRoute() {
         <section ref={sectionRef} id="work" className="relative bg-black pb-20 pt-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 xl:pb-96 2xl:px-0">
             <div
-              data-rellax-speed="-1"
-              data-rellax-xs-speed="0"
-              data-rellax-mobile-speed="0"
-              className="rellax flex flex-wrap items-center gap-6"
+              className="flex flex-wrap items-center gap-6"
             >
               <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{ fontFamily: 'Covered by Your Grace', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', }}>
                 Full Portfolio
@@ -120,7 +105,7 @@ export default function HomeRoute() {
                 {info.length} Projects
               </span>
             </div>
-            <div className="relative mt-20 gap-20 gap-x-6 space-y-20 sm:grid sm:grid-cols-2 sm:space-y-0 md:mt-72 lg:mt-60">
+            <div className="relative mt-20 gap-20 gap-x-6 space-y-20 sm:grid sm:grid-cols-2 sm:space-y-0 md:mt-32 lg:mt-40">
               {displayedItems.map((item, index) => (
                 <ArtCard key={item.id} data={item} index={index} />
               ))}

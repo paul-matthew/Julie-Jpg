@@ -4,7 +4,6 @@ import { useLoaderData } from "@remix-run/react";
 import { getDataFromStrapi } from "~/api/get-data-from-strapi.server";
 // import { baseUrl } from "~/api/get-data-from-strapi.server";
 
-import Rellax from 'rellax';
 import { Link } from "react-router-dom";
 
 // const baseUrl = process.env.NODE_ENV === 'production'
@@ -76,23 +75,14 @@ function ArtCard({ data, index }) {
   const ref = useRef();
 
   useEffect(() => {
-    new Rellax(ref.current, {
-      speed: -2,
-      xsSpeed: 0,
-      mobileSpeed: 0,
-      tabletSpeed: 0,
-    });
+
   }, []);
   if (index > 3) {
     return null; // Skip rendering for items after the fourth index
   }
   return (
     <a
-      data-rellax-speed="-2"
-      data-rellax-xs-speed="0"
-      data-rellax-mobile-speed="0"
-      data-rellax-tablet-speed="0"
-      className="rellax group col-span-2 lg:col-span-1"
+      className="group col-span-2 lg:col-span-1"
     >
       <div style={{ width: '100%', height: '100%', overflow: 'hidden' }} className="relative before:absolute before:inset-0 before:origin-top before:bg-gradient-to-t before:from-black/5 before:opacity-50 before:backdrop-grayscale before:transition before:duration-500 group-hover:before:origin-bottom group-hover:before:scale-y-0">
         <img
@@ -145,10 +135,8 @@ export default function HomeRoute() {
 
   return (
     <div className="bg-black">
-      <head>
-        <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet" />
-      </head>
+      <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet" />
       <main className="background relative">
         <header className="fixed top-0 z-20 w-full mt-0">
           <nav className="2lg:px-12 mx-auto max-w-7xl px-6 py-12 lg:px-12 xl:px-6 2xl:px-0">
@@ -183,21 +171,21 @@ export default function HomeRoute() {
             <source srcSet="/coverintro-desktop.jpg" media="(min-width: 601px)" />
             <img src="/cover2desktop.jpg" alt="Julie Jpeg main pic" className="fixed inset-0 h-full w-full object-cover" />
           </picture>
-          <div className="relative z-10 mx-auto max-w-7xl px-6 pt-1 lg:pt-7 xl:px-10 2xl:px-0" style={{ border: "hidden", marginTop: "-36rem", marginLeft:"0rem" }}>
-            <div className="pb-2 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-12">
-              <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight mt-40 md:mt-20 lg:mt-20 xl:mt-20 2xl:mt-20"   
+          <div className="relative z-10 mx-auto max-w-7xl px-6 pt-1 lg:pt-7 xl:px-10 xl:mb-0 2xl:px-0" style={{ border: "hidden", marginTop: "-26rem", marginLeft:"0rem" }}>
+            <div className="pb-2 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-0">
+              <h1 className=" text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight mt-40 md:mt-20 lg:mt-20 xl:mt-20 2xl:mt-20"   
               style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>JULIE JPEG
               </h1>
             </div>
             <div>
               <div className="md:w-1/3 md:pt-2 lg:w-1/2">
                 <p className="mb-0 text-lg font-light text-white sm:text-2xl xl:leading-normal">Original & custom artwork</p>
-                <a data-rellax-speed="1" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" href="#work" className="rellax relative inline-block py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10">
+                <a href="#work" className="relative inline-block py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10">
                   <span className="relative">See my work</span>
                 </a>
               </div>
             </div>
-            {/* <div className="rellax relative mt-16 ml-auto w-max md:mt-32 md:ml-0 xl:-mt-16">
+            {/* <div className="relative mt-16 ml-auto w-max md:mt-32 md:ml-0 xl:-mt-16">
                 <span className="text-xs font-light uppercase tracking-widest text-white">Follow me</span>
                 <ul className="relative z-20 mt-4 space-y-2 text-sm font-light text-white">
                     <li>
@@ -208,12 +196,9 @@ export default function HomeRoute() {
           </div>
         </section>
         <section ref={sectionRef} id="work" className="relative bg-black pb-20 pt-12">
-          <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 xl:pb-96 2xl:px-0">
+          <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 xl:pb-36 2xl:px-0">
             <div
-              data-rellax-speed="-1"
-              data-rellax-xs-speed="0"
-              data-rellax-mobile-speed="0"
-              className="rellax flex flex-wrap items-center gap-6"
+              className="flex flex-wrap items-center gap-6"
             >
               <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>
                 My work
@@ -222,14 +207,14 @@ export default function HomeRoute() {
                 {info.length} Projects
               </span>
             </div>
-            <div className="relative mt-20 gap-20 gap-x-6 space-y-20 sm:grid sm:grid-cols-2 sm:space-y-0 md:mt-72 lg:mt-60">
+            <div className="relative mt-20 gap-20 gap-x-6 space-y-20 sm:grid sm:grid-cols-2 sm:space-y-0 md:mt-32 lg:mt-30">
               {displayedItems.map((item, index) => (
                 <ArtCard key={item.id} data={item} index={index} />
               ))}
             </div>
           </div>
           {info.length > itemsPerPage && (
-            <div className="flex justify-center mt-20 space-x-4">
+            <div className="flex justify-center mt-0 space-x-4">
               {!isFirstPage && (
                 <button className="text-white text-3xl underline" onClick={handlePrevious}>
                   Previous
@@ -241,7 +226,7 @@ export default function HomeRoute() {
             </div>
           )}
         </section>
-        <section id="services" className="relative bg-black pb-20 pt-12">
+        <section id="services" className="relative bg-black pb-60 pt-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
             <div className="flex flex-wrap items-center gap-6">
               <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>My services</h2>
@@ -289,20 +274,20 @@ export default function HomeRoute() {
         </section>
         <section id="about" className="relative bg-black pb-20 pt-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
-            <div data-rellax-speed="-0.4" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax flex flex-wrap items-center gap-6">
+            <div className=" flex flex-wrap items-center gap-6">
               <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>About me</h2>
             </div>
-            <div className="mt-24 md:mt-72">
+            <div className="mt-24 md:mt-42">
               <div className="grid gap-6">
                 <div className="grid md:grid-cols-3">
-                  <div className="overflow-hidden md:col-span-2 flex items-center" data-rellax-speed="1" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" data-rellax-tablet-speed="0.5">
+                  <div className="overflow-hidden md:col-span-2 flex items-center">
                     <img src="/cover3.jpg" alt="unnamed duo photo" width="1500" height="1000" />
                   </div>
                   <div className="ml-auto flex items-center bg-white">
                     <div>
                       <p className="text-6xl font-light text-black ml-4">Illustrator & Acrylic Painter</p>
                       <hr className="border-black my-4" />
-                      <p className="text-2xl font-light text-black ml-4">Hey! I'm Julie, a Toronto-based visual artist.  Passionate about painting and drawing, I express myself creatively through vibrant colors and intricate details. Inspired by pop culture and the streets of Toronto, I infuse my unique perspective into each artwork. Join me on my artistic journey as I invite you to experience the power of art through my lens.</p>
+                      <p className="text-2xl font-light text-black ml-4">Hey! I’m Julie Jpeg, a Toronto-based Visual Artist.  My journey began at the young age of 4 when I brought a pencil and piece of paper together at school. The creativity hasn’t stopped since. Inspired by pop culture, black culture and nature-esque views, I bring my ideas to life one canvas at a time. Please join me as I invite you to experience the power of art through my lens.</p>
                     </div>
                   </div>
                 </div>
@@ -319,29 +304,30 @@ export default function HomeRoute() {
             <div className="mt-4">
               <div className="grid gap-6 border-t border-white/30 pt-24 lg:grid-cols-3 lg:gap-24">
                 <div className="lg:col-span-2">
-                  <form action="https://formsubmit.co/julestheartist@juliejpeg.com" method="POST" className="mx-auto space-y-8 md:w-3/4">
-                    <div className="grid gap-8 sm:grid-cols-2 sm:gap-4">
-                      <div>
-                        <label htmlFor="firstname" className="tracking-wide text-white">First name</label>
-                        <input type="text" id="fistname" name="fistname" autoComplete="name" placeholder="Your first name" className="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary" />
-                      </div>
-                      <div>
-                        <label htmlFor="lastname" className="tracking-wide text-white">Last name</label>
-                        <input type="text" id="lastname" name="lastname" autoComplete="family-name" placeholder="Your last name" className="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary" />
-                      </div>
+                <form action="https://formsubmit.co/julestheartist@juliejpeg.com" method="POST" className="mx-auto space-y-8 md:w-3/4">
+                  <div className="grid gap-8 sm:grid-cols-2 sm:gap-4">
+                    <div>
+                      <label htmlFor="firstname" className="tracking-wide text-white">First name</label>
+                      <input type="text" id="firstname" name="firstname" autoComplete="given-name" placeholder="Your first name" className="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary" />
                     </div>
                     <div>
-                      <label htmlFor="email" className="tracking-wide text-white">Email address</label>
-                      <input type="email" id="email" name="email" placeholder="Your email address" className="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary" />
+                      <label htmlFor="lastname" className="tracking-wide text-white">Last name</label>
+                      <input type="text" id="lastname" name="lastname" autoComplete="family-name" placeholder="Your last name" className="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary" />
                     </div>
-                    <div>
-                      <label htmlFor="message" className="tracking-wide text-white">Your message</label>
-                      <textarea name="message" id="message" cols="30" rows="6" placeholder="Your message" className="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary"></textarea>
-                    </div>
-                    <button type="submit" className="group ml-auto flex h-12 w-auto items-center overflow-hidden bg-white px-5 transition-all duration-300 hover:bg-primary">
-                      <span className="relative uppercase tracking-wide text-black group-hover:text-white"> Send message </span>
-                    </button>
-                  </form>
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="tracking-wide text-white">Email address</label>
+                    <input type="email" id="email" name="email" autoComplete="email" placeholder="Your email address" className="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary" />
+                  </div>
+                  <div>
+                    <label htmlFor="message" className="tracking-wide text-white">Your message</label>
+                    <textarea name="message" id="message" cols="30" rows="6" placeholder="Your message" className="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary"></textarea>
+                  </div>
+                  <button type="submit" className="group ml-auto flex h-12 w-auto items-center overflow-hidden bg-white px-5 transition-all duration-300 hover:bg-primary">
+                    <span className="relative uppercase tracking-wide text-black group-hover:text-white">Send message</span>
+                  </button>
+                </form>
+
                 </div>
               </div>
             </div>
