@@ -94,7 +94,7 @@ function ArtCard({ data, index }) {
       </div>
       <div className="flex items-center justify-between p-4">
         <h3 className="text-2xl font-normal text-white">{data.attributes.Title}</h3>
-        <span className="h-max rounded-full border border-white/30 px-2 py-1 text-xs tracking-wider text-white">
+        <span className="h-max rounded-full px-2 py-1 text-xs tracking-wider text-white flex justify-end" style={{fontSize:'0.1em', width:'115px'}}>
           {data.attributes.Date}
         </span>
       </div>
