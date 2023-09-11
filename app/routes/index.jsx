@@ -171,9 +171,9 @@ export default function HomeRoute() {
             <source srcSet="/coverintro-desktop.jpg" media="(min-width: 601px)" />
             <img src="/cover2desktop.jpg" alt="Julie Jpeg main pic" className="fixed inset-0 h-full w-full object-cover" />
           </picture>
-          <div className="relative z-10 mx-auto max-w-7xl px-6 pt-1 lg:pt-7 xl:px-10 xl:mb-0 2xl:px-0" style={{ border: "hidden", marginTop: "-26rem", marginLeft:"0rem" }}>
+          <div className="relative z-10 mx-auto max-w-7xl px-6 pt-1 lg:pt-7 xl:px-10 xl:mb-0 2xl:px-0 mt-[-36rem] lg:mt-[-33rem]" style={{ border: "hidden", marginLeft: "0rem" }}>
             <div className="pb-2 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-0">
-              <h1 className=" text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight mt-40 md:mt-20 lg:mt-20 xl:mt-20 2xl:mt-20"   
+              <h1 className=" text-6xl font-bold text-white sm:text-6xl md:text-8xl xl:leading-tight mt-40 md:mt-80 lg:mt-60 xl:mt-20 2xl:mt-20"   
               style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>JULIE JPEG
               </h1>
             </div>
@@ -220,7 +220,7 @@ export default function HomeRoute() {
                   Previous
                 </button>)}
               {!isLastPage && (
-                <a className="text-white text-3xl underline hover:text-blue-500" href="/fullportfolio">
+                <a className="text-white text-3xl underline hover:text-blue-500 mt-20" href="/fullportfolio">
                   Browse Portfolio
                 </a>)}
             </div>
@@ -283,13 +283,16 @@ export default function HomeRoute() {
                   <div className="overflow-hidden md:col-span-2 flex items-center">
                     <img src="/cover3.jpg" alt="unnamed duo photo" width="1500" height="1000" />
                   </div>
-                  <div className="ml-auto flex items-center bg-white">
-                    <div>
-                      <p className="text-6xl font-light text-black ml-4">Illustrator & Acrylic Painter</p>
-                      <hr className="border-black my-4" />
-                      <p className="text-2xl font-light text-black ml-4">Hey! I’m Julie Jpeg, a Toronto-based Visual Artist.  My journey began at the young age of 4 when I brought a pencil and piece of paper together at school. The creativity hasn’t stopped since. Inspired by pop culture, black culture and nature-esque views, I bring my ideas to life one canvas at a time. Please join me as I invite you to experience the power of art through my lens.</p>
-                    </div>
-                  </div>
+                  <div className="ml-auto flex items-center bg-white p-4 lg:p-8">
+  <div>
+    <p className="text-4xl lg:text-6xl font-light text-black">Illustrator & Acrylic Painter</p>
+    <hr className="border-black my-4" />
+    <p className="text-base lg:text-xl font-light text-black">
+      Hey! I’m Julie Jpeg, a Toronto-based Visual Artist. My journey began at the young age of 4 when I brought a pencil and piece of paper together at school. The creativity hasn’t stopped since. Inspired by pop culture, black culture, and nature-esque views, I bring my ideas to life one canvas at a time. Please join me as I invite you to experience the power of art through my lens.
+    </p>
+  </div>
+</div>
+
                 </div>
               </div>
 

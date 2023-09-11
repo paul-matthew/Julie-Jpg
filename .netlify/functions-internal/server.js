@@ -90,7 +90,7 @@ init_react();
 var import_node = require("@remix-run/node"), import_react2 = require("@remix-run/react");
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-6XNOOUU6.css";
+var app_default = "/build/_assets/app-E733ZNXW.css";
 
 // app/root.jsx
 var meta = () => ({
@@ -430,12 +430,12 @@ function HomeRoute2() {
     alt: "Julie Jpeg main pic",
     className: "fixed inset-0 h-full w-full object-cover"
   })), /* @__PURE__ */ import_react5.default.createElement("div", {
-    className: "relative z-10 mx-auto max-w-7xl px-6 pt-1 lg:pt-7 xl:px-10 xl:mb-0 2xl:px-0",
-    style: { border: "hidden", marginTop: "-26rem", marginLeft: "0rem" }
+    className: "relative z-10 mx-auto max-w-7xl px-6 pt-1 lg:pt-7 xl:px-10 xl:mb-0 2xl:px-0 mt-[-36rem] lg:mt-[-33rem]",
+    style: { border: "hidden", marginLeft: "0rem" }
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "pb-2 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-0"
   }, /* @__PURE__ */ import_react5.default.createElement("h1", {
-    className: " text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight mt-40 md:mt-20 lg:mt-20 xl:mt-20 2xl:mt-20",
+    className: " text-6xl font-bold text-white sm:text-6xl md:text-8xl xl:leading-tight mt-40 md:mt-80 lg:mt-60 xl:mt-20 2xl:mt-20",
     style: { fontFamily: "Marcellus, serif", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
   }, "JULIE JPEG")), /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "md:w-1/3 md:pt-2 lg:w-1/2"
@@ -471,7 +471,7 @@ function HomeRoute2() {
     className: "text-white text-3xl underline",
     onClick: handlePrevious
   }, "Previous"), !isLastPage && /* @__PURE__ */ import_react5.default.createElement("a", {
-    className: "text-white text-3xl underline hover:text-blue-500",
+    className: "text-white text-3xl underline hover:text-blue-500 mt-20",
     href: "/fullportfolio"
   }, "Browse Portfolio"))), /* @__PURE__ */ import_react5.default.createElement("section", {
     id: "services",
@@ -543,14 +543,14 @@ function HomeRoute2() {
     width: "1500",
     height: "1000"
   })), /* @__PURE__ */ import_react5.default.createElement("div", {
-    className: "ml-auto flex items-center bg-white"
+    className: "ml-auto flex items-center bg-white p-4 lg:p-8"
   }, /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("p", {
-    className: "text-6xl font-light text-black ml-4"
+    className: "text-4xl lg:text-6xl font-light text-black"
   }, "Illustrator & Acrylic Painter"), /* @__PURE__ */ import_react5.default.createElement("hr", {
     className: "border-black my-4"
   }), /* @__PURE__ */ import_react5.default.createElement("p", {
-    className: "text-2xl font-light text-black ml-4"
-  }, "Hey! I\u2019m Julie Jpeg, a Toronto-based Visual Artist.  My journey began at the young age of 4 when I brought a pencil and piece of paper together at school. The creativity hasn\u2019t stopped since. Inspired by pop culture, black culture and nature-esque views, I bring my ideas to life one canvas at a time. Please join me as I invite you to experience the power of art through my lens.")))))))), /* @__PURE__ */ import_react5.default.createElement("section", {
+    className: "text-base lg:text-xl font-light text-black"
+  }, "Hey! I\u2019m Julie Jpeg, a Toronto-based Visual Artist. My journey began at the young age of 4 when I brought a pencil and piece of paper together at school. The creativity hasn\u2019t stopped since. Inspired by pop culture, black culture, and nature-esque views, I bring my ideas to life one canvas at a time. Please join me as I invite you to experience the power of art through my lens.")))))))), /* @__PURE__ */ import_react5.default.createElement("section", {
     id: "contact",
     className: "relative bg-black pb-20 pt-12"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
@@ -971,7 +971,7 @@ function ShopRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "9f8c667c", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-NTWG5P2X.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-2UXAQD3D.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-ZFFA2NH5.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-33EZ72O5.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-9F8C667C.js" };
+var assets_manifest_default = { version: "24c8adc6", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-AC2W6WFI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-2UXAQD3D.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-VDJ6B4CH.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-33EZ72O5.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-24C8ADC6.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
