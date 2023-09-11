@@ -173,9 +173,9 @@ export default function HomeRoute() {
           </picture>
           <div className="relative z-10 mx-auto max-w-7xl px-6 pt-1 lg:pt-7 xl:px-10 xl:mb-0 2xl:px-0 mt-[-36rem] lg:mt-[-33rem]" style={{ border: "hidden", marginLeft: "0rem" }}>
             <div className="pb-2 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-0">
-              <h1 className=" text-6xl font-bold text-white sm:text-6xl md:text-8xl xl:leading-tight mt-40 md:mt-80 lg:mt-60 xl:mt-20 2xl:mt-20"   
-              style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>JULIE JPEG
-              </h1>
+            <h1 className="text-6xl font-bold text-white sm:text-6xl md:text-8xl xl:leading-tight mt-40 md:mt-80 lg:mt-60 xl:mt-20 2xl:mt-20" style={{ fontFamily: 'Marcellus, serif', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>
+              JULIE JPEG<span style={{ fontSize: '0.5em', verticalAlign: 'super' }}>{String.fromCharCode(8482)}</span>
+            </h1>
             </div>
             <div>
               <div className="md:w-1/3 md:pt-2 lg:w-1/2">
