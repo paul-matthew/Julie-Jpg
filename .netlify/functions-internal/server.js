@@ -90,7 +90,7 @@ init_react();
 var import_node = require("@remix-run/node"), import_react2 = require("@remix-run/react");
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-E733ZNXW.css";
+var app_default = "/build/_assets/app-S3YWKNVZ.css";
 
 // app/root.jsx
 var meta = () => ({
@@ -519,7 +519,14 @@ function HomeRoute2() {
     className: "mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8"
   }, /* @__PURE__ */ import_react5.default.createElement("p", {
     className: "max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-l"
-  }, "Discover a captivating showcase of my artistic creations in the 'Exhibit' section, where my work takes center stage, inviting you to immerse yourself in a world of visual storytelling and creative expression."))))))))), /* @__PURE__ */ import_react5.default.createElement("section", {
+  }, "Discover a captivating showcase of my artistic creations in the 'Exhibit' section, where my work takes center stage, inviting you to immerse yourself in a world of visual storytelling and creative expression.")))))))), /* @__PURE__ */ import_react5.default.createElement("div", {
+    className: "text-center mt-8"
+  }, /* @__PURE__ */ import_react5.default.createElement("a", {
+    href: "#contact",
+    className: "inline-block"
+  }, /* @__PURE__ */ import_react5.default.createElement("button", {
+    className: "bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-5 rounded-full shadow-md transform transition-transform duration-300 hover:scale-105"
+  }, "Request a Quote")))), /* @__PURE__ */ import_react5.default.createElement("section", {
     id: "about",
     className: "relative bg-black pb-20 pt-12"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
@@ -971,7 +978,7 @@ function ShopRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "24c8adc6", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-AC2W6WFI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-2UXAQD3D.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-VDJ6B4CH.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-33EZ72O5.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-24C8ADC6.js" };
+var assets_manifest_default = { version: "813bc3b8", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-L66REXRL.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-2UXAQD3D.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-UYENDVQG.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-33EZ72O5.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-813BC3B8.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

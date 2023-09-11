@@ -271,6 +271,13 @@ export default function HomeRoute() {
               </div>
             </div>
           </div>
+          <div className="text-center mt-8">
+            <a href="#contact" className="inline-block">
+              <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-5 rounded-full shadow-md transform transition-transform duration-300 hover:scale-105">
+                Request a Quote
+              </button>
+            </a>
+          </div>
         </section>
         <section id="about" className="relative bg-black pb-20 pt-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
