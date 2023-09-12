@@ -201,7 +201,7 @@ export default function HomeRoute() {
               className="flex flex-wrap items-center gap-6"
             >
               <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>
-                My work
+                My Work
               </h2>
               <span className="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">
                 {info.length} Projects
@@ -229,7 +229,7 @@ export default function HomeRoute() {
         <section id="services" className="relative bg-black pb-60 pt-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
             <div className="flex flex-wrap items-center gap-6">
-              <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>My services</h2>
+              <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>My Services</h2>
               {/* <span className="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">03 services</span> */}
             </div>
             <div className="mt-24">
@@ -282,7 +282,7 @@ export default function HomeRoute() {
         <section id="about" className="relative bg-black pb-20 pt-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
             <div className=" flex flex-wrap items-center gap-6">
-              <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>About me</h2>
+              <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>About Me</h2>
             </div>
             <div className="mt-24 md:mt-42">
               <div className="grid gap-6">
@@ -291,25 +291,23 @@ export default function HomeRoute() {
                     <img src="/cover3.jpg" alt="unnamed duo photo" width="1500" height="1000" />
                   </div>
                   <div className="ml-auto flex items-center bg-white p-4 lg:p-8">
-  <div>
-    <p className="text-4xl lg:text-6xl font-light text-black">Illustrator & Acrylic Painter</p>
-    <hr className="border-black my-4" />
-    <p className="text-base lg:text-xl font-light text-black">
-      Hey! I’m Julie Jpeg, a Toronto-based Visual Artist. My journey began at the young age of 4 when I brought a pencil and piece of paper together at school. The creativity hasn’t stopped since. Inspired by pop culture, black culture, and nature-esque views, I bring my ideas to life one canvas at a time. Please join me as I invite you to experience the power of art through my lens.
-    </p>
-  </div>
-</div>
-
+                    <div>
+                      <p className="text-4xl lg:text-6xl font-light text-black">Illustrator & Acrylic Painter</p>
+                      <hr className="border-black my-4" />
+                      <p className="text-base lg:text-xl font-light text-black">
+                        Hey! I’m Julie Jpeg, a Toronto-based Visual Artist. My journey began at the young age of 4 when I brought a pencil and piece of paper together at school. The creativity hasn’t stopped since. Inspired by pop culture, black culture, and nature-esque views, I bring my ideas to life one canvas at a time. Please join me as I invite you to experience the power of art through my lens.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-
             </div>
           </div>
         </section>
         <section id="contact" className="relative bg-black pb-20 pt-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
             <div className="flex flex-wrap items-center gap-6">
-              <h2 className="text-7xl font-bold text-white xl:text-8xl sm:mt-8 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-0" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>Let's work together</h2>
+              <h2 className="text-7xl font-bold text-white xl:text-8xl sm:mt-8 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-0" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>Let's Work Together</h2>
             </div>
             <div className="mt-4">
               <div className="grid gap-6 border-t border-white/30 pt-24 lg:grid-cols-3 lg:gap-24">

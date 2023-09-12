@@ -90,7 +90,7 @@ init_react();
 var import_node = require("@remix-run/node"), import_react2 = require("@remix-run/react");
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-LTQBC3HO.css";
+var app_default = "/build/_assets/app-WJBJSYIG.css";
 
 // app/root.jsx
 var meta = () => ({
@@ -460,7 +460,7 @@ function HomeRoute2() {
   }, /* @__PURE__ */ import_react5.default.createElement("h2", {
     className: "text-7xl font-bold text-white xl:text-8xl",
     style: { fontFamily: "Marcellus, serif", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
-  }, "My work"), /* @__PURE__ */ import_react5.default.createElement("span", {
+  }, "My Work"), /* @__PURE__ */ import_react5.default.createElement("span", {
     className: "h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white"
   }, info.length, " Projects")), /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "relative mt-20 gap-20 gap-x-6 space-y-20 sm:grid sm:grid-cols-2 sm:space-y-0 md:mt-32 lg:mt-30"
@@ -486,7 +486,7 @@ function HomeRoute2() {
   }, /* @__PURE__ */ import_react5.default.createElement("h2", {
     className: "text-7xl font-bold text-white xl:text-8xl",
     style: { fontFamily: "Marcellus, serif", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
-  }, "My services")), /* @__PURE__ */ import_react5.default.createElement("div", {
+  }, "My Services")), /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "mt-24"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: ""
@@ -539,7 +539,7 @@ function HomeRoute2() {
   }, /* @__PURE__ */ import_react5.default.createElement("h2", {
     className: "text-7xl font-bold text-white xl:text-8xl",
     style: { fontFamily: "Marcellus, serif", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
-  }, "About me")), /* @__PURE__ */ import_react5.default.createElement("div", {
+  }, "About Me")), /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "mt-24 md:mt-42"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "grid gap-6"
@@ -570,7 +570,7 @@ function HomeRoute2() {
   }, /* @__PURE__ */ import_react5.default.createElement("h2", {
     className: "text-7xl font-bold text-white xl:text-8xl sm:mt-8 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-0",
     style: { fontFamily: "Marcellus, serif", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
-  }, "Let's work together")), /* @__PURE__ */ import_react5.default.createElement("div", {
+  }, "Let's Work Together")), /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "mt-4"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "grid gap-6 border-t border-white/30 pt-24 lg:grid-cols-3 lg:gap-24"
@@ -981,7 +981,7 @@ function ShopRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "7cc472df", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-KZS5AXAM.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-2UXAQD3D.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-MLZY5MSX.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-33EZ72O5.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-7CC472DF.js" };
+var assets_manifest_default = { version: "cae35d35", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-26AUFPPZ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-2UXAQD3D.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-ZQROQSUX.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-33EZ72O5.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-CAE35D35.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
