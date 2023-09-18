@@ -120,77 +120,70 @@ useEffect(() => {
 
   return (
     <div className="bg-black">
-      <head>
-        <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet"/>
-      </head>
+      <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet"/>
     <main className="background relative">
       <header className="fixed top-0 z-20 w-full">
-      <nav className="2lg:px-12 mx-auto max-w-7xl px-6 py-12 lg:px-12 xl:px-6 2xl:px-0">
-  <div className="flex items-center justify-between">
-    <a href="/" className="text-2xl font-light tracking-widest text-white -mt-10 ml-[-0.7rem]">
-      <i className="fa fa-home fa-1x" aria-hidden="true"></i>
-    </a>
-    <div className="flex justify-end flex-1">
-      <a href="/#work" className="mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
-        <span className="relative">Portfolio</span>
-      </a>
-      <a href="/#services" className="mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
-        <span className="relative">Services</span>
-      </a>
-      <a href="/#about" className="mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
-        <span className="relative">About</span>
-      </a>
-      <a href="/#contact" className="mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
-        <span className="relative">Contact</span>
-      </a>
-      <a href="#" className="mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
-        <span className="relative">Shop</span>
-      </a>
-    </div>
-  </div>
-</nav>
-
-      </header>
-
-    <section id="home" className="relative flex min-h-screen items-center">
-        <div aria-hidden="true" className="absolute inset-0 z-[1] bg-gradient-to-b from-black/10 via-black/20 to-black"></div>
-        <picture>
-          <source srcSet="/cover5-mobile.jpg" media="(max-width: 600px)"/>
-          <source srcSet="/cover5desktop.jpg" media="(min-width: 601px)"/>
-          <img src="/cover5desktop.jpg" alt="Julie Jpg main pic" className="fixed inset-0 h-full w-full object-cover"/>
-        </picture>           
-        <div className="relative z-10 mx-auto max-w-7xl px-6 pt-0 lg:px-12 xl:px-6 2xl:px-0">
-            <div className="pb-12 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-12">
-                <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0"style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>Art For Purchase</h1>
+        <nav className="2lg:px-12 mx-auto max-w-7xl px-6 py-12 lg:px-12 xl:px-6 2xl:px-0">
+          <div className="flex items-center justify-between">
+            <a href="/" className="text-2xl font-light tracking-widest text-white -mt-10 ml-[-0.7rem]">
+              <i className="fa fa-home fa-1x" aria-hidden="true"></i>
+            </a>
+            <div className="flex justify-end flex-1">
+              <a href="/#work" className="mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
+                <span className="relative">Portfolio</span>
+              </a>
+              <a href="/#services" className="mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
+                <span className="relative">Services</span>
+              </a>
+              <a href="/#about" className="mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
+                <span className="relative">About</span>
+              </a>
+              <a href="/#contact" className="mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
+                <span className="relative">Contact</span>
+              </a>
+              <a href="#" className="mr-[0.5rem] relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 -mt-10">
+                <span className="relative">Shop</span>
+              </a>
             </div>
-        </div>
-    </section>
-    <section id="work" className="relative bg-black pb-20 pt-32 md:pb-0 lg:pb-32 xl:pt-96 flex justify-center">
-
-<div className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-black px-2">
-      {products.map(product => (
-        <div key={product.id} className="p-4 border border-gray-300 rounded shadow-md bg-white">
-          <h2 className="text-2xl font-bold mb-2 text-gray-800">{product.name}</h2>
-          <div className="min-h-[8.25rem] overflow-hidden">
-  <p className="mb-4 text-gray-600 line-clamp-3">{product.custom_summary}</p>
-</div>
-
-          <img src={product.preview_url} alt={product.name} className="w-full h-[200px] object-cover rounded"/>
-          <div className="flex justify-between items-center mt-4">
-            <p className="text-lg font-semibold text-gray-900">Price: {product.formatted_price}</p>
-            <a href={product.short_url} className="text-blue-500 hover:underline">Purchase</a>
           </div>
-        </div>
-      ))}
-    </div>
-          
-    </section>
-        {/* <div>
-          <h2 className="text-3xl text-white xl:text-6xl" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>Conditions</h2>
-        </div> */}
+        </nav>
+      </header>
+      <section id="home" className="relative flex min-h-screen items-center">
+          <div aria-hidden="true" className="absolute inset-0 z-[1] bg-gradient-to-b from-black/10 via-black/20 to-black"></div>
+          <picture>
+            <source srcSet="/cover5-mobile.jpg" media="(max-width: 600px)"/>
+            <source srcSet="/cover5desktop.jpg" media="(min-width: 601px)"/>
+            <img src="/cover5desktop.jpg" alt="Julie Jpg main pic" className="fixed inset-0 h-full w-full object-cover"/>
+          </picture>           
+          <div className="relative z-10 mx-auto max-w-7xl px-6 pt-0 lg:px-12 xl:px-6 2xl:px-0">
+              <div className="pb-12 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-12">
+                  <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0"style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>Art For Purchase<p style={{fontSize:'0.4em'}}>Coming Soon...</p></h1>
+              </div>
+          </div>
+      </section>
+      {/* <section id="work" className="relative bg-black pb-20 pt-32 md:pb-0 lg:pb-32 xl:pt-96 flex justify-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-black px-2">
+          {products.map(product => (
+            <div key={product.id} className="p-4 border border-gray-300 rounded shadow-md bg-white">
+              <h2 className="text-2xl font-bold mb-2 text-gray-800">{product.name}</h2>
+              <div className="min-h-[8.25rem] overflow-hidden">
+                <p className="mb-4 text-gray-600 line-clamp-3">{product.custom_summary}</p>
+              </div>
+              <img src={product.preview_url} alt={product.name} className="w-full h-[200px] object-cover rounded"/>
+              <div className="flex justify-between items-center mt-4">
+                <p className="text-lg font-semibold text-gray-900">Price: {product.formatted_price}</p>
+                <a href={product.short_url} className="text-blue-500 hover:underline">Purchase</a>
+              </div>
+            </div>
+          ))}
+        </div> 
+      </section> */}
+          {/* <div>
+            <h2 className="text-3xl text-white xl:text-6xl" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>Conditions</h2>
+          </div> */}
     </main>
 
-        <footer className="relative bg-black pt-32 backdrop-opacity-0">
+    <footer className="relative bg-black pt-32 backdrop-opacity-0">
         <div className="mx-auto max-w-7xl px-6 pb-12 lg:px-12 xl:px-6 2xl:px-0">
             <div>
                 <div className="flex flex-wrap items-center gap-6">

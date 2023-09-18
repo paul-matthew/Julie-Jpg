@@ -806,10 +806,10 @@ function ShopRoute() {
     });
   }, []), /* @__PURE__ */ import_react7.default.createElement("div", {
     className: "bg-black"
-  }, /* @__PURE__ */ import_react7.default.createElement("head", null, /* @__PURE__ */ import_react7.default.createElement("link", {
+  }, /* @__PURE__ */ import_react7.default.createElement("link", {
     href: "https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap",
     rel: "stylesheet"
-  })), /* @__PURE__ */ import_react7.default.createElement("main", {
+  }), /* @__PURE__ */ import_react7.default.createElement("main", {
     className: "background relative"
   }, /* @__PURE__ */ import_react7.default.createElement("header", {
     className: "fixed top-0 z-20 w-full"
@@ -876,32 +876,9 @@ function ShopRoute() {
     "data-rellax-mobile-speed": "0",
     className: "rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0",
     style: { fontFamily: "Marcellus, serif", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
-  }, "Art For Purchase")))), /* @__PURE__ */ import_react7.default.createElement("section", {
-    id: "work",
-    className: "relative bg-black pb-20 pt-32 md:pb-0 lg:pb-32 xl:pt-96 flex justify-center"
-  }, /* @__PURE__ */ import_react7.default.createElement("div", {
-    className: "grid grid-cols-2 md:grid-cols-4 gap-4 bg-black px-2"
-  }, products.map((product) => /* @__PURE__ */ import_react7.default.createElement("div", {
-    key: product.id,
-    className: "p-4 border border-gray-300 rounded shadow-md bg-white"
-  }, /* @__PURE__ */ import_react7.default.createElement("h2", {
-    className: "text-2xl font-bold mb-2 text-gray-800"
-  }, product.name), /* @__PURE__ */ import_react7.default.createElement("div", {
-    className: "min-h-[8.25rem] overflow-hidden"
-  }, /* @__PURE__ */ import_react7.default.createElement("p", {
-    className: "mb-4 text-gray-600 line-clamp-3"
-  }, product.custom_summary)), /* @__PURE__ */ import_react7.default.createElement("img", {
-    src: product.preview_url,
-    alt: product.name,
-    className: "w-full h-[200px] object-cover rounded"
-  }), /* @__PURE__ */ import_react7.default.createElement("div", {
-    className: "flex justify-between items-center mt-4"
-  }, /* @__PURE__ */ import_react7.default.createElement("p", {
-    className: "text-lg font-semibold text-gray-900"
-  }, "Price: ", product.formatted_price), /* @__PURE__ */ import_react7.default.createElement("a", {
-    href: product.short_url,
-    className: "text-blue-500 hover:underline"
-  }, "Purchase"))))))), /* @__PURE__ */ import_react7.default.createElement("footer", {
+  }, "Art For Purchase", /* @__PURE__ */ import_react7.default.createElement("p", {
+    style: { fontSize: "0.4em" }
+  }, "Coming Soon...")))))), /* @__PURE__ */ import_react7.default.createElement("footer", {
     className: "relative bg-black pt-32 backdrop-opacity-0"
   }, /* @__PURE__ */ import_react7.default.createElement("div", {
     className: "mx-auto max-w-7xl px-6 pb-12 lg:px-12 xl:px-6 2xl:px-0"
@@ -981,7 +958,7 @@ function ShopRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "a88238e3", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-26AUFPPZ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-2UXAQD3D.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-V27CJEOB.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-33EZ72O5.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-A88238E3.js" };
+var assets_manifest_default = { version: "0e4b0204", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-26AUFPPZ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-2UXAQD3D.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-V27CJEOB.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-J3PZ4EXI.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-0E4B0204.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
