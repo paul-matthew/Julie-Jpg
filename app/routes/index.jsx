@@ -295,7 +295,7 @@ export default function HomeRoute() {
                       <p className="text-4xl lg:text-6xl font-light text-black">Illustrator & Acrylic Painter</p>
                       <hr className="border-black my-4" />
                       <p className="text-base lg:text-xl font-light text-black">
-                        Hey! I’m Julie Jpeg, a Toronto-based Visual Artist. My journey began at the young age of 4 when I brought a pencil and piece of paper together at school. The creativity hasn’t stopped since. Inspired by pop culture, black culture, and nature-esque views, I bring my ideas to life one canvas at a time. Please join me as I invite you to experience the power of art through my lens.
+                        Hey! I’m Julie Jpeg, a Toronto-based Visual Artist. My journey began at the young age of 4 when I brought a pencil and piece of paper together at school. The creativity hasn’t stopped since. Inspired by pop culture, black culture, and landscape views, I bring my ideas to life one canvas at a time. Please join me as I invite you to experience the power of art through my lens.
                       </p>
                     </div>
                   </div>
@@ -350,7 +350,7 @@ export default function HomeRoute() {
           <ul className="bg-white">
             <li className="py-8 text-left border px-4 m-0">
               <div className="flex items-start">
-                <img className="block h-10 w-10 max-w-full flex-shrink-0 rounded-full align-middle" src="./pb.jpg" alt="" />
+                <img className="block h-10 w-10 max-w-full flex-shrink-0 rounded-full align-middle" src="./dog.jpg" alt="" />
                 <div className="ml-6">
                   <div className="flex items-center">
                     <svg className="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -369,9 +369,9 @@ export default function HomeRoute() {
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" className=""></path>
                     </svg>
                   </div>
-                  <p className="mt-5 text-base text-gray-900">Julie's painting exceeded my expectations; I'm thoroughly satisfied with the purchase. A stunning masterpiece that captivates with its beauty.</p>
-                  <p className="mt-5 text-sm font-bold text-gray-900">Matthew</p>
-                  <p className="mt-1 text-sm text-gray-600">May 13, 2023</p>
+                  <p className="mt-5 text-base text-gray-900">Thank you to Julie for the beautiful piece created for my Friend. I asked for Julie to sketch a piece of my Friends dog who passed away, upon gifting her the completed piece she was in tears. The detail represented Jaspar so well, and is now placed on the wall for the Family to see, and remember the moments they had. Truly a masterpiece.</p>
+                  <p className="mt-5 text-sm font-bold text-gray-900">Anonymous</p>
+                  <p className="mt-1 text-sm text-gray-600">Sept 17, 2023</p>
                 </div>
               </div>
             </li>

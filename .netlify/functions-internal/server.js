@@ -560,7 +560,7 @@ function HomeRoute2() {
     className: "border-black my-4"
   }), /* @__PURE__ */ import_react5.default.createElement("p", {
     className: "text-base lg:text-xl font-light text-black"
-  }, "Hey! I\u2019m Julie Jpeg, a Toronto-based Visual Artist. My journey began at the young age of 4 when I brought a pencil and piece of paper together at school. The creativity hasn\u2019t stopped since. Inspired by pop culture, black culture, and nature-esque views, I bring my ideas to life one canvas at a time. Please join me as I invite you to experience the power of art through my lens.")))))))), /* @__PURE__ */ import_react5.default.createElement("section", {
+  }, "Hey! I\u2019m Julie Jpeg, a Toronto-based Visual Artist. My journey began at the young age of 4 when I brought a pencil and piece of paper together at school. The creativity hasn\u2019t stopped since. Inspired by pop culture, black culture, and landscape views, I bring my ideas to life one canvas at a time. Please join me as I invite you to experience the power of art through my lens.")))))))), /* @__PURE__ */ import_react5.default.createElement("section", {
     id: "contact",
     className: "relative bg-black pb-20 pt-12"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
@@ -646,7 +646,7 @@ function HomeRoute2() {
     className: "flex items-start"
   }, /* @__PURE__ */ import_react5.default.createElement("img", {
     className: "block h-10 w-10 max-w-full flex-shrink-0 rounded-full align-middle",
-    src: "./pb.jpg",
+    src: "./dog.jpg",
     alt: ""
   }), /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "ml-6"
@@ -694,11 +694,11 @@ function HomeRoute2() {
     className: ""
   }))), /* @__PURE__ */ import_react5.default.createElement("p", {
     className: "mt-5 text-base text-gray-900"
-  }, "Julie's painting exceeded my expectations; I'm thoroughly satisfied with the purchase. A stunning masterpiece that captivates with its beauty."), /* @__PURE__ */ import_react5.default.createElement("p", {
+  }, "Thank you to Julie for the beautiful piece created for my Friend. I asked for Julie to sketch a piece of my Friends dog who passed away, upon gifting her the completed piece she was in tears. The detail represented Jaspar so well, and is now placed on the wall for the Family to see, and remember the moments they had. Truly a masterpiece."), /* @__PURE__ */ import_react5.default.createElement("p", {
     className: "mt-5 text-sm font-bold text-gray-900"
-  }, "Matthew"), /* @__PURE__ */ import_react5.default.createElement("p", {
+  }, "Anonymous"), /* @__PURE__ */ import_react5.default.createElement("p", {
     className: "mt-1 text-sm text-gray-600"
-  }, "May 13, 2023")))))))), /* @__PURE__ */ import_react5.default.createElement("footer", {
+  }, "Sept 17, 2023")))))))), /* @__PURE__ */ import_react5.default.createElement("footer", {
     className: "relative bg-black pt-32 backdrop-opacity-0"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "mx-auto max-w-7xl px-6 pb-12 lg:px-12 xl:px-6 2xl:px-0"
@@ -981,7 +981,7 @@ function ShopRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "cae35d35", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-26AUFPPZ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-2UXAQD3D.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-ZQROQSUX.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-33EZ72O5.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-CAE35D35.js" };
+var assets_manifest_default = { version: "a88238e3", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-26AUFPPZ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-2UXAQD3D.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-V27CJEOB.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-33EZ72O5.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-A88238E3.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
