@@ -83,6 +83,7 @@ export default function HomeRoute() {
   return (
     <div className="bg-black">
       <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet" />
       <main className="background relative">
         <header className="fixed top-0 z-20 w-full">
           <nav className="2lg:px-12 mx-auto max-w-7xl px-6 py-12 lg:px-12 xl:px-6 2xl:px-0">
@@ -98,7 +99,7 @@ export default function HomeRoute() {
             <div
               className="flex flex-wrap items-center gap-6"
             >
-              <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{ fontFamily: 'Covered by Your Grace', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', }}>
+              <h2 className="text-7xl font-bold text-white xl:text-8xl" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>
                 Full Portfolio
               </h2>
               <span className="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">
@@ -141,7 +142,7 @@ export default function HomeRoute() {
                 <img className="h-8 w-auto brightness-200" src="/empresspaint.png" alt="logo mark" width="100" height="100" />
               </a>
               <div className="flex flex-wrap justify-between gap-3">
-                <span className="text-sm text-white/50">&copy; Radiant 2021 - Present</span>
+                <span className="text-sm text-white/50">&copy; Julie JPEG 2023.  All rights reserved.</span>
                 <span className="text-sm text-white/50"><a href="https://www.pmdaybreak.com" className="text-white">PM Daybreak Designs</a> via Tailus in Lubumbashi </span>
               </div>
             </div>

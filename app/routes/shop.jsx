@@ -121,6 +121,7 @@ useEffect(() => {
   return (
     <div className="bg-black">
       <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet" />
     <main className="background relative">
       <header className="fixed top-0 z-20 w-full">
         <nav className="2lg:px-12 mx-auto max-w-7xl px-6 py-12 lg:px-12 xl:px-6 2xl:px-0">
@@ -157,7 +158,7 @@ useEffect(() => {
           </picture>           
           <div className="relative z-10 mx-auto max-w-7xl px-6 pt-0 lg:px-12 xl:px-6 2xl:px-0">
               <div className="pb-12 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-12">
-                  <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0"style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>Art For Purchase<p style={{fontSize:'0.4em'}}>Coming Soon...</p></h1>
+                  <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" className="rellax text-6xl text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0"style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>Art For Purchase<p style={{fontSize:'0.4em'}}>Coming Soon...</p></h1>
               </div>
           </div>
       </section>
@@ -211,7 +212,7 @@ useEffect(() => {
                         <img className="h-8 w-auto brightness-200" src="/empresspaint.png" alt="logo mark" width="100" height="100" />
                     </a>
                     <div className="flex flex-wrap justify-between gap-3">
-                        <span className="text-sm text-white/50">&copy; Radiant 2021 - Present</span>
+                        <span className="text-sm text-white/50">&copy; Julie JPEG 2023.  All rights reserved.</span>
                         <span className="text-sm text-white/50"><a href="pmdaybreak.com" className="text-white">PM Daybreak Designs</a> via Tailus in Lubumbashi </span>
                     </div>
                 </div>

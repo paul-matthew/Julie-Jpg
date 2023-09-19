@@ -204,6 +204,9 @@ function HomeRoute() {
   }, /* @__PURE__ */ import_react3.default.createElement("link", {
     href: "https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap",
     rel: "stylesheet"
+  }), /* @__PURE__ */ import_react3.default.createElement("link", {
+    href: "https://fonts.googleapis.com/css2?family=Marcellus&display=swap",
+    rel: "stylesheet"
   }), /* @__PURE__ */ import_react3.default.createElement("main", {
     className: "background relative"
   }, /* @__PURE__ */ import_react3.default.createElement("header", {
@@ -228,7 +231,7 @@ function HomeRoute() {
     className: "flex flex-wrap items-center gap-6"
   }, /* @__PURE__ */ import_react3.default.createElement("h2", {
     className: "text-7xl font-bold text-white xl:text-8xl",
-    style: { fontFamily: "Covered by Your Grace", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
+    style: { fontFamily: "Marcellus, serif", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
   }, "Full Portfolio"), /* @__PURE__ */ import_react3.default.createElement("span", {
     className: "h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white"
   }, info.length, " Projects")), /* @__PURE__ */ import_react3.default.createElement("div", {
@@ -304,7 +307,7 @@ function HomeRoute() {
     className: "flex flex-wrap justify-between gap-3"
   }, /* @__PURE__ */ import_react3.default.createElement("span", {
     className: "text-sm text-white/50"
-  }, "\xA9 Radiant 2021 - Present"), /* @__PURE__ */ import_react3.default.createElement("span", {
+  }, "\xA9 Julie JPEG 2023.  All rights reserved."), /* @__PURE__ */ import_react3.default.createElement("span", {
     className: "text-sm text-white/50"
   }, /* @__PURE__ */ import_react3.default.createElement("a", {
     href: "https://www.pmdaybreak.com",
@@ -766,7 +769,7 @@ function HomeRoute2() {
     className: "flex flex-wrap justify-between gap-3"
   }, /* @__PURE__ */ import_react5.default.createElement("span", {
     className: "text-sm text-white/50"
-  }, "\xA9 Radiant 2021 - Present"), /* @__PURE__ */ import_react5.default.createElement("span", {
+  }, "\xA9 Julie JPEG 2023.  All rights reserved."), /* @__PURE__ */ import_react5.default.createElement("span", {
     className: "text-sm text-white/50"
   }, /* @__PURE__ */ import_react5.default.createElement("a", {
     href: "https://www.pmdaybreak.com",
@@ -808,6 +811,9 @@ function ShopRoute() {
     className: "bg-black"
   }, /* @__PURE__ */ import_react7.default.createElement("link", {
     href: "https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap",
+    rel: "stylesheet"
+  }), /* @__PURE__ */ import_react7.default.createElement("link", {
+    href: "https://fonts.googleapis.com/css2?family=Marcellus&display=swap",
     rel: "stylesheet"
   }), /* @__PURE__ */ import_react7.default.createElement("main", {
     className: "background relative"
@@ -874,7 +880,7 @@ function ShopRoute() {
     "data-rellax-speed": "-3",
     "data-rellax-xs-speed": "0",
     "data-rellax-mobile-speed": "0",
-    className: "rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0",
+    className: "rellax text-6xl text-white sm:text-8xl md:text-9xl xl:leading-tight sm:mt-40 md:mt-66 lg:mt-54 xl:mt-0 2xl:mt-0",
     style: { fontFamily: "Marcellus, serif", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }
   }, "Art For Purchase", /* @__PURE__ */ import_react7.default.createElement("p", {
     style: { fontSize: "0.4em" }
@@ -945,7 +951,7 @@ function ShopRoute() {
     className: "flex flex-wrap justify-between gap-3"
   }, /* @__PURE__ */ import_react7.default.createElement("span", {
     className: "text-sm text-white/50"
-  }, "\xA9 Radiant 2021 - Present"), /* @__PURE__ */ import_react7.default.createElement("span", {
+  }, "\xA9 Julie JPEG 2023.  All rights reserved."), /* @__PURE__ */ import_react7.default.createElement("span", {
     className: "text-sm text-white/50"
   }, /* @__PURE__ */ import_react7.default.createElement("a", {
     href: "pmdaybreak.com",
@@ -958,7 +964,7 @@ function ShopRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "0e4b0204", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-26AUFPPZ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-2UXAQD3D.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-V27CJEOB.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-J3PZ4EXI.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-0E4B0204.js" };
+var assets_manifest_default = { version: "f2be8eb0", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-26AUFPPZ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-VVQPLDUX.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-WVZLLZNW.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-4D2QOY7M.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-F2BE8EB0.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
