@@ -213,7 +213,7 @@ useEffect(() => {
                     </a>
                     <div className="flex flex-wrap justify-between gap-3">
                         <span className="text-sm text-white/50">&copy; Julie JPEG 2023.  All rights reserved.</span>
-                        <span className="text-sm text-white/50"><a href="pmdaybreak.com" className="text-white">PM Daybreak Designs</a> via Tailus in Lubumbashi </span>
+                        <span className="text-sm text-white/50"><a href="https://pmdaybreak.com/" className="text-white">PM Daybreak Designs</a> via Tailus in Lubumbashi </span>
                     </div>
                 </div>
             </div>
