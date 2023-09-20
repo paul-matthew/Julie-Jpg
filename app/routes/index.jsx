@@ -179,7 +179,7 @@ export default function HomeRoute() {
             </div>
             <div>
               <div className="md:w-1/3 md:pt-2 lg:w-1/2">
-                <p className="mb-0 text-lg font-light text-white sm:text-2xl xl:leading-normal">Original & custom artwork</p>
+                <p className="mb-0 text-lg font-light text-white sm:text-2xl xl:leading-normal">Original & Custom Artwork</p>
                 <a href="#work" className="relative inline-block py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10">
                   <span className="relative">See my work</span>
                 </a>
