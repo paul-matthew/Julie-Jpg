@@ -170,6 +170,7 @@ const testimonials = [
     stars: 5,
   },
   {
+    imageSrc: './empress-icon.png',
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
     author: "XX O.",
@@ -500,6 +501,16 @@ useEffect(() => {
         </div>
       </footer>
       <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossOrigin="anonymous"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-BD49HNJ1SZ"></script>
+      <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-BD49HNJ1SZ');
+        `}
+      </script>
     </div>
   );
 }
