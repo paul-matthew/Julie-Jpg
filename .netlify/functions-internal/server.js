@@ -97,7 +97,7 @@ init_react();
 var import_node = require("@remix-run/node"), import_react2 = require("@remix-run/react");
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-CIBUMDKJ.css";
+var app_default = "/build/_assets/app-VTKTCFSR.css";
 
 // app/root.jsx
 var meta = () => ({
@@ -388,7 +388,7 @@ function HomeRoute2() {
     opacity: 1,
     transition: "transform 0.5s ease, opacity 0.5s ease"
   }, slideOutStyle = {
-    transform: "translateX(-100%)",
+    transform: "translateX(-200%)",
     opacity: 1,
     transition: "transform 0.5s ease, opacity 0.5s ease"
   }, testimonials = [
@@ -407,16 +407,16 @@ function HomeRoute2() {
       stars: 5
     },
     {
-      imageSrc: "./empress-icon.png",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-      author: "XX O.",
+      imageSrc: "./kim.jpg",
+      content: "Julienne\u2019s eye for flare and creativity is the reason I chose her to create a unique piece of art for me. I provided her some inspiration pieces to work with and she created a portrait that I enjoy til this day. She\u2019s well versed with various styles of painting & drawing, and I can\u2019t wait to have her help me create more pieces in the future for my space.",
+      author: "Laura O.",
       date: "Sept 20, 2023",
       stars: 5
     },
     {
-      imageSrc: "./empress-icon.png",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-      author: "XX O.",
+      imageSrc: "./wednesday.jpg",
+      content: "Had the pleasure of working with Julienne for a logo I wanted to create for my streaming page. I gave her the blueprint and she was able to bring it to life exactly how I pictured it in my head. Not only is she talented but also humble and professional with her craft. It was an extreme pleasure having work with her and continue to be impressed with how she grows as a creative.",
+      author: "Kasean",
       date: "Sept 20, 2023",
       stars: 5
     }
@@ -726,15 +726,15 @@ function HomeRoute2() {
       alt: testimonial.author
     }), /* @__PURE__ */ import_react5.default.createElement("div", {
       className: "ml-6"
-    }, /* @__PURE__ */ import_react5.default.createElement("p", {
+    }, /* @__PURE__ */ import_react5.default.createElement("div", {
+      className: "mt-2"
+    }, renderStars(testimonial.stars)), /* @__PURE__ */ import_react5.default.createElement("p", {
       className: "mt-5 text-base text-gray-900"
     }, testimonial.content), /* @__PURE__ */ import_react5.default.createElement("p", {
       className: "mt-5 text-sm font-bold text-gray-900"
     }, testimonial.author), /* @__PURE__ */ import_react5.default.createElement("p", {
       className: "mt-1 text-sm text-gray-600"
-    }, testimonial.date), /* @__PURE__ */ import_react5.default.createElement("div", {
-      className: "mt-2"
-    }, renderStars(testimonial.stars)))));
+    }, testimonial.date))));
   }))))), /* @__PURE__ */ import_react5.default.createElement("footer", {
     className: "relative bg-black pt-32 backdrop-opacity-0"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
@@ -1007,7 +1007,7 @@ function ShopRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "fe5df404", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-ASIVK4G3.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-FVO6KZKU.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-M2GSVBTE.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-YQA4WDNB.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-FE5DF404.js" };
+var assets_manifest_default = { version: "28ec817d", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-IZTSX7D2.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-FVO6KZKU.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-7JQFXT76.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-YQA4WDNB.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-28EC817D.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

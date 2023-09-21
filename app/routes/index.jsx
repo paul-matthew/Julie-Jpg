@@ -138,7 +138,7 @@ const slideInStyle = {
 };
 
 const slideOutStyle = {
-  transform: 'translateX(-100%)',
+  transform: 'translateX(-200%)',
   opacity: 1,
   transition: 'transform 0.5s ease, opacity 0.5s ease',
 };
@@ -162,18 +162,18 @@ const testimonials = [
     stars: 5,
   },
   {
-    imageSrc: './empress-icon.png',
+    imageSrc: './kim.jpg',
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    author: "XX O.",
+      "Julienne’s eye for flare and creativity is the reason I chose her to create a unique piece of art for me. I provided her some inspiration pieces to work with and she created a portrait that I enjoy til this day. She’s well versed with various styles of painting & drawing, and I can’t wait to have her help me create more pieces in the future for my space.",
+    author: "Laura O.",
     date: "Sept 20, 2023",
     stars: 5,
   },
   {
-    imageSrc: './empress-icon.png',
+    imageSrc: './wednesday.jpg',
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    author: "XX O.",
+      "Had the pleasure of working with Julienne for a logo I wanted to create for my streaming page. I gave her the blueprint and she was able to bring it to life exactly how I pictured it in my head. Not only is she talented but also humble and professional with her craft. It was an extreme pleasure having work with her and continue to be impressed with how she grows as a creative.",
+    author: "Kasean",
     date: "Sept 20, 2023",
     stars: 5,
   },
@@ -450,10 +450,10 @@ useEffect(() => {
                 alt={testimonial.author}
               />
               <div className="ml-6">
+              <div className="mt-2">{renderStars(testimonial.stars)}</div>
                 <p className="mt-5 text-base text-gray-900">{testimonial.content}</p>
                 <p className="mt-5 text-sm font-bold text-gray-900">{testimonial.author}</p>
                 <p className="mt-1 text-sm text-gray-600">{testimonial.date}</p>
-                <div className="mt-2">{renderStars(testimonial.stars)}</div>
               </div>
             </div>
           </li>
