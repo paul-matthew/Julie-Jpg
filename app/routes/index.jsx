@@ -146,7 +146,7 @@ const slideOutStyle = {
 
 const testimonials = [
   {
-    imageSrc: './dogb.jpg',
+    imageSrc: './empress-icon.png',
     content:
       "Thank you to Julie for the beautiful piece created for my Friend. I asked for Julie to sketch a piece of my Friends dog who passed away, upon gifting her the completed piece she was in tears. The detail represented Jaspar so well, and is now placed on the wall for the Family to see, and remember the moments they had. Truly a masterpiece.",
     author: "Anonymous",
@@ -162,7 +162,7 @@ const testimonials = [
     stars: 5,
   },
   {
-    imageSrc: './kim.jpg',
+    imageSrc: './empress-icon.png',
     content:
       "Julienne’s eye for flare and creativity is the reason I chose her to create a unique piece of art for me. I provided her some inspiration pieces to work with and she created a portrait that I enjoy til this day. She’s well versed with various styles of painting & drawing, and I can’t wait to have her help me create more pieces in the future for my space.",
     author: "Laura O.",
@@ -170,7 +170,7 @@ const testimonials = [
     stars: 5,
   },
   {
-    imageSrc: './wednesday.jpg',
+    imageSrc: './empress-icon.png',
     content:
       "Had the pleasure of working with Julienne for a logo I wanted to create for my streaming page. I gave her the blueprint and she was able to bring it to life exactly how I pictured it in my head. Not only is she talented but also humble and professional with her craft. It was an extreme pleasure having work with her and continue to be impressed with how she grows as a creative.",
     author: "Kasean",
