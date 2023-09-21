@@ -1,8 +1,15 @@
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-var __getOwnPropNames = Object.getOwnPropertyNames;
-var __getProtoOf = Object.getPrototypeOf, __hasOwnProp = Object.prototype.hasOwnProperty;
+var __getOwnPropNames = Object.getOwnPropertyNames, __getOwnPropSymbols = Object.getOwnPropertySymbols, __getProtoOf = Object.getPrototypeOf, __hasOwnProp = Object.prototype.hasOwnProperty, __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: !0, configurable: !0, writable: !0, value }) : obj[key] = value, __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    __hasOwnProp.call(b, prop) && __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b))
+      __propIsEnum.call(b, prop) && __defNormalProp(a, prop, b[prop]);
+  return a;
+};
 var __markAsModule = (target) => __defProp(target, "__esModule", { value: !0 });
 var __esm = (fn, res) => function() {
   return fn && (res = (0, fn[__getOwnPropNames(fn)[0]])(fn = 0)), res;
@@ -90,7 +97,7 @@ init_react();
 var import_node = require("@remix-run/node"), import_react2 = require("@remix-run/react");
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-WJBJSYIG.css";
+var app_default = "/build/_assets/app-CIBUMDKJ.css";
 
 // app/root.jsx
 var meta = () => ({
@@ -267,14 +274,14 @@ function HomeRoute() {
     width: "2000",
     height: "1333"
   })), /* @__PURE__ */ import_react3.default.createElement("a", {
-    href: "https://www.instagram.com/p/CNst7BmBp63/",
+    href: "https://www.instagram.com/p/CU8LaXAlNOr/?img_index=1",
     target: "_blank",
     className: "relative before:absolute before:inset-0 before:origin-top before:bg-gradient-to-t before:from-black/5 before:opacity-50 before:backdrop-grayscale before:transition before:duration-500 hover:before:origin-bottom hover:before:scale-y-0"
   }, /* @__PURE__ */ import_react3.default.createElement("span", {
     className: "sr-only"
   }, "Instagram feed"), /* @__PURE__ */ import_react3.default.createElement("img", {
     className: "transition duration-500",
-    src: "/ig2.jpg",
+    src: "/ig4.jpg",
     alt: "insta feed cover",
     width: "2000",
     height: "1334"
@@ -367,8 +374,51 @@ function HomeRoute2() {
     startIndex + itemsPerPage < info.length && (setStartIndex(startIndex + itemsPerPage), scrollToSection());
   }, scrollToSection = () => {
     sectionRef.current.scrollIntoView({ behavior: "smooth" });
-  }, displayedItems = info.slice(startIndex, startIndex + itemsPerPage), isFirstPage = startIndex === 0, isLastPage = startIndex + itemsPerPage >= info.length;
-  return /* @__PURE__ */ import_react5.default.createElement("div", {
+  }, displayedItems = info.slice(startIndex, startIndex + itemsPerPage), isFirstPage = startIndex === 0, isLastPage = startIndex + itemsPerPage >= info.length, slideInStyle = {
+    transform: "translateX(0%)",
+    opacity: 1,
+    transition: "transform 0.5s ease, opacity 0.5s ease"
+  }, slideOutStyle = {
+    transform: "translateX(-100%)",
+    opacity: 1,
+    transition: "transform 0.5s ease, opacity 0.5s ease"
+  }, testimonials = [
+    {
+      imageSrc: "./dogb.jpg",
+      content: "Thank you to Julie for the beautiful piece created for my Friend. I asked for Julie to sketch a piece of my Friends dog who passed away, upon gifting her the completed piece she was in tears. The detail represented Jaspar so well, and is now placed on the wall for the Family to see, and remember the moments they had. Truly a masterpiece.",
+      author: "Anonymous",
+      date: "Sept 17, 2023",
+      stars: 5
+    },
+    {
+      imageSrc: "./empress-icon.png",
+      content: "Words can\u2019t describe how beautifully Jules captured the beauty and essence of my late mother in the portrait she drew for me. The amount of detail Jules added brought me to tears when I first saw it. My mother is fondly remembered for her eyes and bright smile and these physical features really shined through in Jules\u2019 work. It\u2019s truly an amazing reminder of my mother\u2019s elegance and grace. Losing my mother has not been easy but I\u2019m thankful I have something timeless to remember her by. Thank you Jules \u2764\uFE0F",
+      author: "Vanessa O.",
+      date: "Sept 19, 2023",
+      stars: 5
+    },
+    {
+      imageSrc: "./empress-icon.png",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      author: "XX O.",
+      date: "Sept 20, 2023",
+      stars: 5
+    },
+    {
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      author: "XX O.",
+      date: "Sept 20, 2023",
+      stars: 5
+    }
+  ], [currentTestimonialIndex, setCurrentTestimonialIndex] = (0, import_react5.useState)(0);
+  return (0, import_react5.useEffect)(() => {
+    let interval = setInterval(() => {
+      setCurrentTestimonialIndex((prevIndex) => prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1);
+    }, 1e4);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []), /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "bg-black"
   }, /* @__PURE__ */ import_react5.default.createElement("link", {
     href: "https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap",
@@ -505,7 +555,7 @@ function HomeRoute2() {
     className: "mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8"
   }, /* @__PURE__ */ import_react5.default.createElement("p", {
     className: "max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-l"
-  }, "Offering personalized and captivating artwork commissions, my service brings your creative vision to life, ensuring a unique and meaningful piece tailored exclusively for you.")))), /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("div", {
+  }, "Creating personalized and captivating artwork commissions, my service brings your vision to life, ensuring a unique and meaningful piece tailored exclusively for you.")))), /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "group border-b border-white/30 pb-8"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "flex flex-col gap-4 divide-y divide-white/30"
@@ -515,7 +565,7 @@ function HomeRoute2() {
     className: "mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8"
   }, /* @__PURE__ */ import_react5.default.createElement("p", {
     className: "max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-l"
-  }, " I offer a captivating and interactive experience where art comes to life before your eyes, adding a touch of creativity and excitement to any occasion.")))), /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("div", {
+  }, "I offer a fun and interactive experience where art comes to life right before your eyes, adding joy and excitement to any occasion.")))), /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "group border-b border-white/30 pb-8"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "flex flex-col gap-4 divide-y divide-white/30"
@@ -525,7 +575,7 @@ function HomeRoute2() {
     className: "mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8"
   }, /* @__PURE__ */ import_react5.default.createElement("p", {
     className: "max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-l"
-  }, "Discover a captivating showcase of my artistic creations in the 'Exhibit' section, where my work takes center stage, inviting you to immerse yourself in a world of visual storytelling and creative expression.")))))))), /* @__PURE__ */ import_react5.default.createElement("div", {
+  }, "In-person events where my work takes centre stage.  Inviting you to immerse yourself in a world of visual storytelling, with artwork for purchase available on-site.")))))))), /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "text-center mt-8"
   }, /* @__PURE__ */ import_react5.default.createElement("a", {
     href: "#contact",
@@ -563,7 +613,7 @@ function HomeRoute2() {
     className: "border-black my-4"
   }), /* @__PURE__ */ import_react5.default.createElement("p", {
     className: "text-base lg:text-xl font-light text-black"
-  }, "Hey! I\u2019m Julie Jpeg, a Toronto-based Visual Artist. My journey began at the young age of 4 when I brought a pencil and piece of paper together at school. The creativity hasn\u2019t stopped since. Inspired by pop culture, black culture, and landscape views, I bring my ideas to life one canvas at a time. Please join me as I invite you to experience the power of art through my lens.")))))))), /* @__PURE__ */ import_react5.default.createElement("section", {
+  }, "Hey! I\u2019m Julie Jpeg, a Toronto-based Visual Artist. My journey began at the young age of 4 when I brought a pencil and piece of paper together at school. The creativity hasn\u2019t stopped since. Inspired by pop culture, African culture, and landscape views, I bring my ideas to life one canvas at a time. Please join me as I invite you to experience the power of art through my lens.")))))))), /* @__PURE__ */ import_react5.default.createElement("section", {
     id: "contact",
     className: "relative bg-black pb-20 pt-12"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
@@ -642,66 +692,40 @@ function HomeRoute2() {
   }, "Reviews")), /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "grid gap-6 border-t border-white/30 pt-24 lg:grid-cols-3 lg:gap-24"
   }), /* @__PURE__ */ import_react5.default.createElement("ul", {
-    className: "bg-white"
-  }, /* @__PURE__ */ import_react5.default.createElement("li", {
-    className: "py-8 text-left border px-4 m-0"
-  }, /* @__PURE__ */ import_react5.default.createElement("div", {
-    className: "flex items-start"
-  }, /* @__PURE__ */ import_react5.default.createElement("img", {
-    className: "block h-10 w-10 max-w-full flex-shrink-0 rounded-full align-middle",
-    src: "./dog.jpg",
-    alt: ""
-  }), /* @__PURE__ */ import_react5.default.createElement("div", {
-    className: "ml-6"
-  }, /* @__PURE__ */ import_react5.default.createElement("div", {
-    className: "flex items-center"
-  }, /* @__PURE__ */ import_react5.default.createElement("svg", {
-    className: "block h-6 w-6 align-middle text-yellow-500",
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20 20",
-    fill: "currentColor"
-  }, /* @__PURE__ */ import_react5.default.createElement("path", {
-    d: "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z",
-    className: ""
-  })), /* @__PURE__ */ import_react5.default.createElement("svg", {
-    className: "block h-6 w-6 align-middle text-yellow-500",
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20 20",
-    fill: "currentColor"
-  }, /* @__PURE__ */ import_react5.default.createElement("path", {
-    d: "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z",
-    className: ""
-  })), /* @__PURE__ */ import_react5.default.createElement("svg", {
-    className: "block h-6 w-6 align-middle text-yellow-500",
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20 20",
-    fill: "currentColor"
-  }, /* @__PURE__ */ import_react5.default.createElement("path", {
-    d: "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z",
-    className: ""
-  })), /* @__PURE__ */ import_react5.default.createElement("svg", {
-    className: "block h-6 w-6 align-middle text-yellow-500",
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20 20",
-    fill: "currentColor"
-  }, /* @__PURE__ */ import_react5.default.createElement("path", {
-    d: "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z",
-    className: ""
-  })), /* @__PURE__ */ import_react5.default.createElement("svg", {
-    className: "block h-6 w-6 align-middle text-yellow-500",
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20 20",
-    fill: "currentColor"
-  }, /* @__PURE__ */ import_react5.default.createElement("path", {
-    d: "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z",
-    className: ""
-  }))), /* @__PURE__ */ import_react5.default.createElement("p", {
-    className: "mt-5 text-base text-gray-900"
-  }, "Thank you to Julie for the beautiful piece created for my Friend. I asked for Julie to sketch a piece of my Friends dog who passed away, upon gifting her the completed piece she was in tears. The detail represented Jaspar so well, and is now placed on the wall for the Family to see, and remember the moments they had. Truly a masterpiece."), /* @__PURE__ */ import_react5.default.createElement("p", {
-    className: "mt-5 text-sm font-bold text-gray-900"
-  }, "Anonymous"), /* @__PURE__ */ import_react5.default.createElement("p", {
-    className: "mt-1 text-sm text-gray-600"
-  }, "Sept 17, 2023")))))))), /* @__PURE__ */ import_react5.default.createElement("footer", {
+    className: "bg-white relative overflow-hidden",
+    id: "testimonial-slideshow"
+  }, testimonials.map((testimonial, index) => {
+    let nextIndex = (currentTestimonialIndex + 1) % testimonials.length, opacityClass = index === currentTestimonialIndex || index === nextIndex ? "opacity-100" : "opacity-0 hidden", heightStyle = index === currentTestimonialIndex ? { height: "auto" } : { height: "0", overflow: "hidden" }, renderStars = (count) => {
+      let stars = [];
+      for (let i = 0; i < count; i++)
+        stars.push(/* @__PURE__ */ import_react5.default.createElement("i", {
+          key: i,
+          className: "fas fa-star text-yellow-400"
+        }));
+      return stars;
+    };
+    return /* @__PURE__ */ import_react5.default.createElement("li", {
+      key: index,
+      style: __spreadValues(__spreadValues({}, index === currentTestimonialIndex ? slideInStyle : slideOutStyle), heightStyle),
+      className: `py-8 text-left px-4 m-0 ${opacityClass}`
+    }, /* @__PURE__ */ import_react5.default.createElement("div", {
+      className: "flex items-start"
+    }, /* @__PURE__ */ import_react5.default.createElement("img", {
+      className: "block h-10 w-10 max-w-full flex-shrink-0 rounded-full align-middle",
+      src: testimonial.imageSrc,
+      alt: testimonial.author
+    }), /* @__PURE__ */ import_react5.default.createElement("div", {
+      className: "ml-6"
+    }, /* @__PURE__ */ import_react5.default.createElement("p", {
+      className: "mt-5 text-base text-gray-900"
+    }, testimonial.content), /* @__PURE__ */ import_react5.default.createElement("p", {
+      className: "mt-5 text-sm font-bold text-gray-900"
+    }, testimonial.author), /* @__PURE__ */ import_react5.default.createElement("p", {
+      className: "mt-1 text-sm text-gray-600"
+    }, testimonial.date), /* @__PURE__ */ import_react5.default.createElement("div", {
+      className: "mt-2"
+    }, renderStars(testimonial.stars)))));
+  }))))), /* @__PURE__ */ import_react5.default.createElement("footer", {
     className: "relative bg-black pt-32 backdrop-opacity-0"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "mx-auto max-w-7xl px-6 pb-12 lg:px-12 xl:px-6 2xl:px-0"
@@ -729,14 +753,14 @@ function HomeRoute2() {
     width: "2000",
     height: "1333"
   })), /* @__PURE__ */ import_react5.default.createElement("a", {
-    href: "https://www.instagram.com/p/CNst7BmBp63/",
+    href: "https://www.instagram.com/p/CU8LaXAlNOr/?img_index=1",
     target: "_blank",
     className: "relative before:absolute before:inset-0 before:origin-top before:bg-gradient-to-t before:from-black/5 before:opacity-50 before:backdrop-grayscale before:transition before:duration-500 hover:before:origin-bottom hover:before:scale-y-0"
   }, /* @__PURE__ */ import_react5.default.createElement("span", {
     className: "sr-only"
   }, "Instagram feed"), /* @__PURE__ */ import_react5.default.createElement("img", {
     className: "transition duration-500",
-    src: "/ig2.jpg",
+    src: "/ig4.jpg",
     alt: "insta feed cover",
     width: "2000",
     height: "1334"
@@ -964,7 +988,7 @@ function ShopRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "564bd8e0", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-26AUFPPZ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-VVQPLDUX.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-AQZCZSSZ.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-YQA4WDNB.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-564BD8E0.js" };
+var assets_manifest_default = { version: "203b9a55", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-ASIVK4G3.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-2K6XFFNM.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-XIR2HNBZ.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-YQA4WDNB.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-203B9A55.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

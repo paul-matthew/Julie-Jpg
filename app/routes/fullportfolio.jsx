@@ -126,9 +126,9 @@ export default function HomeRoute() {
                 <span className="sr-only">Instagram feed</span>
                 <img className="transition duration-500" src="/ig1.jpg" alt="insta feed cover" width="2000" height="1333" />
               </a>
-              <a href="https://www.instagram.com/p/CNst7BmBp63/" target="_blank" className="relative before:absolute before:inset-0 before:origin-top before:bg-gradient-to-t before:from-black/5 before:opacity-50 before:backdrop-grayscale before:transition before:duration-500 hover:before:origin-bottom hover:before:scale-y-0">
+              <a href="https://www.instagram.com/p/CU8LaXAlNOr/?img_index=1" target="_blank" className="relative before:absolute before:inset-0 before:origin-top before:bg-gradient-to-t before:from-black/5 before:opacity-50 before:backdrop-grayscale before:transition before:duration-500 hover:before:origin-bottom hover:before:scale-y-0">
                 <span className="sr-only">Instagram feed</span>
-                <img className="transition duration-500" src="/ig2.jpg" alt="insta feed cover" width="2000" height="1334" />
+                <img className="transition duration-500" src="/ig4.jpg" alt="insta feed cover" width="2000" height="1334" />
               </a>
               <a href="https://www.instagram.com/p/CdbkYJdJ4BJ/" target="_blank" className="relative before:absolute before:inset-0 before:origin-top before:bg-gradient-to-t before:from-black/5 before:opacity-50 before:backdrop-grayscale before:transition before:duration-500 hover:before:origin-bottom hover:before:scale-y-0">
                 <span className="sr-only">Instagram feed</span>

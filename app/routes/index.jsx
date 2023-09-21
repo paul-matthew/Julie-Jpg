@@ -39,8 +39,6 @@ export async function loader() {
 
 }
 
-
-
 // const data = {
 //   info: [
 //     {
@@ -132,6 +130,71 @@ export default function HomeRoute() {
 
   const isFirstPage = startIndex === 0;
   const isLastPage = startIndex + itemsPerPage >= info.length;
+
+const slideInStyle = {
+  transform: 'translateX(0%)',
+  opacity: 1,
+  transition: 'transform 0.5s ease, opacity 0.5s ease',
+};
+
+const slideOutStyle = {
+  transform: 'translateX(-100%)',
+  opacity: 1,
+  transition: 'transform 0.5s ease, opacity 0.5s ease',
+};
+
+
+const testimonials = [
+  {
+    imageSrc: './dogb.jpg',
+    content:
+      "Thank you to Julie for the beautiful piece created for my Friend. I asked for Julie to sketch a piece of my Friends dog who passed away, upon gifting her the completed piece she was in tears. The detail represented Jaspar so well, and is now placed on the wall for the Family to see, and remember the moments they had. Truly a masterpiece.",
+    author: "Anonymous",
+    date: "Sept 17, 2023",
+    stars: 5,
+  },
+  {
+    imageSrc: './empress-icon.png',
+    content:
+      "Words can’t describe how beautifully Jules captured the beauty and essence of my late mother in the portrait she drew for me. The amount of detail Jules added brought me to tears when I first saw it. My mother is fondly remembered for her eyes and bright smile and these physical features really shined through in Jules’ work. It’s truly an amazing reminder of my mother’s elegance and grace. Losing my mother has not been easy but I’m thankful I have something timeless to remember her by. Thank you Jules ❤️",
+    author: "Vanessa O.",
+    date: "Sept 19, 2023",
+    stars: 5,
+  },
+  {
+    imageSrc: './empress-icon.png',
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    author: "XX O.",
+    date: "Sept 20, 2023",
+    stars: 5,
+  },
+  {
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    author: "XX O.",
+    date: "Sept 20, 2023",
+    stars: 5,
+  },
+  // Add more testimonials here...
+];
+  
+
+const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    // Increment the index to show the next testimonial
+    setCurrentTestimonialIndex((prevIndex) =>
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+    );
+  }, 10000); // Change testimonial every 5 seconds (adjust as needed)
+
+  return () => {
+    clearInterval(interval); // Clear the interval on component unmount
+  };
+}, []);
+  
 
   return (
     <div className="bg-black">
@@ -242,7 +305,7 @@ export default function HomeRoute() {
                         <h3 className="bg-black pt-6 text-3xl text-white">Commissions</h3>
                       </div>
                       <div className="mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8">
-                        <p className="max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-l">Offering personalized and captivating artwork commissions, my service brings your creative vision to life, ensuring a unique and meaningful piece tailored exclusively for you.</p>
+                        <p className="max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-l">Creating personalized and captivating artwork commissions, my service brings your vision to life, ensuring a unique and meaningful piece tailored exclusively for you.</p>
                       </div>
                     </div>
                   </div>
@@ -253,7 +316,7 @@ export default function HomeRoute() {
                         <h3 className="bg-black pt-6 text-3xl text-white">Live Painting</h3>
                       </div>
                       <div className="mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8">
-                        <p className="max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-l"> I offer a captivating and interactive experience where art comes to life before your eyes, adding a touch of creativity and excitement to any occasion.</p>
+                        <p className="max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-l">I offer a fun and interactive experience where art comes to life right before your eyes, adding joy and excitement to any occasion.</p>
                       </div>
                     </div>
                   </div>
@@ -263,7 +326,7 @@ export default function HomeRoute() {
                         <h3 className="bg-black pt-6 text-3xl text-white">Exhibits</h3>
                       </div>
                       <div className="mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8">
-                        <p className="max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-l">Discover a captivating showcase of my artistic creations in the 'Exhibit' section, where my work takes center stage, inviting you to immerse yourself in a world of visual storytelling and creative expression.</p>
+                        <p className="max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-l">In-person events where my work takes centre stage.  Inviting you to immerse yourself in a world of visual storytelling, with artwork for purchase available on-site.</p>
                       </div>
                     </div>
                   </div>
@@ -295,7 +358,7 @@ export default function HomeRoute() {
                       <p className="text-4xl lg:text-6xl font-light text-black">Illustrator & Acrylic Painter</p>
                       <hr className="border-black my-4" />
                       <p className="text-base lg:text-xl font-light text-black">
-                        Hey! I’m Julie Jpeg, a Toronto-based Visual Artist. My journey began at the young age of 4 when I brought a pencil and piece of paper together at school. The creativity hasn’t stopped since. Inspired by pop culture, black culture, and landscape views, I bring my ideas to life one canvas at a time. Please join me as I invite you to experience the power of art through my lens.
+                        Hey! I’m Julie Jpeg, a Toronto-based Visual Artist. My journey began at the young age of 4 when I brought a pencil and piece of paper together at school. The creativity hasn’t stopped since. Inspired by pop culture, African culture, and landscape views, I bring my ideas to life one canvas at a time. Please join me as I invite you to experience the power of art through my lens.
                       </p>
                     </div>
                   </div>
@@ -342,42 +405,63 @@ export default function HomeRoute() {
           </div>
         </section>
         <section className="relative z-10 bg-black pb-0 pt-12 md:pb-0 md:pt-0 lg:pb-0 xl:pt-96">
-        <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
-            <div className="flex flex-wrap items-center gap-6">
-              <h2 className="text-7xl font-bold text-white xl:text-8xl sm:mt-8 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-0" style={{fontFamily: 'Marcellus, serif',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>Reviews</h2>
-            </div>
-            <div className="grid gap-6 border-t border-white/30 pt-24 lg:grid-cols-3 lg:gap-24"></div>
-          <ul className="bg-white">
-            <li className="py-8 text-left border px-4 m-0">
-              <div className="flex items-start">
-                <img className="block h-10 w-10 max-w-full flex-shrink-0 rounded-full align-middle" src="./dog.jpg" alt="" />
-                <div className="ml-6">
-                  <div className="flex items-center">
-                    <svg className="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" className=""></path>
-                    </svg>
-                    <svg className="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" className=""></path>
-                    </svg>
-                    <svg className="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" className=""></path>
-                    </svg>
-                    <svg className="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" className=""></path>
-                    </svg>
-                    <svg className="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" className=""></path>
-                    </svg>
-                  </div>
-                  <p className="mt-5 text-base text-gray-900">Thank you to Julie for the beautiful piece created for my Friend. I asked for Julie to sketch a piece of my Friends dog who passed away, upon gifting her the completed piece she was in tears. The detail represented Jaspar so well, and is now placed on the wall for the Family to see, and remember the moments they had. Truly a masterpiece.</p>
-                  <p className="mt-5 text-sm font-bold text-gray-900">Anonymous</p>
-                  <p className="mt-1 text-sm text-gray-600">Sept 17, 2023</p>
-                </div>
+  <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
+    <div className="flex flex-wrap items-center gap-6">
+      <h2 className="text-7xl font-bold text-white xl:text-8xl sm:mt-8 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-0" style={{ fontFamily: 'Marcellus, serif', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>Reviews</h2>
+    </div>
+    <div className="grid gap-6 border-t border-white/30 pt-24 lg:grid-cols-3 lg:gap-24"></div>
+    <ul className="bg-white relative overflow-hidden" id="testimonial-slideshow">
+      {testimonials.map((testimonial, index) => {
+        // Calculate the next index in the cycle
+        const nextIndex = (currentTestimonialIndex + 1) % testimonials.length;
+
+        // Determine the opacity based on whether it's the current or next testimonial
+        const opacityClass =
+          index === currentTestimonialIndex || index === nextIndex
+            ? 'opacity-100'
+            : 'opacity-0 hidden';
+
+        // Calculate the height based on whether it's the current testimonial
+        const heightStyle = index === currentTestimonialIndex ? { height: 'auto' } : { height: '0', overflow: 'hidden' };
+
+        const renderStars = (count) => {
+          const stars = [];
+          for (let i = 0; i < count; i++) {
+            stars.push(<i key={i} className="fas fa-star text-yellow-400"></i>);
+          }
+          return stars;
+        };
+
+        return (
+          <li
+            key={index}
+            style={{
+              ...index === currentTestimonialIndex ? slideInStyle : slideOutStyle,
+              ...heightStyle
+            }}
+            className={`py-8 text-left px-4 m-0 ${opacityClass}`}
+          >
+            {/* Testimonial content */}
+            <div className="flex items-start">
+              <img
+                className="block h-10 w-10 max-w-full flex-shrink-0 rounded-full align-middle"
+                src={testimonial.imageSrc}
+                alt={testimonial.author}
+              />
+              <div className="ml-6">
+                <p className="mt-5 text-base text-gray-900">{testimonial.content}</p>
+                <p className="mt-5 text-sm font-bold text-gray-900">{testimonial.author}</p>
+                <p className="mt-1 text-sm text-gray-600">{testimonial.date}</p>
+                <div className="mt-2">{renderStars(testimonial.stars)}</div>
               </div>
-            </li>
-          </ul>
-        </div>
-        </section>
+            </div>
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+</section>
+
 
       </main>
       <footer className="relative bg-black pt-32 backdrop-opacity-0">
@@ -392,9 +476,9 @@ export default function HomeRoute() {
                 <span className="sr-only">Instagram feed</span>
                 <img className="transition duration-500" src="/ig1.jpg" alt="insta feed cover" width="2000" height="1333" />
               </a>
-              <a href="https://www.instagram.com/p/CNst7BmBp63/" target="_blank" className="relative before:absolute before:inset-0 before:origin-top before:bg-gradient-to-t before:from-black/5 before:opacity-50 before:backdrop-grayscale before:transition before:duration-500 hover:before:origin-bottom hover:before:scale-y-0">
+              <a href="https://www.instagram.com/p/CU8LaXAlNOr/?img_index=1" target="_blank" className="relative before:absolute before:inset-0 before:origin-top before:bg-gradient-to-t before:from-black/5 before:opacity-50 before:backdrop-grayscale before:transition before:duration-500 hover:before:origin-bottom hover:before:scale-y-0">
                 <span className="sr-only">Instagram feed</span>
-                <img className="transition duration-500" src="/ig2.jpg" alt="insta feed cover" width="2000" height="1334" />
+                <img className="transition duration-500" src="/ig4.jpg" alt="insta feed cover" width="2000" height="1334" />
               </a>
               <a href="https://www.instagram.com/p/CdbkYJdJ4BJ/" target="_blank" className="relative before:absolute before:inset-0 before:origin-top before:bg-gradient-to-t before:from-black/5 before:opacity-50 before:backdrop-grayscale before:transition before:duration-500 hover:before:origin-bottom hover:before:scale-y-0">
                 <span className="sr-only">Instagram feed</span>

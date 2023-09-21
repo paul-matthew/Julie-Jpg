@@ -1,0 +1,32 @@
+/*Testimonal Slideshow*/
+
+.testimonial-slideshow {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    max-width: 600px; /* Adjust the width as needed */
+    margin: 0 auto;
+    border:solid red;
+  }
+  
+  .testimonial-slideshow li {
+    display: none;
+    padding: 20px;
+  }
+  
+  /* Animation for sliding testimonials */
+  .testimonial-slideshow li.active {
+    display: block;
+    animation: slide-in 1s forwards;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
