@@ -81,6 +81,19 @@ export default function HomeRoute() {
   const isLastPage = startIndex + itemsPerPage >= info.length;
 
   return (
+    <div>
+    <head>
+      {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-BD49HNJ1SZ"></script>
+      <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-BD49HNJ1SZ');
+        `}
+      </script> */}
+    </head>
     <div className="bg-black">
       <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet" />
@@ -150,16 +163,7 @@ export default function HomeRoute() {
         </div>
       </footer>
       <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossOrigin="anonymous"></script>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-BD49HNJ1SZ"></script>
-      <script>
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-BD49HNJ1SZ');
-        `}
-      </script>
+    </div>
     </div>
   );
 }
