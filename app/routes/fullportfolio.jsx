@@ -83,7 +83,7 @@ export default function HomeRoute() {
   return (
     <div>
     <head>
-      {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-BD49HNJ1SZ"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-BD49HNJ1SZ"></script>
       <script>
         {`
           window.dataLayer = window.dataLayer || [];
@@ -92,7 +92,7 @@ export default function HomeRoute() {
 
           gtag('config', 'G-BD49HNJ1SZ');
         `}
-      </script> */}
+      </script>
     </head>
     <div className="bg-black">
       <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet" />
