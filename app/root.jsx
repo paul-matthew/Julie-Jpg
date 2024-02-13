@@ -61,15 +61,14 @@ export default function App() {
         <Meta />
         <Links />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-BD49HNJ1SZ"></script>
-      <script>
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-BD49HNJ1SZ');
-        `}
-      </script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BD49HNJ1SZ');
+          `
+        }} />
       </head>
 
       <body className="h-full">

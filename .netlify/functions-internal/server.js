@@ -97,7 +97,7 @@ init_react();
 var import_node = require("@remix-run/node"), import_react2 = require("@remix-run/react");
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-HGH3ZUJJ.css";
+var app_default = "/build/_assets/app-GC66R4DZ.css";
 
 // app/root.jsx
 var meta = () => ({
@@ -139,13 +139,16 @@ function App() {
   }, /* @__PURE__ */ React.createElement("head", null, /* @__PURE__ */ React.createElement(import_react2.Meta, null), /* @__PURE__ */ React.createElement(import_react2.Links, null), /* @__PURE__ */ React.createElement("script", {
     async: !0,
     src: "https://www.googletagmanager.com/gtag/js?id=G-BD49HNJ1SZ"
-  }), /* @__PURE__ */ React.createElement("script", null, `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-BD49HNJ1SZ');
-        `)), /* @__PURE__ */ React.createElement("body", {
+  }), /* @__PURE__ */ React.createElement("script", {
+    dangerouslySetInnerHTML: {
+      __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BD49HNJ1SZ');
+          `
+    }
+  })), /* @__PURE__ */ React.createElement("body", {
     className: "h-full"
   }, /* @__PURE__ */ React.createElement(import_react2.Outlet, null), /* @__PURE__ */ React.createElement(import_react2.ScrollRestoration, null), /* @__PURE__ */ React.createElement(import_react2.Scripts, null), /* @__PURE__ */ React.createElement("script", {
     dangerouslySetInnerHTML: {
@@ -649,7 +652,7 @@ function HomeRoute2() {
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
     className: "lg:col-span-2"
   }, /* @__PURE__ */ import_react5.default.createElement("form", {
-    action: "https://formsubmit.co/julestheartist@juliejpeg.com",
+    action: "https://formkeep.com/f/2abb9bf03da8",
     method: "POST",
     className: "mx-auto space-y-8 md:w-3/4"
   }, /* @__PURE__ */ import_react5.default.createElement("div", {
@@ -657,22 +660,12 @@ function HomeRoute2() {
   }, /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("label", {
     htmlFor: "firstname",
     className: "tracking-wide text-white"
-  }, "First name"), /* @__PURE__ */ import_react5.default.createElement("input", {
+  }, "Name"), /* @__PURE__ */ import_react5.default.createElement("input", {
     type: "text",
     id: "firstname",
     name: "firstname",
     autoComplete: "given-name",
-    placeholder: "Your first name",
-    className: "mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary"
-  })), /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("label", {
-    htmlFor: "lastname",
-    className: "tracking-wide text-white"
-  }, "Last name"), /* @__PURE__ */ import_react5.default.createElement("input", {
-    type: "text",
-    id: "lastname",
-    name: "lastname",
-    autoComplete: "family-name",
-    placeholder: "Your last name",
+    placeholder: "Your Name",
     className: "mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary"
   }))), /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("label", {
     htmlFor: "email",
@@ -696,7 +689,7 @@ function HomeRoute2() {
     className: "mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary"
   })), /* @__PURE__ */ import_react5.default.createElement("button", {
     type: "submit",
-    className: "group ml-auto flex h-12 w-auto items-center overflow-hidden bg-white px-5 transition-all duration-300 hover:bg-primary"
+    className: "group ml-auto flex h-12 w-auto items-center overflow-hidden bg-white px-5 transition-all duration-300 hover:bg-black"
   }, /* @__PURE__ */ import_react5.default.createElement("span", {
     className: "relative uppercase tracking-wide text-black group-hover:text-white"
   }, "Send message")))))))), /* @__PURE__ */ import_react5.default.createElement("section", {
@@ -1007,7 +1000,7 @@ function ShopRoute() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { version: "06dca47f", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-WCE3CBE4.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-Y5TE7ANH.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-4VTOJQDK.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-YQA4WDNB.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-06DCA47F.js" };
+var assets_manifest_default = { version: "ce90fcf3", entry: { module: "/build/entry.client-HR2D2GYH.js", imports: ["/build/_shared/chunk-VLWZG3OR.js", "/build/_shared/chunk-O6YYFGCX.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-I22W7Z2P.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/fullportfolio": { id: "routes/fullportfolio", parentId: "root", path: "fullportfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/fullportfolio-Y5TE7ANH.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-2N2EFUPP.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index.client": { id: "routes/index.client", parentId: "root", path: "client", index: void 0, caseSensitive: void 0, module: "/build/routes/index.client-U24MRD5E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop": { id: "routes/shop", parentId: "root", path: "shop", index: void 0, caseSensitive: void 0, module: "/build/routes/shop-YQA4WDNB.js", imports: ["/build/_shared/chunk-WGKF5EQU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-CE90FCF3.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
